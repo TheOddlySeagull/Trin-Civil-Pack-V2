@@ -1,0 +1,11 @@
+{//dyes: black:0 red:1 green:2 brown:3 blue:4 purple:5 cyan:6 light gray:7 gray:8 pink:9 lime:10 yellow:11 light blue:12 magenta:13 orange:14 white:15
+	"general": {
+		"name" : "Pile Of V2 Junk",
+		"width" : 0.25,
+		"height" : 1,
+		"depth" : 1,
+		"oriented" : true,
+		"modelName" : "pile_of_v2_junk",
+		"materials" : ["minecraft:iron_ingot:0:10"]
+	}
+}

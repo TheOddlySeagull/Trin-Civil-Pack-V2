@@ -1,0 +1,2248 @@
+{
+  "motorized": {
+    "isFrontWheelDrive": true,
+    "isRearWheelDrive": true,
+    "hasRunningLights": true,
+    "hasHeadlights": true,
+    "hasTurnSignals": true,
+    "emptyMass": 20000,
+    "fuelCapacity": 30000,
+    "downForce": 0.9,
+    "overSteer": 3,
+    "underSteer": 0.5,
+    "overSteerAccel": 2,
+    "overSteerDecel": -0.5,
+    "axleRatio": 3.5,
+    "brakingFactor": 2.0,
+    "maxTiltAngle": -5,
+    "dragCoefficient": 0.37
+  },
+  "parts": [
+    {
+      "pos": [1.75,0.0,-2.1875],
+      "minValue": 0.1,
+      "maxValue": 2.0,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [-1.75,0.0,-2.1875],
+      "minValue": 0.1,
+      "maxValue": 2.0,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [1.125,0.0,-2.1875],
+      "minValue": 0.1,
+      "maxValue": 2.0,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [-1.125,0.0,-2.1875],
+      "minValue": 0.1,
+      "maxValue": 2.0,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [1.75,0.0,0.0],
+      "minValue": 0.1,
+      "maxValue": 2.0,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [-1.75,0.0,0.0],
+      "minValue": 0.1,
+      "maxValue": 2.0,
+      "types": ["ground_wheel"]
+    },
+    {
+      "pos": [1.75,0.0,8.6875],
+      "turnsWithSteer": true,
+      "minValue": 0.1,
+      "maxValue": 2.0,
+      "types": ["ground_wheel"],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "rudder",
+          "centerPoint": [0.0,0.0,0.0],
+          "axis": [0.0,-1.0,0.0]
+        }
+      ]
+    },
+    {
+      "pos": [-1.75,0.0,8.6875],
+      "turnsWithSteer": true,
+      "minValue": 0.1,
+      "maxValue": 2.0,
+      "types": ["ground_wheel"],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "rudder",
+          "centerPoint": [0.0,0.0,0.0],
+          "axis": [0.0,-1.0,0.0]
+        }
+      ]
+    },
+    {
+      "pos": [1.75,0.0,6.5],
+      "turnsWithSteer": true,
+      "minValue": 0.1,
+      "maxValue": 2.0,
+      "types": ["ground_wheel"],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "rudder",
+          "centerPoint": [0.0,0.0,0.0],
+          "axis": [0.0,-1.0,0.0]
+        }
+      ]
+    },
+    {
+      "pos": [-1.75,0.0,6.5],
+      "turnsWithSteer": true,
+      "minValue": 0.1,
+      "maxValue": 2.0,
+      "types": ["ground_wheel"],
+      "animations": [
+        {
+          "animationType": "rotation",
+          "variable": "rudder",
+          "centerPoint": [0.0,0.0,0.0],
+          "axis": [0.0,-1.0,0.0]
+        }
+      ]
+    },
+    {
+      "pos": [1.0,1.625,9.1875],
+      "isController": true,
+      "types": ["seat"]
+    },
+    {
+      "pos": [-1.0,1.625,9.1875],
+      "types": ["seat"]
+    },
+    {
+      "pos": [-1.5,1.625,7.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,1.625,7.75],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,1.625,7.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,2.625,7.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,2.625,7.75],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,2.625,7.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,1.625,6.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,1.625,6.75],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,1.625,6.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,2.625,6.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,2.625,6.75],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,2.625,6.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,3.625,6.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-0.5,3.625,6.75],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,3.625,6.75],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,3.625,6.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,3.625,5.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-0.5,3.625,5.75],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,3.625,5.75],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,3.625,5.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,2.625,5.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,2.625,5.75],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,2.625,5.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,1.625,5.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,1.625,5.75],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,1.625,5.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,2.625,4.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,2.625,4.75],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,2.625,4.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,1.625,4.75],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,1.625,4.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,0.625,3.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-0.5,0.625,3.75],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,0.625,3.75],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,0.625,3.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,1.625,3.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-0.5,1.625,3.75],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,1.625,3.75],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,1.625,3.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,2.625,3.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 1.0,
+      "types": ["generic","interactable_crate"],
+      "customTypes": ["furniture"]
+    },
+    {
+      "pos": [-0.5,2.625,3.75],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,2.625,3.75],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,2.625,3.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,0.625,2.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,0.625,2.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,1.625,2.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,1.625,2.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,2.625,2.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-0.5,2.625,2.75],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,2.625,2.75],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,2.625,2.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,2.625,1.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,1.625,1.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,0.625,1.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,2.625,1.75],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,1.625,1.75],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,0.625,1.75],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,2.625,1.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,1.625,1.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,0.625,1.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,3.625,0.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,2.625,0.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,1.625,0.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-0.5,3.625,0.75],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,3.625,0.75],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,2.625,0.75],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,1.625,0.75],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,3.625,0.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,2.625,0.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,1.625,0.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,3.625,-0.25],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,2.625,-0.25],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,1.625,-0.25],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-0.5,3.625,-0.25],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,3.625,-0.25],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,2.625,-0.25],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,1.625,-0.25],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,3.625,-0.25],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,2.625,-0.25],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,1.625,-0.25],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,3.625,-1.25],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,2.625,-1.25],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,1.625,-1.25],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-0.5,3.625,-1.25],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,3.625,-1.25],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,3.625,-1.25],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,2.625,-1.25],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,1.625,-1.25],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,3.625,-2.25],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,2.625,-2.25],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,1.625,-2.25],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-0.5,3.625,-2.25],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,3.625,-2.25],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,2.625,-2.25],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,1.625,-2.25],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,3.625,-2.25],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,2.625,-2.25],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,1.625,-2.25],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,3.625,-3.25],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,2.625,-3.25],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,1.625,-3.25],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-0.5,3.625,-3.25],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,3.625,-3.25],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,2.625,-3.25],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,1.625,-3.25],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,3.625,-3.25],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,2.625,-3.25],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,1.625,-3.25],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,3.625,-4.25],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,2.625,-4.25],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-1.5,1.625,-4.25],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-0.5,3.625,-4.25],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-0.5,2.625,-4.25],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [-0.5,1.625,-4.25],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,3.625,-4.25],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,2.625,-4.25],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,1.625,-4.25],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,3.625,-4.25],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,2.625,-4.25],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,1.625,-4.25],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [1.5,0.625,4.75],
+      "rot": [0.0,90.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.5,0.625,4.75],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 3.0,
+      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
+    },
+    {
+      "pos": [0.0,0.1875,5.875],
+      "maxValue": 3.0,
+      "types": ["engine_car"]
+    },
+    {
+      "pos": [0.0,3.75,8.5],
+      "maxValue": 3.0,
+      "types": ["generic_roofdevice"]
+    },
+    {
+      "pos": [1.375,4.375,-3.3125],
+      "maxValue": 3.0,
+      "types": ["interactable_crate_roof"]
+    },
+    {
+      "pos": [0.0,4.375,-3.3125],
+      "maxValue": 2.0,
+      "types": ["interactable_crate_roof"]
+    },
+    {
+      "pos": [-1.375,4.375,-3.3125],
+      "maxValue": 3.0,
+      "types": ["interactable_crate_roof"]
+    },
+    {
+      "pos": [1.375,4.375,-0.6875],
+      "maxValue": 3.0,
+      "types": ["interactable_crate_roof"]
+    },
+    {
+      "pos": [0.0,4.375,-0.6875],
+      "maxValue": 2.0,
+      "types": ["interactable_crate_roof"]
+    },
+    {
+      "pos": [-1.375,4.375,-0.6875],
+      "maxValue": 3.0,
+      "types": ["interactable_crate_roof"]
+    },
+    {
+      "pos": [1.375,4.375,1.9375],
+      "maxValue": 3.0,
+      "types": ["interactable_crate_roof"]
+    },
+    {
+      "pos": [0.0,4.375,1.9375],
+      "maxValue": 2.0,
+      "types": ["interactable_crate_roof"]
+    },
+    {
+      "pos": [-1.375,4.375,1.9375],
+      "maxValue": 3.0,
+      "types": ["interactable_crate_roof"]
+    },
+    {
+      "pos": [1.375,4.375,4.5625],
+      "maxValue": 3.0,
+      "types": ["interactable_crate_roof"]
+    },
+    {
+      "pos": [0.0,4.375,4.5625],
+      "maxValue": 2.0,
+      "types": ["interactable_crate_roof"]
+    },
+    {
+      "pos": [-1.375,4.375,4.5625],
+      "maxValue": 3.0,
+      "types": ["interactable_crate_roof"]
+    },
+    {
+      "pos": [0.0,3.75,9.0625],
+      "maxValue": 3.0,
+      "types": ["generic_lightbar"]
+    },
+    {
+      "pos": [0.0,4.25,-4.375],
+      "rot": [0.0,180.0,0.0],
+      "maxValue": 3.0,
+      "types": ["generic_lightbar"]
+    },
+    {
+      "pos": [0.0,1.1875,10.375],
+      "maxValue": 2.0,
+      "types": ["generic_bullbar"]
+    }
+  ],
+  "collisionGroups": [
+    {
+      "collisions": [
+        {
+          "pos": [0.0,1.0,8.25],
+          "width": 4.0,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [1.0,-0.125,5.75],
+          "width": 1.0,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-0.75,1.0,6.0],
+          "width": 0.5,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-0.25,1.0,6.0],
+          "width": 0.5,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-1.0,-0.125,5.75],
+          "width": 1.0,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-0.5,-0.125,5.75],
+          "width": 1.0,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-0.75,0.5,5.5],
+          "width": 0.5,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-0.25,0.5,5.5],
+          "width": 0.5,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [0.0,0.0,3.25],
+          "width": 4.0,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-0.75,0.5,1.0],
+          "width": 0.5,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-0.25,0.5,1.0],
+          "width": 0.5,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-1.5,1.0,0.75],
+          "width": 1.0,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-0.75,1.0,0.5],
+          "width": 0.5,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-0.25,1.0,0.5],
+          "width": 0.5,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [0.5,1.0,0.75],
+          "width": 1.0,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [1.5,1.0,0.75],
+          "width": 1.0,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [0.0,1.0,-1.75],
+          "width": 4.0,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-1.5,1.0,-4.25],
+          "width": 1.0,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-0.5,1.0,-4.25],
+          "width": 1.0,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [0.5,1.0,-4.25],
+          "width": 1.0,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [1.5,1.0,-4.25],
+          "width": 1.0,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-1.5,3.3125,9.8125],
+          "width": 0.5,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-0.5,3.3125,9.8125],
+          "width": 0.5,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [0.5,3.3125,9.8125],
+          "width": 0.5,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [1.5,3.3125,9.8125],
+          "width": 0.5,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-1.0,3.8125,8.3125],
+          "width": 2.0,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [1.0,3.8125,8.3125],
+          "width": 2.0,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [0.0,4.4375,5.3125],
+          "width": 4.0,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [0.0,3.0625,3.25],
+          "width": 4.0,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [0.0,4.4375,1.3125],
+          "width": 4.0,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [0.0,4.4375,-2.6875],
+          "width": 4.0,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-2.03125,2.625,8.5],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-2.03125,2.625,8.0],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-2.03125,2.625,7.5],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-2.03125,2.625,7.0],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-2.03125,2.625,6.5],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-2.03125,2.625,6.0],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-2.03125,2.625,5.5],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-2.03125,1.625,4.3],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-2.03125,1.625,4.0],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-2.03125,1.625,3.5],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-2.03125,1.625,3.0],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-2.03125,1.625,2.5],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-2.03125,1.625,2.0],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-2.03125,2.625,1.5],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-2.03125,2.625,1.0],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-2.03125,2.625,0.5],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-2.03125,2.625,0.0],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-2.03125,2.625,-0.5],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-2.03125,2.625,-1.0],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-2.03125,2.625,-1.5],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-2.03125,2.625,-2.0],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-2.03125,2.625,-2.5],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-2.03125,2.625,-3.0],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-2.03125,2.625,-3.5],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-2.03125,2.625,-4.0],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-1.5,2.625,-4.78125],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-1.0,2.625,-4.78125],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-0.5,2.625,-4.78125],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [0.0,2.625,-4.78125],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [0.5,2.625,-4.78125],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [1.0,2.625,-4.78125],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [1.5,2.625,-4.78125],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [2.0,2.625,-4.78125],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [-2.0,2.625,-4.78125],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [2.03125,2.625,8.5],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [2.03125,2.625,8.0],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [2.03125,2.625,7.5],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [2.03125,2.625,7.0],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [2.03125,2.625,6.5],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [2.03125,2.625,6.0],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [2.03125,2.625,5.5],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [2.03125,1.625,5.0],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [2.03125,1.625,4.5],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [2.03125,1.625,4.0],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [2.03125,1.625,3.5],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [2.03125,1.625,3.0],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [2.03125,1.625,2.5],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [2.03125,1.625,2.0],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [2.03125,2.625,1.5],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [2.03125,2.625,1.0],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [2.03125,2.625,0.5],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [2.03125,2.625,0.0],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [2.03125,2.625,-0.5],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [2.03125,2.625,-1.0],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [2.03125,2.625,-1.5],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [2.03125,2.625,-2.0],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [2.03125,2.625,-2.5],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [2.03125,2.625,-3.0],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [2.03125,2.625,-3.5],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [2.03125,2.625,-4.0],
+          "width": 0.0625,
+          "height": 3.0,
+          "variableValue": 0.0
+        }
+      ]
+    }
+  ],
+  "connectionGroups": [
+    {
+      "groupName": "HOOKUP",
+      "hookup": true,
+      "connections": [
+        {
+          "type": "tow_bumper_heavy",
+          "pos": [0.0,1.25,10.43813],
+          "distance": 0.0
+        },
+        {
+          "type": "tow_bumper_heavy",
+          "pos": [0.0,0.875,-4.87625],
+          "distance": 0.0
+        },
+        {
+          "type": "tow_wheel_heavy",
+          "pos": [0.0,-0.9375,8.6875],
+          "distance": 0.0
+        }
+      ]
+    }
+  ],
+  "instruments": [
+    {
+      "pos": [1.1875,1.84375,9.95313],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 80,
+      "hudY": 36,
+      "hudScale": 0.25
+    },
+    {
+      "pos": [1.125,2.09375,9.98375],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 160,
+      "hudY": 36,
+      "hudScale": 0.5
+    },
+    {
+      "pos": [0.875,2.09375,9.98375],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 240,
+      "hudY": 36,
+      "hudScale": 0.5
+    },
+    {
+      "pos": [0.8125,1.84375,9.96875],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 320,
+      "hudY": 36,
+      "hudScale": 0.25
+    }
+  ],
+  "definitions": [
+    {
+      "subName": "_blue",
+      "name": "Trin Gorgantom",
+      "extraMaterials": ["minecraft:dye:4:5"]
+    },
+    {
+      "subName": "_brown",
+      "name": "Trin Gorgantom",
+      "extraMaterials": ["minecraft:dye:3:5"]
+    },
+    {
+      "subName": "_light_blue",
+      "name": "Trin Gorgantom",
+      "extraMaterials": ["minecraft:dye:12:5"]
+    },
+    {
+      "subName": "_light_gray",
+      "name": "Trin Gorgantom",
+      "extraMaterials": ["minecraft:dye:7:5"]
+    },
+    {
+      "subName": "_olive",
+      "name": "Trin Gorgantom",
+      "extraMaterials": ["minecraft:dye:2:5"]
+    },
+    {
+      "subName": "_red",
+      "name": "Trin Gorgantom",
+      "extraMaterials": ["minecraft:dye:1:5"]
+    },
+    {
+      "subName": "_pure_black",
+      "name": "Trin Gorgantom",
+      "extraMaterials": ["minecraft:dye:0:10"]
+    },
+    {
+      "subName": "_pure_white",
+      "name": "Trin Gorgantom",
+      "extraMaterials": ["minecraft:dye:15:10"]
+    },
+    {
+      "subName": "_diamond",
+      "name": "Trin Gorgantom",
+      "extraMaterials": ["minecraft:dye:12:4","minecraft:diamond:0:1"]
+    }
+  ],
+  "rendering": {
+    "textObjects": [
+      {
+        "pos": [0.0,1.25,10.43813],
+        "rot": [0.0,0.0,0.0],
+        "scale": 0.13,
+        "fieldName": "Text",
+        "defaultText": "tcp-000",
+        "maxLength": 7,
+        "color": "000000"
+      },
+      {
+        "pos": [0.0,0.875,-4.87625],
+        "rot": [0.0,180.0,0.0],
+        "scale": 0.13,
+        "fieldName": "Text",
+        "defaultText": "tcp-000",
+        "maxLength": 7,
+        "color": "000000"
+      }
+    ],
+    "animatedObjects": [
+      {
+        "objectName": "$gas",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "throttle",
+            "centerPoint": [1.3125,1.1875,9.92188],
+            "axis": [25.0,0.0,0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "$brake",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "brake",
+            "centerPoint": [0.9375,1.1875,9.85938],
+            "axis": [25.0,0.0,0.0]
+          },
+          {
+            "animationType": "rotation",
+            "variable": "p_brake",
+            "centerPoint": [0.9375,1.1875,9.85938],
+            "axis": [-45.0,0.0,0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "$doorL",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "door",
+            "centerPoint": [2.0,2.125,9.5],
+            "axis": [0.0,-60.0,0.0],
+            "duration": 30
+          }
+        ]
+      },
+      {
+        "objectName": "$doorwindowL",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "door",
+            "centerPoint": [2.0,2.125,9.5],
+            "axis": [0.0,-60.0,0.0],
+            "duration": 30
+          }
+        ]
+      },
+      {
+        "objectName": "$doorR",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "door",
+            "centerPoint": [-2.0,2.125,9.5],
+            "axis": [0.0,60.0,0.0],
+            "duration": 30
+          }
+        ]
+      },
+      {
+        "objectName": "$doorwindowR",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "door",
+            "centerPoint": [-2.0,2.125,9.5],
+            "axis": [0.0,60.0,0.0],
+            "duration": 30
+          }
+        ]
+      },
+      {
+        "objectName": "$doorRR",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "door",
+            "centerPoint": [-2.09375,2.125,5.1875],
+            "axis": [0.0,90.0,0.0],
+            "duration": 30
+          }
+        ]
+      },
+      {
+        "objectName": "$doorwindowRR",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "door",
+            "centerPoint": [-2.09375,2.125,5.1875],
+            "axis": [0.0,90.0,0.0],
+            "duration": 30
+          }
+        ]
+      },
+      {
+        "objectName": "$doorWC",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "door",
+            "centerPoint": [-0.03125,2.125,2.3125],
+            "axis": [0.0,-90.0,0.0],
+            "duration": 30
+          }
+        ]
+      },
+      {
+        "objectName": "$steer",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "rudder",
+            "centerPoint": [1.0,1.9375,9.85938],
+            "axis": [-0.0,-0.0,1.0]
+          }
+        ]
+      },
+      {
+        "objectName": "$shaft1",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "Driveshaft",
+            "centerPoint": [0.0,-0.0625,2.0],
+            "axis": [0.0,0.0,1.0]
+          }
+        ]
+      },
+      {
+        "objectName": "$shaft2",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "Driveshaft",
+            "centerPoint": [0.0,0.0,0.125],
+            "axis": [0.0,0.0,1.0]
+          }
+        ]
+      },
+      {
+        "objectName": "$shaft3",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "Driveshaft",
+            "centerPoint": [0.0,0.0,-2.0],
+            "axis": [0.0,0.0,1.0]
+          }
+        ]
+      },
+      {
+        "objectName": "$doorchsetFL",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "door",
+            "centerPoint": [2.03125,3.875,4.75],
+            "axis": [0.0,-60.0,0.0],
+            "duration": 30
+          }
+        ]
+      },
+      {
+        "objectName": "$doorchsetFR",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "door",
+            "centerPoint": [-2.03125,3.875,4.75],
+            "axis": [0.0,60.0,0.0],
+            "duration": 30
+          }
+        ]
+      },
+      {
+        "objectName": "$doorchsetRL",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "door",
+            "centerPoint": [2.03125,3.875,1.75],
+            "axis": [0.0,60.0,0.0],
+            "duration": 30
+          }
+        ]
+      },
+      {
+        "objectName": "$doorchsetRR",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "door",
+            "centerPoint": [-2.03125,3.875,1.75],
+            "axis": [0.0,-60.0,0.0],
+            "duration": 30
+          }
+        ]
+      },
+      {
+        "objectName": "$hood",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "hood",
+            "centerPoint": [0.0,0.125,5.25],
+            "axis": [30.0,0.0,0.0]
+          }
+        ]
+      }
+    ],
+    "lightObjects": [
+      {
+        "objectName": "&RightTurnLight_ff6600_FFC00_111",
+        "emissive": true,
+        "covered": true,
+        "isElectric": true,
+        "color": "FF6600",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "right_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "10_10_0_cycle",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "blendableComponents": [
+          {
+            "pos": [-1.7187509536743164,1.6249920129776,10.375],
+            "axis": [0.0,0.0,1.0],
+            "flareHeight": 0.5625,
+            "flareWidth": 0.5625
+          },
+          {
+            "pos": [-1.71875,1.7812540531158447,-4.90625],
+            "axis": [0.0,0.0,-1.0],
+            "flareHeight": 1.3125,
+            "flareWidth": 1.3125
+          },
+          {
+            "pos": [-2.1562509536743164,2.0312419533729553,9.71875],
+            "axis": [-1.0,0.0,0.0],
+            "flareHeight": 0.5625,
+            "flareWidth": 0.5625
+          },
+          {
+            "pos": [-2.15625,2.0312540531158447,-4.46875],
+            "axis": [-1.0,0.0,0.0],
+            "flareHeight": 0.5625,
+            "flareWidth": 0.5625
+          },
+          {
+            "pos": [-2.15625,0.9687460064888,3.21875],
+            "axis": [-1.0,0.0,0.0],
+            "flareHeight": 0.5625,
+            "flareWidth": 0.5625
+          }
+        ]
+      },
+      {
+        "objectName": "&Headlight_ffcc00_FFFFF_111",
+        "emissive": true,
+        "covered": true,
+        "isElectric": true,
+        "color": "FFCC00",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "headlight",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "blendableComponents": [
+          {
+            "pos": [-1.7187509536743164,1.7499920129776,10.390625],
+            "axis": [0.0,0.0,1.0],
+            "flareHeight": 0.5625,
+            "flareWidth": 0.5625,
+            "beamDiameter": 12.0,
+            "beamLength": 36.0
+          },
+          {
+            "pos": [1.7187490463256836,1.7499920129776,10.390625],
+            "axis": [0.0,0.0,1.0],
+            "flareHeight": 0.5625,
+            "flareWidth": 0.5625,
+            "beamDiameter": 12.0,
+            "beamLength": 36.0
+          }
+        ]
+      },
+      {
+        "objectName": "&RunningLight_ffcc00_FFFFF_111",
+        "emissive": true,
+        "covered": true,
+        "isElectric": true,
+        "color": "FFCC00",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "running_light",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "blendableComponents": [
+          {
+            "pos": [-1.7187509536743164,1.8749920129776,10.40625],
+            "axis": [0.0,0.0,1.0],
+            "flareHeight": 0.5625,
+            "flareWidth": 0.5625
+          },
+          {
+            "pos": [-1.5937509536743164,1.6249920129776,10.390625],
+            "axis": [0.0,0.0,1.0],
+            "flareHeight": 0.375,
+            "flareWidth": 0.375
+          },
+          {
+            "pos": [-1.5937509536743164,1.7499920129776,10.40625],
+            "axis": [0.0,0.0,1.0],
+            "flareHeight": 0.375,
+            "flareWidth": 0.375
+          },
+          {
+            "pos": [-1.5937509536743164,1.8749920129776,10.421875],
+            "axis": [0.0,0.0,1.0],
+            "flareHeight": 0.375,
+            "flareWidth": 0.375
+          },
+          {
+            "pos": [1.7187490463256836,1.8749920129776,10.40625],
+            "axis": [0.0,0.0,1.0],
+            "flareHeight": 0.5625,
+            "flareWidth": 0.5625
+          },
+          {
+            "pos": [1.5937490463256836,1.6249920129776,10.390625],
+            "axis": [0.0,0.0,1.0],
+            "flareHeight": 0.375,
+            "flareWidth": 0.375
+          },
+          {
+            "pos": [1.5937490463256836,1.7499920129776,10.40625],
+            "axis": [0.0,0.0,1.0],
+            "flareHeight": 0.375,
+            "flareWidth": 0.375
+          },
+          {
+            "pos": [1.5937490463256836,1.8749920129776,10.421875],
+            "axis": [0.0,0.0,1.0],
+            "flareHeight": 0.375,
+            "flareWidth": 0.375
+          }
+        ]
+      },
+      {
+        "objectName": "&RunningLight_ff6600_FFFFF_111",
+        "emissive": true,
+        "covered": true,
+        "isElectric": true,
+        "color": "FF6600",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "running_light",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "blendableComponents": [
+          {
+            "pos": [0.8437489867210388,3.1249918937683105,10.531253814697266],
+            "axis": [0.0,0.0,1.0],
+            "flareHeight": 0.5625,
+            "flareWidth": 0.5625
+          },
+          {
+            "pos": [-0.8437510132789612,3.1249918937683105,10.531253814697266],
+            "axis": [0.0,0.0,1.0],
+            "flareHeight": 0.5625,
+            "flareWidth": 0.5625
+          },
+          {
+            "pos": [-9.98377799987793E-7,3.1249918937683105,10.531253814697266],
+            "axis": [0.0,0.0,1.0],
+            "flareHeight": 0.5625,
+            "flareWidth": 0.5625
+          },
+          {
+            "pos": [0.0,3.7500040531158447,-4.90625],
+            "axis": [0.0,0.0,-1.0],
+            "flareHeight": 0.5625,
+            "flareWidth": 0.5625
+          },
+          {
+            "pos": [-0.84375,3.7500040531158447,-4.90625],
+            "axis": [0.0,0.0,-1.0],
+            "flareHeight": 0.5625,
+            "flareWidth": 0.5625
+          },
+          {
+            "pos": [0.84375,3.7500040531158447,-4.90625],
+            "axis": [0.0,0.0,-1.0],
+            "flareHeight": 0.5625,
+            "flareWidth": 0.5625
+          }
+        ]
+      },
+      {
+        "objectName": "&LeftTurnLight_ff6600_FFC00_111",
+        "emissive": true,
+        "covered": true,
+        "isElectric": true,
+        "color": "FF6600",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "left_turn_signal",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "10_10_0_cycle",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "blendableComponents": [
+          {
+            "pos": [1.7187490463256836,1.6249920129776,10.375],
+            "axis": [0.0,0.0,1.0],
+            "flareHeight": 0.5625,
+            "flareWidth": 0.5625
+          },
+          {
+            "pos": [1.71875,1.7812540531158447,-4.90625],
+            "axis": [0.0,0.0,-1.0],
+            "flareHeight": 1.3125,
+            "flareWidth": 1.3125
+          },
+          {
+            "pos": [2.1562490463256836,2.0312419533729553,9.71875],
+            "axis": [1.0,0.0,0.0],
+            "flareHeight": 0.5625,
+            "flareWidth": 0.5625
+          },
+          {
+            "pos": [2.15625,2.0312540531158447,-4.46875],
+            "axis": [1.0,0.0,0.0],
+            "flareHeight": 0.5625,
+            "flareWidth": 0.5625
+          },
+          {
+            "pos": [2.15625,0.9687460064888,3.21875],
+            "axis": [1.0,0.0,0.0],
+            "flareHeight": 0.5625,
+            "flareWidth": 0.5625
+          }
+        ]
+      },
+      {
+        "objectName": "&BackupLight_ffffcc_FFFFF_111",
+        "emissive": true,
+        "covered": true,
+        "isElectric": true,
+        "color": "FFFFCC",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_reversed_1",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "blendableComponents": [
+          {
+            "pos": [-1.5625,1.8750040531158447,-4.90625],
+            "axis": [0.0,0.0,-1.0],
+            "flareHeight": 0.375,
+            "flareWidth": 0.375
+          },
+          {
+            "pos": [1.5625,1.8750040531158447,-4.90625],
+            "axis": [0.0,0.0,-1.0],
+            "flareHeight": 0.375,
+            "flareWidth": 0.375
+          }
+        ]
+      },
+      {
+        "objectName": "&RunningLight_e60000_FFFFF_111",
+        "emissive": true,
+        "covered": true,
+        "isElectric": true,
+        "color": "E60000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "running_light",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "blendableComponents": [
+          {
+            "pos": [-1.71875,1.8750040531158447,-4.90625],
+            "axis": [0.0,0.0,-1.0],
+            "flareHeight": 0.5625,
+            "flareWidth": 0.5625
+          },
+          {
+            "pos": [1.71875,1.8750040531158447,-4.90625],
+            "axis": [0.0,0.0,-1.0],
+            "flareHeight": 0.5625,
+            "flareWidth": 0.5625
+          }
+        ]
+      },
+      {
+        "objectName": "&BrakeLight_e60000_FFFFF_111",
+        "emissive": true,
+        "covered": true,
+        "isElectric": true,
+        "color": "E60000",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "brake",
+            "clampMin": 0.01,
+            "clampMax": 1.0
+          }
+        ],
+        "blendableComponents": [
+          {
+            "pos": [-1.875,1.8750040531158447,-4.90625],
+            "axis": [0.0,0.0,-1.0],
+            "flareHeight": 0.375,
+            "flareWidth": 0.375
+          },
+          {
+            "pos": [1.875,1.8750040531158447,-4.90625],
+            "axis": [0.0,0.0,-1.0],
+            "flareHeight": 0.375,
+            "flareWidth": 0.375
+          },
+          {
+            "pos": [0.0,3.937503933906555,-4.90625],
+            "axis": [0.0,0.0,-1.0],
+            "flareHeight": 2.25,
+            "flareWidth": 2.25
+          }
+        ]
+      }
+    ],
+    "customVariables": ["siren"],
+    "sounds": [
+      {
+        "name": "iv_tcp:horn_1",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "horn",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "looping": true
+      },
+      {
+        "name": "iv_tcp:siren",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "siren",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "looping": true
+      },
+      {
+        "name": "mts:air_brake_activating",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "p_brake",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "name": "mts:backup_beeper",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_gear_1",
+            "clampMin": -10.0,
+            "clampMax": -1.0
+          }
+        ],
+        "looping": true
+      }
+    ],
+    "particles": []
+  },
+  "general": {
+    "description": "Recommended parts:\nGorgantom Sized Wheels\nHeavy V10 Engine\nModel 2 Seats",
+    "materials": ["mts:iv_tcp_v2.pile_of_v2_junk:0:16"]
+  }
+}

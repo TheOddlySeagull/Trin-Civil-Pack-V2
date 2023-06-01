@@ -1,0 +1,306 @@
+{
+  "motorized": {
+    "isRearWheelDrive": true,
+    "hasOpenTop": true,
+    "hasRunningLights": true,
+    "hasHeadlights": true,
+    "emptyMass": 100,
+    "fuelCapacity": 1000,
+    "downForce": 0.7,
+    "overSteer": 0.25,
+    "underSteer": 3,
+    "overSteerAccel": 0.5,
+    "overSteerDecel": -0.5,
+    "axleRatio": 1.25,
+    "brakingFactor": 0.15,
+    "maxTiltAngle": 17.5,
+    "dragCoefficient": 0.3
+  },
+  "parts": [
+    {
+      "pos": [0.0,0.0,0.0],
+      "minValue": 0.8,
+      "maxValue": 0.9,
+      "types": ["ground_wheel_bicycle"]
+    },
+    {
+      "pos": [0.0,0.0,1.375],
+      "rot": [0.0,0.0,0.0],
+      "turnsWithSteer": true,
+      "minValue": 0.8,
+      "maxValue": 0.9,
+      "types": ["ground_wheel_bicycle"]
+    },
+    {
+      "pos": [0.0,0.8125,0.125],
+      "isController": true,
+      "types": ["seat_motorcycle"]
+    },
+    {
+      "pos": [0.0,0.5625,1.125],
+      "rot": [0.0,0.0,0.0],
+      "maxValue": 1.0,
+      "types": ["engine_bike"]
+    },
+    {
+      "pos": [0.0,1.125,1.125],
+      "turnsWithSteer": true,
+      "maxValue": 3.0,
+      "types": ["generic_gyrophare"]
+    },
+    {
+      "pos": [0.0,0.5,0.1875],
+      "rot": [0.0,180.0,0.0],
+      "maxValue": 0.1,
+      "types": ["generic_ledlight"]
+    }
+  ],
+  "collisionGroups": [
+    {
+      "collisions": [
+        {
+          "pos": [0.0,0.5625,1.25],
+          "width": 0.25,
+          "height": 0.125,
+          "variableValue": 0.0
+        },
+        {
+          "pos": [0.0,0.5625,0.375],
+          "width": 0.25,
+          "height": 0.125,
+          "variableValue": 0.0
+        }
+      ]
+    }
+  ],
+  "connectionGroups": [],
+  "instruments": [
+    {
+      "pos": [0.0,1.0,1.0775],
+      "rot": [0.0,0.0,0.0],
+      "scale": 0.015625,
+      "hudX": 200,
+      "hudY": 36,
+      "hudScale": 0.25
+    }
+  ],
+  "definitions": [
+    {
+      "subName": "_blue",
+      "name": "Trin E-Cycle",
+      "extraMaterials": ["minecraft:dye:4:5"]
+    },
+    {
+      "subName": "_brown",
+      "name": "Trin E-Cycle",
+      "extraMaterials": ["minecraft:dye:3:5"]
+    },
+    {
+      "subName": "_light_blue",
+      "name": "Trin E-Cycle",
+      "extraMaterials": ["minecraft:dye:12:5"]
+    },
+    {
+      "subName": "_light_gray",
+      "name": "Trin E-Cycle",
+      "extraMaterials": ["minecraft:dye:7:5"]
+    },
+    {
+      "subName": "_olive",
+      "name": "Trin E-Cycle",
+      "extraMaterials": ["minecraft:dye:2:5"]
+    },
+    {
+      "subName": "_red",
+      "name": "Trin E-Cycle",
+      "extraMaterials": ["minecraft:dye:1:5"]
+    },
+    {
+      "subName": "_pure_black",
+      "name": "Trin E-Cycle",
+      "extraMaterials": ["minecraft:dye:0:10"]
+    },
+    {
+      "subName": "_pure_white",
+      "name": "Trin E-Cycle",
+      "extraMaterials": ["minecraft:dye:15:10"]
+    },
+    {
+      "subName": "_diamond",
+      "name": "Trin E-Cycle",
+      "extraMaterials": ["minecraft:dye:12:4","minecraft:diamond:0:1"]
+    }
+  ],
+  "rendering": {
+    "textObjects": [],
+    "animatedObjects": [
+      {
+        "objectName": "$pedal",
+        "animations": [
+          {
+            "animationType": "inhibitor",
+            "variable": "throttle",
+            "clampMax": 0.05
+          },
+          {
+            "animationType": "inhibitor",
+            "variable": "speed",
+            "clampMax": 0.0025
+          },
+          {
+            "animationType": "inhibitor",
+            "variable": "engine_gear_1",
+            "clampMin": -0.5,
+            "clampMax": 0.5
+          },
+          {
+            "animationType": "rotation",
+            "variable": "engine_driveshaft_rotation_1",
+            "centerPoint": [0.0,0.0,0.6875],
+            "axis": [1.0,0.0,0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "$gear",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "engine_driveshaft_rotation_1",
+            "centerPoint": [0.0,0.0,0.0],
+            "axis": [1.0,0.0,0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "$chain_top",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "engine_driveshaft_rotation_1",
+            "centerPoint": [-0.15625,0.07813,0.0],
+            "axis": [0.0,0.0,1.0]
+          }
+        ]
+      },
+      {
+        "objectName": "$chain_down",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "engine_driveshaft_rotation_",
+            "centerPoint": [-0.15625,-0.07813,0.0],
+            "axis": [0.0,0.0,1.0]
+          }
+        ]
+      },
+      {
+        "objectName": "$steer",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "rudder",
+            "centerPoint": [0.0,1.0625,1.125],
+            "axis": [-0.0,-1.0,-0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "$&Headlight_ffcc00_CCCCC_111",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "rudder",
+            "centerPoint": [0.0,1.0625,1.125],
+            "axis": [-0.0,-1.0,-0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "$&RunningLight_ffcc00_FFFFF_111",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "rudder",
+            "centerPoint": [0.0,1.0625,1.125],
+            "axis": [-0.0,-1.0,-0.0]
+          }
+        ]
+      }
+    ],
+    "lightObjects": [
+      {
+        "objectName": "$&RunningLight_ffcc00_FFFFF_111",
+        "emissive": true,
+        "covered": true,
+        "isElectric": true,
+        "color": "FFCC00",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "running_light",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "blendableComponents": [
+          {
+            "pos": [0.0,1.125,1.046875],
+            "axis": [0.0,0.0,-1.0],
+            "flareHeight": 0.1875,
+            "flareWidth": 0.1875
+          }
+        ]
+      },
+      {
+        "objectName": "$&Headlight_ffcc00_CCCCC_111",
+        "emissive": true,
+        "covered": true,
+        "isElectric": true,
+        "color": "FFCC00",
+        "brightnessAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "headlight",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "visibility",
+            "variable": "2_2_16_cycle",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ],
+        "blendableComponents": [
+          {
+            "pos": [0.0,1.09375,1.203125],
+            "axis": [0.0,0.0,1.0],
+            "flareHeight": 0.1875,
+            "flareWidth": 0.1875,
+            "beamDiameter": 4.0,
+            "beamLength": 12.0
+          }
+        ]
+      }
+    ],
+    "sounds": [
+      {
+        "name": "iv_tcp:bike_bell",
+        "activeAnimations": [
+          {
+            "animationType": "visibility",
+            "variable": "horn",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      }
+    ],
+    "particles": []
+  },
+  "general": {
+    "description": "Recommended parts:\nBike Wheels\nElectric Bike Engine\nBike Seats",
+    "materials": ["mts:iv_tcp_v2.pile_of_v2_junk:0:1"]
+  }
+}
