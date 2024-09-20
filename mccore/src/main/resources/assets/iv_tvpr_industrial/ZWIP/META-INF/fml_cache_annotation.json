@@ -1,0 +1,39 @@
+{
+  "iv_timp/MTSPackLoader": {
+    "name": "iv_timp/MTSPackLoader",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+        "target": "iv_timp/MTSPackLoader"
+      },
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/Mod;",
+        "target": "iv_timp/MTSPackLoader",
+        "values": {
+          "acceptedMinecraftVersions": {
+            "value": "[1.12.0,]"
+          },
+          "dependencies": {
+            "value": "required-after:mts@[15.0.0,);"
+          },
+          "modid": {
+            "value": "iv_timp"
+          },
+          "name": {
+            "value": "Trin Industrial Machinery Pack"
+          },
+          "version": {
+            "value": "1.0.3"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "registerItems(Lnet/minecraftforge/event/RegistryEvent$Register;)V"
+      }
+    ]
+  }
+}

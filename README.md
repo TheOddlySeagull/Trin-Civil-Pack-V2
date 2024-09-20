@@ -17,3 +17,7 @@ Not updated anymore, but maintained.
 - Discord - [TheOddlySeagull](https://discordapp.com/users/374911928428134400)
 - GitHub - [TheOddlySeagull](https://github.com/TheOddlySeagull)
 
+
+# Trin Vehicle Pack Rebirth Changelogs
+
+## Trin Vehicle Pack Rebirth 1.0.0 changelog:

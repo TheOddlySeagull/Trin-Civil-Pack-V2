@@ -1,0 +1,283 @@
+{
+	"definitions" : [
+		{
+		"name" : "Rusty apocalyps Trin Pharaon",
+			"subName" : "_rust",
+			"extraMaterials" : ["minecraft:dye:14:3", "minecraft:dye:15:2"]
+		},
+		{
+		"name" : "Clean apocalyps Trin Pharaon",
+			"subName" : "_clean",
+			"extraMaterials" : ["minecraft:dye:0:5"]
+		}
+	],	
+	"general": {
+		"type" : "car",
+		"openTop" : false,
+		"emptyMass" : 3500,
+		"materials" : ["minecraft:iron_ingot:0:47", "minecraft:dye:1:2"]
+	},
+	"motorized" : {
+		"fuelCapacity" : 16000,
+		"hornSound" : "mtsseagullcivilpack:horn_1",
+		"controls" : [],
+		"instruments" : [
+			{//1
+				"pos" : [1.063, 0.938, 3.859],
+				"rot" : [0, 0, 0],
+				"hudX" : 80,
+				"hudY" : 36,
+				"scale" : 0.015625,
+				"hudScale" : 0.25
+			},
+			{//2
+				"pos" : [0.844, 1.031, 3.859],
+				"rot" : [0, 0, 0],
+				"hudX" : 160,
+				"hudY" : 36,
+				"scale" : 0.015625,
+				"hudScale" : 0.5
+			},
+			{//3
+				"pos" : [0.656, 1.031, 3.859],
+				"rot" : [0, 0, 0],
+				"hudX" : 240,
+				"hudY" : 36,
+				"scale" : 0.015625,
+				"hudScale" : 0.5
+			},
+			{//4
+				"pos" : [0.438, 0.938, 3.859],
+				"rot" : [0, 0, 0],
+				"hudX" : 320,
+				"hudY" : 36,
+				"scale" : 0.015625,
+				"hudScale" : 0.25
+			}
+		]
+	},
+	"car" : {
+		"isBigTruck" : false,
+		"isFrontWheelDrive" : true,
+		"isRearWheelDrive" : true,
+		"dragCoefficient" :  0.6,
+		"axleRatio" : 4
+	},
+	"parts": [
+		{//wheel RL out
+			"pos" : [1.9375, -0.8125, 0],
+			"types" : ["wheel"],
+			"minValue" : 0.40,
+			"maxValue" : 2
+		},
+		{//wheel RL in
+			"pos" : [1.6875, -0.8125, 0],
+			"types" : ["wheel"],
+			"minValue" : 0.40,
+			"maxValue" : 2
+		},
+		{//wheel RR out
+			"pos" : [-1.9375, -0.8125, 0],
+			"types" : ["wheel"],
+			"minValue" : 0.40,
+			"maxValue" : 2
+		},
+		{//wheel RR in
+			"pos" : [-1.6875, -0.8125, 0],
+			"types" : ["wheel"],
+			"minValue" : 0.40,
+			"maxValue" : 2
+		},
+		{//wheel FL
+			"pos" : [1.5625, -0.5625, 5.5625],
+			"types" : ["wheel"],
+			"minValue" : 0.40,
+			"maxValue" : 1.7,
+			"turnsWithSteer" : true
+		},
+		{//wheel FR
+			"pos" : [-1.5625, -0.5625, 5.5625],
+			"types" : ["wheel"],
+			"minValue" : 0.40,
+			"maxValue" : 1.7,
+			"turnsWithSteer" : true
+		},
+		{//seat FL
+			"pos" : [0.75, 0.5, 2.938],
+			"types" : ["seat"],
+			"isController" : true
+		},
+		{//seat FR
+			"pos" : [-0.75, 0.5, 2.938],
+			"types" : ["seat"]
+		},
+		{//seat RL
+			"pos" : [0.75, 0.5, 1.325],
+			"types" : ["seat"]
+		},
+		{//seat RR
+			"pos" : [-0.75, 0.5, 1.325],
+			"types" : ["seat"]
+		},
+		{//engine
+			"pos" : [0, 0.063, 4.469],
+			"types" : ["engine_car"],
+			"minValue" : 0.0,
+			"maxValue" : 5
+		},
+		{//luggage 1
+			"pos" : [-0.563, 0.125, -0.156],
+			"types" : ["crate"],
+			"customTypes" : ["luggage"],
+			"maxValue" : 3.0
+		},
+		{//luggage 2
+			"pos" : [0, 0.125, -0.156],
+			"types" : ["crate"],
+			"customTypes" : ["luggage"],
+			"maxValue" : 3.0
+		},
+		{//luggage 3
+			"pos" : [0.563, 0.125, -0.156],
+			"types" : ["crate"],
+			"customTypes" : ["luggage"],
+			"maxValue" : 3.0
+		}
+	],
+	"collision": [
+		{//hood
+			"pos" : [0, 1, 5.719],
+			"width" : 2.5,
+			"height" : 0.125
+		},
+		{//roof
+			"pos" : [0, 1.938, 2.344],
+			"width" : 2.5,
+			"height" : 0.125
+		},
+		{//Back
+			"pos" : [0, 1, -0.781],
+			"width" : 2.5,
+			"height" : 0.125
+		}
+	],
+	"rendering": {
+		"numberWindows" : 18,
+		"defaultDisplayText" : "SCP-000",
+		"hudBackplaneTexturePercentages" : [0.5918, 0.59961, 0.31641, 0.31836],
+		"hudMouldingTexturePercentages" : [0.56055, 0.56641, 0.32422, 0.32617],
+		"displayTextMaxLength" : 7,
+		"textMarkings" : [
+			{//front
+				"pos" : [0, 0.20625, 7.305],
+				"rot" : [0, 0, 0],
+				"scale" : 0.13,
+				"color" : "#000000"
+			},
+			{//rear
+				"pos" : [0, 0.53125, -2.05375],
+				"rot" : [0, 180, 0],
+				"scale" : 0.13,
+				"color" : "#000000"
+			}
+		],
+		"rotatableModelObjects" : [
+			{
+				"partName" : "$gas",
+				"rotationPoint" : [0.96875, 0.0625, 4.0625],
+				"rotationAxis" : [12.5, 0.0, 0.0],
+				"rotationVariable" : "throttle"
+			},
+			{
+				"partName" : "$brake",
+				"rotationPoint" : [0.96875, 0.0625, 4.0625],
+				"rotationAxis" : [12.5, 0.0, 0.0],
+				"rotationVariable" : "brake"
+			},
+			{
+				"partName" : "$p_brake",
+				"rotationPoint" : [0.1875, 0.125, 3.875],
+				"rotationAxis" : [30.0, 0.0, 0.0],
+				"rotationVariable" : "p_brake"
+			},
+			{
+				"partName" : "$doorFL",
+				"rotationPoint" : [1.5625, 0.9375, 3.65625],
+				"rotationAxis" : [0.0, -60.0, 0.0],
+				"rotationVariable" : "door"
+			},
+			{
+				"partName" : "$doorwindowFLA",
+				"rotationPoint" : [1.5625, 0.9375, 3.65625],
+				"rotationAxis" : [0.0, -60.0, 0.0],
+				"rotationVariable" : "door"
+			},
+			{
+				"partName" : "$doorwindowFLB",
+				"rotationPoint" : [1.5625, 0.9375, 3.65625],
+				"rotationAxis" : [0.0, -60.0, 0.0],
+				"rotationVariable" : "door"
+			},
+			{
+				"partName" : "$doorFR",
+				"rotationPoint" : [-1.5625, 0.9375, 3.65625],
+				"rotationAxis" : [0.0, 60.0, 0.0],
+				"rotationVariable" : "door"
+			},
+			{
+				"partName" : "$doorwindowFRA",
+				"rotationPoint" : [-1.5625, 0.9375, 3.65625],
+				"rotationAxis" : [0.0, 60.0, 0.0],
+				"rotationVariable" : "door"
+			},
+			{
+				"partName" : "$doorwindowFRB",
+				"rotationPoint" : [-1.5625, 0.9375, 3.65625],
+				"rotationAxis" : [0.0, 60.0, 0.0],
+				"rotationVariable" : "door"
+			},
+			{
+				"partName" : "$doorRL",
+				"rotationPoint" : [1.5625, 0.9375, 1.15625],
+				"rotationAxis" : [0.0, 60.0, 0.0],
+				"rotationVariable" : "door"
+			},
+			{
+				"partName" : "$doorwindowRL",
+				"rotationPoint" : [1.5625, 0.9375, 1.15625],
+				"rotationAxis" : [0.0, 60.0, 0.0],
+				"rotationVariable" : "door"
+			},
+			{
+				"partName" : "$doorRR",
+				"rotationPoint" : [-1.5625, 0.9375, 1.15625],
+				"rotationAxis" : [0.0, -60.0, 0.0],
+				"rotationVariable" : "door"
+			},
+			{
+				"partName" : "$doorwindowRR",
+				"rotationPoint" : [-1.5625, 0.9375, 1.15625],
+				"rotationAxis" : [0.0, -60.0, 0.0],
+				"rotationVariable" : "door"
+			},
+			{
+				"partName" : "$steer",
+				"rotationPoint" : [0.75, 0.875, 3.78125],
+				"rotationAxis" : [0, 0, -1],
+				"rotationVariable" : "steering_wheel"
+			},
+			{
+				"partName" : "$hood",
+				"rotationPoint" : [0, 1.063, 4.406],
+				"rotationAxis" : [-60.0, 0.0, 0.0],
+				"rotationVariable" : "hood"
+			},
+			{
+				"partName" : "$shift",
+				"rotationPoint" : [0, 0.1875, 3.71875],
+				"rotationAxis" : [1, 0, 0],
+				"rotationVariable" : "engine_gearshift_1"
+			}
+		]
+	}
+}

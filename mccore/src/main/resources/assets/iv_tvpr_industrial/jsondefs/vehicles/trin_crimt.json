@@ -1,0 +1,307 @@
+{//Trin Crimt
+	"definitions" : [
+		{//dyes: black:0 red:1 green:2 brown:3 blue:4 purple:5 cyan:6 light gray:7 gray:8 pink:9 lime:10 yellow:11 light blue:12 magenta:13 orange:14 white:15
+			"subName" : "_yellow",
+			"extraMaterials" : ["minecraft:dye:11:5"],
+			"name" : "Trin Crimpt Front End Loader (yellow)"
+		},
+		{//dyes: black:0 red:1 green:2 brown:3 blue:4 purple:5 cyan:6 light gray:7 gray:8 pink:9 lime:10 yellow:11 light blue:12 magenta:13 orange:14 white:15
+			"subName" : "_orange",
+			"extraMaterials" : ["minecraft:dye:14:5"],
+			"name" : "Trin Crimpt Front End Loader (orange)"
+		},
+		{//dyes: black:0 red:1 green:2 brown:3 blue:4 purple:5 cyan:6 light gray:7 gray:8 pink:9 lime:10 yellow:11 light blue:12 magenta:13 orange:14 white:15
+			"subName" : "_blue",
+			"extraMaterials" : ["minecraft:dye:4:5"],
+			"name" : "Trin Crimpt Front End Loader (blue)"
+		}
+	],	
+	"general": {
+		"type" : "car",
+		"openTop" : false,
+		"emptyMass" : 9000,
+		"materials" : ["minecraft:iron_ingot:0:16", "minecraft:iron_block:0:5", "minecraft:glass_pane:0:10", "minecraft:wool:0:1"]
+	},
+	"motorized" : {
+		"fuelCapacity" : 20000,
+		"hornSound" : "iv_timp:horn_1",
+		"controls" : [],
+		"instruments" : [
+			{//1
+				"pos" : [0.3125, 0.8125, 2.12],
+				"rot" : [0, 0, 0],
+				"hudX" : 80,
+				"hudY" : 36,
+				"scale" : 0.015625,
+				"hudScale" : 0.25
+			},
+			{//2
+				"pos" : [0.125, 0.8125, 2.12],
+				"rot" : [0, 0, 0],
+				"hudX" : 160,
+				"hudY" : 36,
+				"scale" : 0.015625,
+				"hudScale" : 0.5
+			},
+			{//3
+				"pos" : [-0.125, 0.8125, 2.12],
+				"rot" : [0, 0, 0],
+				"hudX" : 240,
+				"hudY" : 36,
+				"scale" : 0.015625,
+				"hudScale" : 0.5
+			},
+			{//4
+				"pos" : [-0.3125, 0.8125, 2.12],
+				"rot" : [0, 0, 0],
+				"hudX" : 320,
+				"hudY" : 36,
+				"scale" : 0.015625,
+				"hudScale" : 0.25
+			}
+		],
+		"hitchPos" : [0, 0.15625, -1.01563], //towing point
+		"hitchTypes" : ["Ring"],
+		"hookupPos" : [0, 0, -1.01563], //towed point
+		"hookupType" : "Tow"
+	},
+	"car" : {
+		"isBigTruck" : true,
+		"isFrontWheelDrive" : false,
+		"isRearWheelDrive" : true,
+		//0 is an ultimate aerodynamic vehicle, 1 is a brick. 0.25 is for sports car, 0.5 for classic usual SUVs
+		"dragCoefficient" :  0.7, 
+		//axle Ratios:  3.3: SUVs... 3 to 3.5: Trucks (bigger = 3.5)... 3.55: sedans/hatchbacks... 4.1: sports cars...
+		"axleRatio" : 3.5
+	},
+	"parts": [
+		{//wheel RL (rear left)
+			"pos" : [0.8125, 0, 0],
+			"types" : ["wheel"],
+			"minValue" : 0.40,
+			"maxValue" : 1.3
+		},
+		{//wheel RR (rear right)
+			"pos" : [-0.8125, 0, 0],
+			"types" : ["wheel"],
+			"minValue" : 0.40,
+			"maxValue" : 1.3
+		},
+		{//wheel FL (front left)
+			"pos" : [0.8125, 0, 3.25],
+			"types" : ["wheel"],
+			"minValue" : 0.40,
+			"maxValue" : 1.3,
+			"turnsWithSteer" : true
+		},
+		{//wheel FR (front right)
+			"pos" : [-0.8125, 0, 3.25],
+			"types" : ["wheel"],
+			"minValue" : 0.40,
+			"maxValue" : 1.3,
+			"turnsWithSteer" : true
+		},
+		{//driver seat
+			"pos" : [0, 0.375, 1.5],
+			"types" : ["seat"],
+			"isController" : true,
+            "dismountPos" : [2, 0.375, 1.5]
+		},
+		{//engine (V12: 2, V10: 0.7, V8: 0.6, V6: 0.4, i5/i4: 0.3, i3: 0.2)
+			"pos" : [0, 0.125, -0.9375],
+			"types" : ["engine_car"],
+			"rot" : [0, 0, 0],
+			"minValue" : 0.0,
+			"maxValue" : 4
+		},
+		{//roof_device
+			"pos" : [0, 1.9375, 1.5],
+			"types" : ["custom"],
+			"customTypes" : ["roof_device"],
+			"minValue" : 0.0,
+			"maxValue" : 3.0
+		},
+		{//gyrophare
+			"pos" : [-0.59375, 2, 2.09375],
+			"types" : ["custom"],
+			"customTypes" : ["siren"],
+			"minValue" : 0.0,
+			"maxValue" : 3.0
+		},
+		{//gyrophare
+			"pos" : [0.59375, 2, 2.09375],
+			"types" : ["custom"],
+			"customTypes" : ["siren"],
+			"minValue" : 0.0,
+			"maxValue" : 3.0
+		},
+		{//gyrophare
+			"pos" : [0, 1.0625, -0.15625],
+			"types" : ["custom"],
+			"customTypes" : ["siren"],
+			"minValue" : 0.0,
+			"maxValue" : 3.0
+		},
+		{//excavator shovel
+			"pos" : [0, -0.1875, 4.6875],
+			"types" : ["custom"],
+			"customTypes" : ["excavator"],
+			"minValue" : 0.0,
+			"maxValue" : 3.0
+		}
+	],
+	"collision": [
+		// 2 pixels tall: 0.125; 1 block wide: 1
+		{//front
+			"pos" : [0, 0.9375, 3.0625],
+			"width" : 1,
+			"height" : 0.125
+		},
+		{//roof
+			"pos" : [0, 1.9375, 1.5625],
+			"width" : 1,
+			"height" : 0.125
+		},
+		{//rear
+			"pos" : [0, 1, 0.4375],
+			"width" : 1,
+			"height" : 0.125
+		},
+		{//rear
+			"pos" : [0, 1, -0.5625],
+			"width" : 1,
+			"height" : 0.125
+		}
+	],
+	"rendering": {
+		"numberWindows" : 10,
+		"defaultDisplayText" : "tcp-000",
+		//512x64: hbptp: [0.00195, 0.00391, 0.82813, 0.84375] hmtp: [0.01367, 0.01563, 0.82813, 0.84375]
+		//512x128: hbptp: [0.00195, 0.00391, 0.91406, 0.92188] hmtp: [0.01367, 0.01563, 0.91406, 0.92188]
+		//512x512: hbtp:[0.001953, 0.003906, 0.978516, 0.980469] hmtp:[0.013672, 0.015625, 0.978516, 0.980469]
+		//1024x512: hbptp: [0.97852, 0.98047, 0.00098, 0.00195] hmtp: [0.97852, 0.98047, 0.00684, 0.00781]
+		"hudBackplaneTexturePercentages" : [0.00195, 0.00391, 0.91406, 0.92188],
+		"hudMouldingTexturePercentages" : [0.01367, 0.01563, 0.91406, 0.92188],
+		"displayTextMaxLength" : 7,
+		"textMarkings" : [],
+		"rotatableModelObjects" : [
+			//rotations: [x,y,z]: (x: gas pedals, hoods...) (y: wheels when turning, doors...) (z: steering wheel, gullwing doors...)
+			{//gas
+				"partName" : "$gas",
+				"rotationPoint" : [0, 0.1875, 2],
+				"rotationAxis" : [20, 0, 0],
+				"rotationVariable" : "throttle"
+			},
+			{//brake
+				"partName" : "$brake",
+				"rotationPoint" : [0, 0.1875, 2],
+				"rotationAxis" : [20, 0, 0],
+				"rotationVariable" : "brake"
+			},
+			{//p_brake
+				"partName" : "$p_brake",
+				"rotationPoint" : [0.4375, 0.25, 2.125],
+				"rotationAxis" : [-20, 0, 0],
+				"rotationVariable" : "p_brake"
+			},
+			{//shift
+				"partName" : "$shift",
+				"rotationPoint" : [0.4375, 0.25, 2.125],
+				"rotationAxis" : [20, 0, 0],
+				"rotationVariable" : "gearshift"
+			},
+			{//arm control
+				"partName" : "$arm_control",
+				"rotationPoint" : [0.4375, 0.25, 2.125],
+				"rotationAxis" : [60, 0, 0],
+				"rotationVariable" : "door"
+			},
+			{//steering_wheel
+				"partName" : "$steer",
+				"rotationPoint" : [0, 0.9375, 2],
+				"rotationAxis" : [0, 0, -1],
+				"rotationVariable" : "steering_wheel"
+			},
+			{//classic doors (1 = right)
+				"partName" : "$doorFR",
+				"rotationPoint" : [-0.625, 0.125, 1.9375],
+				"rotationAxis" : [0, 60, 0],
+				"rotationVariable" : "door"
+			},
+			{//classic doors (1 = right)
+				"partName" : "$doorwindowFRa",
+				"rotationPoint" : [-0.625, 0.125, 1.9375],
+				"rotationAxis" : [0, 60, 0],
+				"rotationVariable" : "door"
+			},
+			{//classic doors (1 = right)
+				"partName" : "$doorwindowFRb",
+				"rotationPoint" : [-0.625, 0.125, 1.9375],
+				"rotationAxis" : [0, 60, 0],
+				"rotationVariable" : "door"
+			},
+			{//classic doors (1 = right)
+				"partName" : "$doorFL",
+				"rotationPoint" : [0.625, 0.125, 1.9375],
+				"rotationAxis" : [0, -60, 0],
+				"rotationVariable" : "door"
+			},
+			{//classic doors (1 = right)
+				"partName" : "$doorwindowFLa",
+				"rotationPoint" : [0.625, 0.125, 1.9375],
+				"rotationAxis" : [0, -60, 0],
+				"rotationVariable" : "door"
+			},
+			{//classic doors (1 = right)
+				"partName" : "$doorwindowFLb",
+				"rotationPoint" : [0.625, 0.125, 1.9375],
+				"rotationAxis" : [0, -60, 0],
+				"rotationVariable" : "door"
+			},
+			{//arm
+				"partName" : "$arm_main",
+				"rotationPoint" : [0, 0.21875, 3.28125],
+				"rotationAxis" : [-66, 0, 0],
+				"rotationVariable" : "door"
+			},
+			{//arm
+				"partName" : "$arm_hydro",
+				"rotationPoint" : [0, 0.6875, 2.5625],
+				"rotationAxis" : [-34, 0, 0],
+				"rotationVariable" : "door"
+			},
+			{//arm
+				"partName" : "$arm_hydro_shovel_out",
+				"rotationPoint" : [0, 0.90625, 2.5625],
+				"rotationAxis" : [-39, 0, 0],
+				"rotationVariable" : "door"
+			},
+			{//arm
+				"partName" : "%$arm_hydro_shovel_in",
+				"rotationPoint" : [0, 0.90625, 2.5625],
+				"rotationAxis" : [-39, 0, 0],
+				"rotationVariable" : "door"
+			},
+			{//hood
+				"partName" : "$hood",
+				"rotationPoint" : [0, 1, 0.875],
+				"rotationAxis" : [60, 0, 0],
+				"rotationVariable" : "hood"
+			},
+			{//excavator
+				"partName" : "$excavator",
+				"rotationPoint" : [0, 0.21875, 3.28125],
+				"rotationAxis" : [-66, 0, 0],
+				"rotationVariable" : "door"
+			}
+		],
+		"translatableModelObjects" : [
+			//translations: [x,y,z]: (x: right/left) (y: up/down) (z: forewords/backwords)
+			{//example
+				"partName" : "%$arm_hydro_shovel_in",
+				"translationAxis" : [0, -0.32/*-0.9*/, -0.76875],
+                "translationVariable" : "door"
+			}
+		]
+	}
+}

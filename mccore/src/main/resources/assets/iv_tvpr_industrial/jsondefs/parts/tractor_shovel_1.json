@@ -1,0 +1,22 @@
+{
+	"general": {
+		"type" : "custom",
+		"customType" : "excavator",
+		"materials" : ["minecraft:iron_ingot:0:10"]
+	},
+	"custom" : {
+		"width" : 0.75,
+		"height" : 1,
+		"overrideMirror" : true
+	},
+	"rendering": {
+		"rotatableModelObjects" : [
+			{
+				"partName" : "$excavator",
+				"rotationPoint" : [0, 0.40625, -1.40625],
+				"rotationAxis" : [-66, 0, 0],
+				"rotationVariable" : "door"
+			}
+		]
+	}
+}

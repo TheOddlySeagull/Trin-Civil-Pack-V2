@@ -1,0 +1,37 @@
+{
+	"general": {
+		"type" : "harvester",
+		"customType" : "header",
+		"materials" : ["minecraft:iron_ingot:0:32"]
+	},
+	"harvester" : {
+		"width" : 0.5,
+		"height" : 0.12,
+		"overrideMirror" : true
+	},
+	"rendering": {
+		"rotatableModelObjects" : [
+			{
+				"partName" : "$core",
+				"rotationPoint" : [0, 0, 0],
+				"rotationAxis" : [-42, 0, 0],
+				"rotationVariable" : "door"
+			},
+			{
+				"partName" : "$rot",
+				"rotationPoint" : [0, 0, 0],
+				"rotationAxis" : [-42, 0, 0],
+				"rotationVariable" : "door"
+			},
+			{
+				"partName" : "$rot",
+				"rotationPoint" : [0, -0.125, 0.75],
+				"rotationAxis" : [1, 0, 0],
+				"rotationVariable" : "driveshaft"
+			}
+		]
+	},
+	"effector": {
+		"blocksWide": 5
+	}
+}

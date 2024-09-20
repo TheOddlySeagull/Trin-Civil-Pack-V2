@@ -1,0 +1,372 @@
+{//Trin Commarter
+	"definitions" : [
+		{//dyes: black:0 red:1 green:2 brown:3 blue:4 purple:5 cyan:6 light gray:7 gray:8 pink:9 lime:10 yellow:11 light blue:12 magenta:13 orange:14 white:15
+			"subName" : "_yellow",
+			"extraMaterials" : ["minecraft:dye:11:5"],
+			"name" : "Trin Commarter Combine Harvester (yellow)"
+		},
+		{//dyes: black:0 red:1 green:2 brown:3 blue:4 purple:5 cyan:6 light gray:7 gray:8 pink:9 lime:10 yellow:11 light blue:12 magenta:13 orange:14 white:15
+			"subName" : "_orange",
+			"extraMaterials" : ["minecraft:dye:14:5"],
+			"name" : "Trin Commarter Combine Harvester (orange)"
+		},
+		{//dyes: black:0 red:1 green:2 brown:3 blue:4 purple:5 cyan:6 light gray:7 gray:8 pink:9 lime:10 yellow:11 light blue:12 magenta:13 orange:14 white:15
+			"subName" : "_blue",
+			"extraMaterials" : ["minecraft:dye:4:5"],
+			"name" : "Trin Commarter Combine Harvester (blue)"
+		}
+	],	
+	"general": {
+		"type" : "car",
+		"openTop" : false,
+		"emptyMass" : 3500,
+		"materials" : ["minecraft:iron_ingot:0:23", "minecraft:iron_block:0:10", "minecraft:glass_pane:0:9", "minecraft:wool:0:1"]
+	},
+	"motorized" : {
+		"fuelCapacity" : 15000,
+		"hornSound" : "iv_timp:horn_1",
+		"controls" : [],
+		"instruments" : [
+			{//1
+				"pos" : [0.125, 1.26875, 5.8],
+				"rot" : [0, 0, 0],
+				"hudX" : 80,
+				"hudY" : 36,
+				"scale" : 0.015625,
+				"hudScale" : 0.25
+			},
+			{//2
+				"pos" : [0.125, 1.4375, 5.8],
+				"rot" : [0, 0, 0],
+				"hudX" : 160,
+				"hudY" : 36,
+				"scale" : 0.015625,
+				"hudScale" : 0.5
+			},
+			{//3
+				"pos" : [-0.125, 1.4375, 5.8],
+				"rot" : [0, 0, 0],
+				"hudX" : 240,
+				"hudY" : 36,
+				"scale" : 0.015625,
+				"hudScale" : 0.5
+			},
+			{//4
+				"pos" : [-0.125, 1.26875, 5.8],
+				"rot" : [0, 0, 0],
+				"hudX" : 320,
+				"hudY" : 36,
+				"scale" : 0.015625,
+				"hudScale" : 0.25
+			}
+		],
+		"hitchPos" : [0, 0.0625, -0.375], //towing point
+		"hitchTypes" : ["Ring"],
+		"hookupPos" : [0, 0, 0],//[0, 0, 5.9375], //towed point
+		"hookupType" : "Tow"
+	},
+	"car" : {
+		"isBigTruck" : true,
+		"isFrontWheelDrive" : true,
+		"isRearWheelDrive" : false,
+		//0 is an ultimate aerodynamic vehicle, 1 is a brick. 0.25 is for sports car, 0.5 for classic usual SUVs
+		"dragCoefficient" :  0.7,
+		//axle Ratios:  3.3: SUVs... 3 to 3.5: Trucks (bigger = 3.5)... 3.55: sedans/hatchbacks... 4.1: sports cars...
+		"axleRatio" : 3.55
+	},
+	"parts": [
+		{//wheel RL (rear left)
+			"pos" : [1.3125, 0, 0],
+			"types" : ["wheel"],
+			"minValue" : 1,
+			"maxValue" : 1.1
+		},
+		{//wheel RR (rear right)
+			"pos" : [-1.3125, 0, 0],
+			"types" : ["wheel"],
+			"minValue" : 1,
+			"maxValue" : 1.1
+		},
+		{//wheel FL (front left)
+			"pos" : [1.3125, 0.125, 5.0625],
+			"types" : ["wheel"],
+			"minValue" : 1.1,
+			"maxValue" : 1.3,
+			"turnsWithSteer" : true
+		},
+		{//wheel FR (front right)
+			"pos" : [-1.3125, 0.125, 5.0625],
+			"types" : ["wheel"],
+			"minValue" : 1.1,
+			"maxValue" : 1.3,
+			"turnsWithSteer" : true
+		},
+		{//driver seat
+			"pos" : [0, 1.1875, 5],
+			"types" : ["seat"],
+			"isController" : true,
+            "dismountPos" : [2, 1.1875, 5]
+		},
+		{//engine (V12: 2, V10: 0.7, V8: 0.6, V6: 0.4, i5/i4: 0.3, i3: 0.2)
+			"pos" : [0.78125, 0.75, 0.15625],
+			"types" : ["engine_car"],
+			"rot" : [0, -90, 0],
+			"minValue" : 0.0,
+			"maxValue" : 2
+		},
+		{//roof_device
+			"pos" : [0, 2.625, 4.6875],
+			"types" : ["custom"],
+			"customTypes" : ["roof_device"],
+			"minValue" : 0.0,
+			"maxValue" : 3.0
+		},
+		{//classic crates
+			"pos" : [0, 1.3125, 3.625],
+			"types" : ["crate"],
+			"rot" : [1, 2, -1],
+			"minValue" : 0.0,
+			"maxValue" : 3.0,
+			"overrideMirror" : true
+		},
+		{//classic crates
+			"pos" : [0, 2.0625, 3.625],
+			"types" : ["crate"],
+			"rot" : [-1, 0, 1],
+			"minValue" : 0.0,
+			"maxValue" : 3.0,
+			"overrideMirror" : true
+		},
+		{//gyrophare
+			"pos" : [0.4375, 2.625, 5.9375],
+			"types" : ["custom"],
+			"customTypes" : ["siren"],
+			"minValue" : 0.0,
+			"maxValue" : 3.0
+		},
+		{//gyrophare
+			"pos" : [-0.4375, 2.625, 5.9375],
+			"types" : ["custom"],
+			"customTypes" : ["siren"],
+			"minValue" : 0.0,
+			"maxValue" : 3.0
+		},
+		{//gyrophare
+			"pos" : [1, 2.75, 2.9375],
+			"types" : ["custom"],
+			"customTypes" : ["siren"],
+			"minValue" : 0.0,
+			"maxValue" : 3.0
+		},
+		{//gyrophare
+			"pos" : [-1.3125, 2.75, 2.9375],
+			"types" : ["custom"],
+			"customTypes" : ["siren"],
+			"minValue" : 0.0,
+			"maxValue" : 3.0
+		},
+		{//gyrophare
+			"pos" : [1, 2.75, 1.125],
+			"types" : ["custom"],
+			"customTypes" : ["siren"],
+			"minValue" : 0.0,
+			"maxValue" : 3.0
+		},
+		{//gyrophare
+			"pos" : [-1.3125, 2.75, 1.125],
+			"types" : ["custom"],
+			"customTypes" : ["siren"],
+			"minValue" : 0.0,
+			"maxValue" : 3.0
+		},
+		{//gyrophare
+			"pos" : [1.125, 2.125, 0],
+			"types" : ["custom"],
+			"customTypes" : ["siren"],
+			"minValue" : 0.0,
+			"maxValue" : 3.0
+		},
+		{//gyrophare
+			"pos" : [-1.125, 2.125, 0],
+			"types" : ["custom"],
+			"customTypes" : ["siren"],
+			"minValue" : 0.0,
+			"maxValue" : 3.0
+		},
+		{//header
+			"pos" : [0, 0.0625, 5.96875],
+			"types" : ["harvester"],
+			"customTypes" : ["header"],
+			"minValue" : 0.0,
+			"maxValue" : 0.8
+		}
+	],
+	"collision": [
+		// 2 pixels tall: 0.125; 1 block wide: 1
+		{
+			"pos" : [0, 0.875, 4.375],
+			"width" : 3,
+			"height" : 0.125
+		},
+		{
+			"pos" : [0, 0.875, 1.125],
+			"width" : 3,
+			"height" : 0.125
+		},
+		{
+			"pos" : [-0.5625, 0.875, -0.1875],
+			"width" : 1,
+			"height" : 0.125
+		},
+		{
+			"pos" : [-0.5625, 1.4375, -0.125],
+			"width" : 1,
+			"height" : 0.125
+		},
+		{
+			"pos" : [0, 2.0625, 0.4375],
+			"width" : 2,
+			"height" : 0.125
+		},
+		{
+			"pos" : [0, 2.5625, 1.9375],
+			"width" : 3,
+			"height" : 0.125
+		},
+		{
+			"pos" : [0, 2.5625, 4.375],
+			"width" : 1,
+			"height" : 0.125
+		},
+		{
+			"pos" : [0, 2.5625, 5.6875],
+			"width" : 1,
+			"height" : 0.125
+		}
+	],
+	"rendering": {
+		"numberWindows" : 9,
+		"defaultDisplayText" : "HEY BRO, WHATSUP?",
+		//512x64: hbptp: [0.00195, 0.00391, 0.82813, 0.84375] hmtp: [0.01367, 0.01563, 0.82813, 0.84375]
+		//512x128: hbptp: [0.00195, 0.00391, 0.91406, 0.92188] hmtp: [0.01367, 0.01563, 0.91406, 0.92188]
+		//512x512: hbtp:[0.001953, 0.003906, 0.978516, 0.980469] hmtp:[0.013672, 0.015625, 0.978516, 0.980469]
+		//1024x512: hbptp: [0.97852, 0.98047, 0.00098, 0.00195] hmtp: [0.97852, 0.98047, 0.00684, 0.00781]
+		"hudBackplaneTexturePercentages" : [0.001953, 0.003906, 0.978516, 0.980469],
+		"hudMouldingTexturePercentages" : [0.013672, 0.015625, 0.978516, 0.980469],
+		"displayTextMaxLength" : 42,
+		"textMarkings" : [],
+		"rotatableModelObjects" : [
+			//rotations: [x,y,z]: (x: gas pedals, hoods...) (y: wheels when turning, doors...) (z: steering wheel, gullwing doors...)
+			{//gas
+				"partName" : "$gas",
+				"rotationPoint" : [0, 0.875, 5.625],
+				"rotationAxis" : [20, 0, 0],
+				"rotationVariable" : "throttle"
+			},
+			{//brake
+				"partName" : "$brake",
+				"rotationPoint" : [0, 0.875, 5.625],
+				"rotationAxis" : [20, 0, 0],
+				"rotationVariable" : "brake"
+			},
+			{//p_brake
+				"partName" : "$p_brake",
+				"rotationPoint" : [0, 0.9375, 5.8125],
+				"rotationAxis" : [-20, 0, 0],
+				"rotationVariable" : "p_brake"
+			},
+			{//arm control
+				"partName" : "$arm_control",
+				"rotationPoint" : [0, 0.9375, 5.8125],
+				"rotationAxis" : [60, 0, 0],
+				"rotationVariable" : "door"
+			},
+			{//shift
+				"partName" : "$shift",
+				"rotationPoint" : [0, 0.9375, 5.8125],
+				"rotationAxis" : [20, 0, 0],
+				"rotationVariable" : "gearshift"
+			},
+			{//steering_wheel
+				"partName" : "$steer",
+				"rotationPoint" : [0, 1.5, 5.6875],
+				"rotationAxis" : [0, 0, -1],
+				"rotationVariable" : "steering_wheel"
+			},
+			{//classic doors (1 = right)
+				"partName" : "$doorFR",
+				"rotationPoint" : [-0.625, 1.125, 5.6875],
+				"rotationAxis" : [0, 60, 0],
+				"rotationVariable" : "door"
+			},
+			{//classic doors (1 = right)
+				"partName" : "$doorwindowFRa",
+				"rotationPoint" : [-0.625, 1.125, 5.6875],
+				"rotationAxis" : [0, 60, 0],
+				"rotationVariable" : "door"
+			},
+			{//classic doors (1 = right)
+				"partName" : "$doorwindowFRb",
+				"rotationPoint" : [-0.625, 1.125, 5.6875],
+				"rotationAxis" : [0, 60, 0],
+				"rotationVariable" : "door"
+			},
+			{//classic doors (1 = right)
+				"partName" : "$doorFL",
+				"rotationPoint" : [0.625, 1.125, 5.6875],
+				"rotationAxis" : [0, -60, 0],
+				"rotationVariable" : "door"
+			},
+			{//classic doors (1 = right)
+				"partName" : "$doorwindowFLa",
+				"rotationPoint" : [0.625, 1.125, 5.6875],
+				"rotationAxis" : [0, -60, 0],
+				"rotationVariable" : "door"
+			},
+			{//classic doors (1 = right)
+				"partName" : "$doorwindowFLb",
+				"rotationPoint" : [0.625, 1.125, 5.6875],
+				"rotationAxis" : [0, -60, 0],
+				"rotationVariable" : "door"
+			},
+			{//classic doors (1 = right)
+				"partName" : "$doorRR",
+				"rotationPoint" : [-0.625, 0, 3.3125],
+				"rotationAxis" : [0, -60, 0],
+				"rotationVariable" : "door"
+			},
+			{//classic doors (1 = right)
+				"partName" : "$doorRL",
+				"rotationPoint" : [0.625, 0, 3.3125],
+				"rotationAxis" : [0, 60, 0],
+				"rotationVariable" : "door"
+			},
+			{//hood
+				"partName" : "$hood",
+				"rotationPoint" : [0, 1.8125, -0.4375],
+				"rotationAxis" : [60, 0, 0],
+				"rotationVariable" : "hood"
+			},
+			{//arm
+				"partName" : "$hydrolics_down",
+				"rotationPoint" : [0, 0.5625, 4.875],
+				"rotationAxis" : [-4, 0, 0],
+				"rotationVariable" : "door"
+			},
+			{//arm
+				"partName" : "%$hydrolics_up",
+				"rotationPoint" : [0, 0.5625, 4.875],
+				"rotationAxis" : [-4, 0, 0],
+				"rotationVariable" : "door"
+			}
+		],
+		"translatableModelObjects" : [
+			//translations: [x,y,z]: (x: right/left) (y: up/down) (z: forewords/backwords)
+			{//arm
+				"partName" : "%$hydrolics_up",
+				"translationAxis" : [0, 0.025, -0.29688],
+                "translationVariable" : "door"
+			}
+		]
+	}
+}

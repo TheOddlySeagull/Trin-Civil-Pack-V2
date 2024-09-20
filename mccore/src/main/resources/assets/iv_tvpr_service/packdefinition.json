@@ -1,0 +1,5 @@
+{
+	"packID" : "iv_tvpr_service",
+	"packName" : "Trin Vehicle Pack Rebirth - Services",
+	"dependents" : ["iv_tpp"]
+}

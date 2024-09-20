@@ -1,0 +1,13 @@
+{
+  "general": {
+    "type" : "pontoon",
+	"customType" : "alligator_seal",
+	"materials" : ["minecraft:wool:-1:3"]
+  },
+	
+	"pontoon" : {
+		"width" : 0.2,
+		"lateralFriction" : 0.125,
+		"extraCollisionBoxOffset" : 4.0
+	}
+}
