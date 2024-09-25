@@ -1521,8 +1521,8 @@
     "modelType": "obj"
   },
   "general": {
-    "description": "Recommended parts:\nLarge Sized Wheels\nV12 Engine\nModel 3 Seats",
-    "health": 100,
+    "description": "The great Trin Pharaon, the most luxurious Trin ever produced. This huge V12 powered luxury car is the ultimate in comfort and style. The Trin Pharaon is the perfect car for those who want to travel in style and comfort.\n\nRecommended parts:\nLarge Sized Wheels\nV12 Engine\nModel 2 Seats",
+    "health": 300,
     "materialLists": [
       [
         "mts:iv_tcp_v2.pile_of_v2_junk:0:10"
