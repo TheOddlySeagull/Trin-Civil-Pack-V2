@@ -1,0 +1,17 @@
+{
+    "definitions": [
+        {
+            "subName": "_gray_blue",
+            "modelName": "trin_seat_1",
+            "subDescription": "Skin is added by Trin Vehicle Rebirth Pack, not part of original pack.",
+            "name": "Model 1 Trin Seat, Gray And Blue",
+            "extraMaterials": [
+                "minecraft:dye:3:2"
+            ]
+        }
+    ],
+    "general": {
+        "packID": "iv_tpp",
+        "systemName": "trin_seat_1"
+    }
+}
