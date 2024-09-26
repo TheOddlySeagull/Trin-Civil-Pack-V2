@@ -14,3 +14,4 @@ mccore/build.gradle
 build/*
 compile.py
 .vscode/*
+*convert.py
