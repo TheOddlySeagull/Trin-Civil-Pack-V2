@@ -570,14 +570,11 @@
         {
             "subName": "_blue",
             "name": "Trin Destitume - Electric Blue Paint, Gray Interior",
-            "extraMaterials": [
-                "minecraft:dye:4:5"
-            ],
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_electricblue:0:1",
-                    "minecraft:wool:4:2",
-                    "minecraft:wool:0:3"
+                    "minecraft:wool:7:2",
+                    "minecraft:wool:8:3"
                 ]
             ],
             "partTones": [
@@ -586,27 +583,21 @@
         },
         {
             "subName": "_brown",
-            "name": "Trin Destitume - Milk Coffee Paint, Tan Interior",
-            "extraMaterials": [
-                "minecraft:dye:3:5"
-            ],
+            "name": "Trin Destitume - Milk Coffee Paint, Gray Interior",
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_milkcoffee:0:1",
-                    "minecraft:wool:4:2",
-                    "minecraft:wool:0:3"
+                    "minecraft:wool:7:2",
+                    "minecraft:wool:8:3"
                 ]
             ],
             "partTones": [
-                "_beige"
+                "_gray"
             ]
         },
         {
             "subName": "_light_blue",
             "name": "Trin Destitume - Sky Blue Paint, Gray Interior",
-            "extraMaterials": [
-                "minecraft:dye:12:5"
-            ],
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_skyblue:0:1",
@@ -620,61 +611,49 @@
         },
         {
             "subName": "_light_gray",
-            "name": "Trin Destitume - Silver Paint, Black Interior",
-            "extraMaterials": [
-                "minecraft:dye:7:5"
-            ],
+            "name": "Trin Destitume - Silver Paint, Gray Interior",
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_silver:0:1",
                     "minecraft:wool:7:2",
-                    "minecraft:wool:15:3"
+                    "minecraft:wool:8:3"
                 ]
             ],
             "partTones": [
-                "_black"
+                "_gray"
             ]
         },
         {
             "subName": "_olive",
-            "name": "Trin Destitume - Soft Green Paint, Tan Interior",
-            "extraMaterials": [
-                "minecraft:dye:2:5"
-            ],
+            "name": "Trin Destitume - Soft Green Paint, Gray Interior",
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_softgreen:0:1",
-                    "minecraft:wool:4:2",
-                    "minecraft:wool:0:3"
+                    "minecraft:wool:7:2",
+                    "minecraft:wool:8:3"
                 ]
             ],
             "partTones": [
-                "_beige"
+                "_gray"
             ]
         },
         {
             "subName": "_red",
-            "name": "Trin Destitume - Red Paint, Tan Interior",
-            "extraMaterials": [
-                "minecraft:dye:1:5"
-            ],
+            "name": "Trin Destitume - Red Paint, Gray Interior",
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_carminred:0:1",
-                    "minecraft:wool:4:2",
-                    "minecraft:wool:0:3"
+                    "minecraft:wool:7:2",
+                    "minecraft:wool:8:3"
                 ]
             ],
             "partTones": [
-                "_beige"
+                "_gray"
             ]
         },
         {
             "subName": "_pure_black",
             "name": "Trin Destitume - Pure Black Paint, Red Interior",
-            "extraMaterials": [
-                "minecraft:dye:0:10"
-            ],
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_pureblack:0:1",
@@ -689,9 +668,6 @@
         {
             "subName": "_pure_white",
             "name": "Trin Destitume - Pure White Paint, Red Interior",
-            "extraMaterials": [
-                "minecraft:dye:15:10"
-            ],
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_purewhite:0:1",
@@ -705,20 +681,16 @@
         },
         {
             "subName": "_diamond",
-            "name": "Trin Destitume - Diamond Wrap, White Interior",
-            "extraMaterials": [
-                "minecraft:dye:12:4",
-                "minecraft:diamond:0:1"
-            ],
+            "name": "Trin Destitume - Diamond Wrap, Gray Interior",
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.wrap_roll_diamond:0:1",
                     "minecraft:wool:7:2",
-                    "minecraft:wool:11:3"
+                    "minecraft:wool:8:3"
                 ]
             ],
             "partTones": [
-                "_white"
+                "_gray"
             ]
         }
     ],

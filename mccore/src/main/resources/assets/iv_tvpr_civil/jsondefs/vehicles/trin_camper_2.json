@@ -1130,10 +1130,7 @@
     "definitions": [
         {
             "subName": "_blue",
-            "name": "Trin Camper 2 - Electric Blue Paint, Gray Interior",
-            "extraMaterials": [
-                "minecraft:dye:4:5"
-            ],
+            "name": "Trin Camper 2 - Electric Blue Paint, Tan Interior",
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_electricblue:0:1",
@@ -1142,15 +1139,12 @@
                 ]
             ],
             "partTones": [
-                "_gray"
+                "_beige"
             ]
         },
         {
             "subName": "_brown",
             "name": "Trin Camper 2 - Milk Coffee Paint, Tan Interior",
-            "extraMaterials": [
-                "minecraft:dye:3:5"
-            ],
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_milkcoffee:0:1",
@@ -1165,9 +1159,6 @@
         {
             "subName": "_light_blue",
             "name": "Trin Camper 2 - Sky Blue Paint, Gray Interior",
-            "extraMaterials": [
-                "minecraft:dye:12:5"
-            ],
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_skyblue:0:1",
@@ -1182,9 +1173,6 @@
         {
             "subName": "_light_gray",
             "name": "Trin Camper 2 - Silver Paint, Black Interior",
-            "extraMaterials": [
-                "minecraft:dye:7:5"
-            ],
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_silver:0:1",
@@ -1199,9 +1187,6 @@
         {
             "subName": "_olive",
             "name": "Trin Camper 2 - Soft Green Paint, Tan Interior",
-            "extraMaterials": [
-                "minecraft:dye:2:5"
-            ],
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_softgreen:0:1",
@@ -1216,9 +1201,6 @@
         {
             "subName": "_red",
             "name": "Trin Camper 2 - Red Paint, Tan Interior",
-            "extraMaterials": [
-                "minecraft:dye:1:5"
-            ],
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_carminred:0:1",
@@ -1232,45 +1214,35 @@
         },
         {
             "subName": "_pure_black",
-            "name": "Trin Camper 2 - Pure Black Paint, Red Interior",
-            "extraMaterials": [
-                "minecraft:dye:0:10"
-            ],
+            "name": "Trin Camper 2 - Pure Black Paint, Gray & Blue Interior",
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_pureblack:0:1",
                     "minecraft:wool:7:2",
-                    "minecraft:wool:14:3"
+                    "minecraft:wool:11:3"
                 ]
             ],
             "partTones": [
-                "_red"
+                "_gray_blue"
             ]
         },
         {
             "subName": "_pure_white",
-            "name": "Trin Camper 2 - Pure White Paint, Red Interior",
-            "extraMaterials": [
-                "minecraft:dye:15:10"
-            ],
+            "name": "Trin Camper 2 - Pure White Paint, Gray & Blue Interior",
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_purewhite:0:1",
                     "minecraft:wool:7:2",
-                    "minecraft:wool:14:3"
+                    "minecraft:wool:11:3"
                 ]
             ],
             "partTones": [
-                "_red"
+                "_gray_blue"
             ]
         },
         {
             "subName": "_diamond",
-            "name": "Trin Camper 2 - Diamond Wrap, White Interior",
-            "extraMaterials": [
-                "minecraft:dye:12:4",
-                "minecraft:diamond:0:1"
-            ],
+            "name": "Trin Camper 2 - Diamond Wrap, Gray & Blue Interior",
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.wrap_roll_diamond:0:1",
@@ -1279,7 +1251,7 @@
                 ]
             ],
             "partTones": [
-                "_white"
+                "_gray_blue"
             ]
         }
     ],

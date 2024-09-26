@@ -254,6 +254,11 @@
             "linkedParts": [
                 1,
                 2
+            ],
+            "partScale": [
+                1.0,
+                0.8,
+                1.0
             ]
         },
         {
@@ -571,14 +576,11 @@
         {
             "subName": "_blue",
             "name": "Trin Keibab - Electric Blue Paint, Gray Interior",
-            "extraMaterials": [
-                "minecraft:dye:4:5"
-            ],
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_electricblue:0:1",
-                    "minecraft:wool:4:2",
-                    "minecraft:wool:0:3"
+                    "minecraft:wool:7:2",
+                    "minecraft:wool:8:3"
                 ]
             ],
             "partTones": [
@@ -587,27 +589,21 @@
         },
         {
             "subName": "_brown",
-            "name": "Trin Keibab - Milk Coffee Paint, Tan Interior",
-            "extraMaterials": [
-                "minecraft:dye:3:5"
-            ],
+            "name": "Trin Keibab - Milk Coffee Paint, Gray Interior",
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_milkcoffee:0:1",
-                    "minecraft:wool:4:2",
-                    "minecraft:wool:0:3"
+                    "minecraft:wool:7:2",
+                    "minecraft:wool:8:3"
                 ]
             ],
             "partTones": [
-                "_beige"
+                "_gray"
             ]
         },
         {
             "subName": "_light_blue",
             "name": "Trin Keibab - Sky Blue Paint, Gray Interior",
-            "extraMaterials": [
-                "minecraft:dye:12:5"
-            ],
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_skyblue:0:1",
@@ -621,105 +617,86 @@
         },
         {
             "subName": "_light_gray",
-            "name": "Trin Keibab - Silver Paint, Black Interior",
-            "extraMaterials": [
-                "minecraft:dye:7:5"
-            ],
+            "name": "Trin Keibab - Silver Paint, Gray Interior",
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_silver:0:1",
                     "minecraft:wool:7:2",
-                    "minecraft:wool:15:3"
+                    "minecraft:wool:8:3"
                 ]
             ],
             "partTones": [
-                "_black"
+                "_gray"
             ]
         },
         {
             "subName": "_olive",
-            "name": "Trin Keibab - Soft Green Paint, Tan Interior",
-            "extraMaterials": [
-                "minecraft:dye:2:5"
-            ],
+            "name": "Trin Keibab - Soft Green Paint, Gray Interior",
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_softgreen:0:1",
-                    "minecraft:wool:4:2",
-                    "minecraft:wool:0:3"
+                    "minecraft:wool:7:2",
+                    "minecraft:wool:8:3"
                 ]
             ],
             "partTones": [
-                "_beige"
+                "_gray"
             ]
         },
         {
             "subName": "_red",
-            "name": "Trin Keibab - Red Paint, Tan Interior",
-            "extraMaterials": [
-                "minecraft:dye:1:5"
-            ],
+            "name": "Trin Keibab - Red Paint, Gray Interior",
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_carminred:0:1",
-                    "minecraft:wool:4:2",
-                    "minecraft:wool:0:3"
+                    "minecraft:wool:7:2",
+                    "minecraft:wool:8:3"
                 ]
             ],
             "partTones": [
-                "_beige"
+                "_gray"
             ]
         },
         {
             "subName": "_pure_black",
-            "name": "Trin Keibab - Pure Black Paint, Red Interior",
-            "extraMaterials": [
-                "minecraft:dye:0:10"
-            ],
+            "name": "Trin Keibab - Pure Black Paint, Gray Interior",
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_pureblack:0:1",
                     "minecraft:wool:7:2",
-                    "minecraft:wool:14:3"
+                    "minecraft:wool:8:3"
                 ]
             ],
             "partTones": [
-                "_red"
+                "_gray"
             ]
         },
         {
             "subName": "_pure_white",
-            "name": "Trin Keibab - Pure White Paint, Red Interior",
-            "extraMaterials": [
-                "minecraft:dye:15:10"
-            ],
+            "name": "Trin Keibab - Pure White Paint, Gray Interior",
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_purewhite:0:1",
                     "minecraft:wool:7:2",
-                    "minecraft:wool:14:3"
+                    "minecraft:wool:8:3"
                 ]
             ],
             "partTones": [
-                "_red"
+                "_gray"
             ]
         },
         {
             "subName": "_diamond",
-            "name": "Trin Keibab - Diamond Wrap, White Interior",
-            "extraMaterials": [
-                "minecraft:dye:12:4",
-                "minecraft:diamond:0:1"
-            ],
+            "name": "Trin Keibab - Diamond Wrap, Gray Interior",
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.wrap_roll_diamond:0:1",
                     "minecraft:wool:7:2",
-                    "minecraft:wool:11:3"
+                    "minecraft:wool:8:3"
                 ]
             ],
             "partTones": [
-                "_white"
+                "_gray"
             ]
         }
     ],

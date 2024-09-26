@@ -567,10 +567,7 @@
     "definitions": [
         {
             "subName": "_blue",
-            "name": "Trin Bolter - Electric Blue Paint, Gray Interior",
-            "extraMaterials": [
-                "minecraft:dye:4:5"
-            ],
+            "name": "Trin Bolter - Electric Blue Paint, Beige Interior",
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_electricblue:0:1",
@@ -579,15 +576,12 @@
                 ]
             ],
             "partTones": [
-                "_gray"
+                "_beige"
             ]
         },
         {
             "subName": "_brown",
             "name": "Trin Bolter - Milk Coffee Paint, Tan Interior",
-            "extraMaterials": [
-                "minecraft:dye:3:5"
-            ],
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_milkcoffee:0:1",
@@ -602,9 +596,6 @@
         {
             "subName": "_light_blue",
             "name": "Trin Bolter - Sky Blue Paint, Gray Interior",
-            "extraMaterials": [
-                "minecraft:dye:12:5"
-            ],
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_skyblue:0:1",
@@ -619,9 +610,6 @@
         {
             "subName": "_light_gray",
             "name": "Trin Bolter - Silver Paint, Black Interior",
-            "extraMaterials": [
-                "minecraft:dye:7:5"
-            ],
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_silver:0:1",
@@ -636,9 +624,6 @@
         {
             "subName": "_olive",
             "name": "Trin Bolter - Soft Green Paint, Tan Interior",
-            "extraMaterials": [
-                "minecraft:dye:2:5"
-            ],
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_softgreen:0:1",
@@ -653,9 +638,6 @@
         {
             "subName": "_red",
             "name": "Trin Bolter - Red Paint, Tan Interior",
-            "extraMaterials": [
-                "minecraft:dye:1:5"
-            ],
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_carminred:0:1",
@@ -670,9 +652,6 @@
         {
             "subName": "_pure_black",
             "name": "Trin Bolter - Pure Black Paint, Red Interior",
-            "extraMaterials": [
-                "minecraft:dye:0:10"
-            ],
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_pureblack:0:1",
@@ -687,9 +666,6 @@
         {
             "subName": "_pure_white",
             "name": "Trin Bolter - Pure White Paint, Red Interior",
-            "extraMaterials": [
-                "minecraft:dye:15:10"
-            ],
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.paint_bucket_purewhite:0:1",
@@ -704,10 +680,6 @@
         {
             "subName": "_diamond",
             "name": "Trin Bolter - Diamond Wrap, White Interior",
-            "extraMaterials": [
-                "minecraft:dye:12:4",
-                "minecraft:diamond:0:1"
-            ],
             "extraMaterialLists": [
                 [
                     "mts:iv_tpp.wrap_roll_diamond:0:1",
