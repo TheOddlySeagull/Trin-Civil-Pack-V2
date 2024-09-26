@@ -1,1282 +1,2662 @@
 {
-  "motorized": {
-    "isFrontWheelDrive": true,
-    "hasRunningLights": true,
-    "hasHeadlights": true,
-    "hasTurnSignals": true,
-    "emptyMass": 4700,
-    "fuelCapacity": 13000,
-    "downForce": 0.6,
-    "overSteer": 1,
-    "underSteer": 4,
-    "overSteerAccel": -2,
-    "overSteerDecel": 3,
-    "axleRatio": 3.45,
-    "brakingFactor": 1.75,
-    "maxTiltAngle": -4.4,
-    "dragCoefficient": 0.6
-  },
-  "parts": [
-    {
-      "pos": [1.0,-0.03125,0.0],
-      "minValue": 0.4,
-      "maxValue": 1.1625,
-      "types": ["ground_wheel"]
+    "motorized": {
+        "isFrontWheelDrive": true,
+        "hasRunningLights": true,
+        "hasHeadlights": true,
+        "hasTurnSignals": true,
+        "emptyMass": 4700,
+        "fuelCapacity": 13000,
+        "downForce": 0.6,
+        "overSteer": 1,
+        "underSteer": 4,
+        "overSteerAccel": -2,
+        "overSteerDecel": 3,
+        "axleRatio": 3.45,
+        "brakingFactor": 1.75,
+        "maxTiltAngle": -4.4,
+        "dragCoefficient": 0.6
     },
-    {
-      "pos": [1.25,-0.03125,0.0],
-      "minValue": 0.4,
-      "maxValue": 1.1625,
-      "types": ["ground_wheel"]
-    },
-    {
-      "pos": [-1.0,-0.03125,0.0],
-      "minValue": 0.4,
-      "maxValue": 1.1625,
-      "types": ["ground_wheel"]
-    },
-    {
-      "pos": [-1.25,-0.03125,0.0],
-      "minValue": 0.4,
-      "maxValue": 1.1625,
-      "types": ["ground_wheel"]
-    },
-    {
-      "pos": [1.0,-0.03125,7.59375],
-      "turnsWithSteer": true,
-      "minValue": 0.4,
-      "maxValue": 1.1625,
-      "types": ["ground_wheel"],
-      "animations": [
+    "parts": [
         {
-          "animationType": "rotation",
-          "variable": "rudder",
-          "centerPoint": [0.0,0.0,0.0],
-          "axis": [0.0,-1.0,0.0]
+            "pos": [
+                1.0,
+                -0.03125,
+                0.0
+            ],
+            "minValue": 0.4,
+            "maxValue": 1.1625,
+            "types": [
+                "ground_wheel"
+            ],
+            "defaultPart": "iv_tpp:wheel_classic_4d16_1_chromic"
+        },
+        {
+            "pos": [
+                1.25,
+                -0.03125,
+                0.0
+            ],
+            "minValue": 0.4,
+            "maxValue": 1.1625,
+            "types": [
+                "ground_wheel"
+            ],
+            "defaultPart": "iv_tpp:wheel_classic_4d16_1_chromic"
+        },
+        {
+            "pos": [
+                -1.0,
+                -0.03125,
+                0.0
+            ],
+            "minValue": 0.4,
+            "maxValue": 1.1625,
+            "types": [
+                "ground_wheel"
+            ],
+            "defaultPart": "iv_tpp:wheel_classic_4d16_1_chromic"
+        },
+        {
+            "pos": [
+                -1.25,
+                -0.03125,
+                0.0
+            ],
+            "minValue": 0.4,
+            "maxValue": 1.1625,
+            "types": [
+                "ground_wheel"
+            ],
+            "defaultPart": "iv_tpp:wheel_classic_4d16_1_chromic"
+        },
+        {
+            "pos": [
+                1.0,
+                -0.03125,
+                7.59375
+            ],
+            "turnsWithSteer": true,
+            "minValue": 0.4,
+            "maxValue": 1.1625,
+            "types": [
+                "ground_wheel"
+            ],
+            "animations": [
+                {
+                    "animationType": "rotation",
+                    "variable": "rudder",
+                    "centerPoint": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "axis": [
+                        0.0,
+                        -1.0,
+                        0.0
+                    ]
+                }
+            ],
+            "defaultPart": "iv_tpp:wheel_classic_4d16_1_chromic"
+        },
+        {
+            "pos": [
+                -1.0,
+                -0.03125,
+                7.59375
+            ],
+            "turnsWithSteer": true,
+            "minValue": 0.4,
+            "maxValue": 1.1625,
+            "types": [
+                "ground_wheel"
+            ],
+            "animations": [
+                {
+                    "animationType": "rotation",
+                    "variable": "rudder",
+                    "centerPoint": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "axis": [
+                        0.0,
+                        -1.0,
+                        0.0
+                    ]
+                }
+            ],
+            "defaultPart": "iv_tpp:wheel_classic_4d16_1_chromic"
+        },
+        {
+            "pos": [
+                -0.625,
+                0.625,
+                6.3125
+            ],
+            "types": [
+                "seat"
+            ],
+            "defaultPart": "iv_tpp:trin_seat_2_gray",
+            "toneIndex": 1,
+            "interactableVariables": [
+                []
+            ]
+        },
+        {
+            "pos": [
+                0.625,
+                0.625,
+                6.3125
+            ],
+            "isController": true,
+            "types": [
+                "seat"
+            ],
+            "defaultPart": "iv_tpp:trin_seat_2_gray",
+            "toneIndex": 1,
+            "interactableVariables": [
+                []
+            ]
+        },
+        {
+            "pos": [
+                0.0,
+                0.0625,
+                7.3125
+            ],
+            "maxValue": 2.0,
+            "types": [
+                "engine_car"
+            ],
+            "animations": [
+                {
+                    "animationType": "scaling",
+                    "variable": "part_present_9",
+                    "centerPoint": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "axis": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "offset": 0.7
+                }
+            ],
+            "defaultPart": "iv_tpp:engine_i4_gasoline_normal_aut",
+            "linkedParts": [
+                1,
+                2
+            ]
+        },
+        {
+            "pos": [
+                0.0,
+                3.8125,
+                6.875
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "generic_lightbar",
+                "generic_roofdevice",
+                "generic_gyrophare"
+            ]
+        },
+        {
+            "pos": [
+                -0.5625,
+                3.8125,
+                5.6875
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "interactable_crate_roof"
+            ]
+        },
+        {
+            "pos": [
+                0.5625,
+                3.8125,
+                5.6875
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "interactable_crate_roof"
+            ]
+        },
+        {
+            "pos": [
+                -0.5625,
+                3.8125,
+                3.375
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "interactable_crate_roof"
+            ]
+        },
+        {
+            "pos": [
+                0.5625,
+                3.8125,
+                3.375
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "interactable_crate_roof"
+            ]
+        },
+        {
+            "pos": [
+                -0.5625,
+                3.8125,
+                1.0625
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "interactable_crate_roof"
+            ]
+        },
+        {
+            "pos": [
+                0.5625,
+                3.8125,
+                1.0625
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "interactable_crate_roof"
+            ]
+        },
+        {
+            "pos": [
+                -0.5625,
+                3.8125,
+                -1.25
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "interactable_crate_roof"
+            ]
+        },
+        {
+            "pos": [
+                0.5625,
+                3.8125,
+                -1.25
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "interactable_crate_roof"
+            ]
+        },
+        {
+            "pos": [
+                0.0,
+                3.8125,
+                7.1875
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "generic_lightbar",
+                "generic_roofdevice",
+                "generic_gyrophare"
+            ]
+        },
+        {
+            "pos": [
+                0.0,
+                0.14063,
+                8.6875
+            ],
+            "maxValue": 2.0,
+            "types": [
+                "generic_bullbar"
+            ]
+        },
+        {
+            "pos": [
+                1.0,
+                3.0625,
+                -2.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                1.0,
+                2.0625,
+                -2.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                1.0,
+                1.0625,
+                -2.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                0.0,
+                3.0625,
+                -2.0
+            ],
+            "rot": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                0.0,
+                2.0625,
+                -2.0
+            ],
+            "rot": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                0.0,
+                1.0625,
+                -2.0
+            ],
+            "rot": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                -1.0,
+                3.0625,
+                -2.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                -1.0,
+                2.0625,
+                -2.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                -1.0,
+                1.0625,
+                -2.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                1.0,
+                3.0625,
+                -1.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                1.0,
+                2.0625,
+                -1.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                1.0,
+                1.0625,
+                -1.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                0.0,
+                3.0625,
+                -1.0
+            ],
+            "rot": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                0.0,
+                2.0625,
+                -1.0
+            ],
+            "rot": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                0.0,
+                1.0625,
+                -1.0
+            ],
+            "rot": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                -1.0,
+                3.0625,
+                -1.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                1.0,
+                3.0625,
+                0.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                1.0,
+                2.0625,
+                0.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                1.0,
+                1.0625,
+                0.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                0.0,
+                3.0625,
+                0.0
+            ],
+            "rot": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                0.0,
+                2.0625,
+                0.0
+            ],
+            "rot": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                0.0,
+                1.0625,
+                0.0
+            ],
+            "rot": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                1.0,
+                3.0625,
+                1.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                1.0,
+                2.0625,
+                1.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                1.0,
+                1.0625,
+                1.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                0.0,
+                3.0625,
+                1.0
+            ],
+            "rot": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                1.0,
+                3.0625,
+                2.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                1.0,
+                2.0625,
+                2.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                1.0,
+                1.0625,
+                2.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                0.0,
+                3.0625,
+                2.0
+            ],
+            "rot": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                0.0,
+                2.0625,
+                2.0
+            ],
+            "rot": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                0.0,
+                1.0625,
+                2.0
+            ],
+            "rot": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                -1.0,
+                3.0625,
+                2.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                1.0,
+                3.0625,
+                3.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                1.0,
+                2.0625,
+                3.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                1.0,
+                1.0625,
+                3.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                0.0,
+                3.0625,
+                3.0
+            ],
+            "rot": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                0.0,
+                2.0625,
+                3.0
+            ],
+            "rot": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                0.0,
+                1.0625,
+                3.0
+            ],
+            "rot": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                -1.0,
+                3.0625,
+                3.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                -1.0,
+                2.0625,
+                3.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                -1.0,
+                1.0625,
+                3.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                1.0,
+                3.0625,
+                4.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                1.0,
+                2.0625,
+                4.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                1.0,
+                1.0625,
+                4.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                1.0,
+                1.0625,
+                5.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                1.0,
+                3.0625,
+                5.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                0.0,
+                3.0625,
+                5.0
+            ],
+            "rot": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                1.0,
+                3.0625,
+                6.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                0.0,
+                3.0625,
+                6.0
+            ],
+            "rot": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
+        },
+        {
+            "pos": [
+                -1.0,
+                3.0625,
+                6.0
+            ],
+            "rot": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "types": [
+                "seat_furniture",
+                "interactable_furniture",
+                "generic_furniture"
+            ]
         }
-      ]
-    },
-    {
-      "pos": [-1.0,-0.03125,7.59375],
-      "turnsWithSteer": true,
-      "minValue": 0.4,
-      "maxValue": 1.1625,
-      "types": ["ground_wheel"],
-      "animations": [
-        {
-          "animationType": "rotation",
-          "variable": "rudder",
-          "centerPoint": [0.0,0.0,0.0],
-          "axis": [0.0,-1.0,0.0]
-        }
-      ]
-    },
-    {
-      "pos": [-0.625,0.625,6.3125],
-      "types": ["seat"]
-    },
-    {
-      "pos": [0.625,0.625,6.3125],
-      "isController": true,
-      "types": ["seat"]
-    },
-    {
-      "pos": [0.0,0.0625,7.3125],
-      "maxValue": 2.0,
-      "types": ["engine_car"],
-      "animations": [
-        {
-          "animationType": "scaling",
-          "variable": "part_present_9",
-          "centerPoint": [0.0,0.0,0.0],
-          "axis": [0.0,0.0,0.0],
-          "offset": 0.7
-        }
-      ]
-    },
-    {
-      "pos": [0.0,3.8125,6.875],
-      "maxValue": 3.0,
-      "types": ["generic_roofdevice"]
-    },
-    {
-      "pos": [-0.5625,3.8125,5.6875],
-      "maxValue": 3.0,
-      "types": ["interactable_crate_roof"]
-    },
-    {
-      "pos": [0.5625,3.8125,5.6875],
-      "maxValue": 3.0,
-      "types": ["interactable_crate_roof"]
-    },
-    {
-      "pos": [-0.5625,3.8125,3.375],
-      "maxValue": 3.0,
-      "types": ["interactable_crate_roof"]
-    },
-    {
-      "pos": [0.5625,3.8125,3.375],
-      "maxValue": 3.0,
-      "types": ["interactable_crate_roof"]
-    },
-    {
-      "pos": [-0.5625,3.8125,1.0625],
-      "maxValue": 3.0,
-      "types": ["interactable_crate_roof"]
-    },
-    {
-      "pos": [0.5625,3.8125,1.0625],
-      "maxValue": 3.0,
-      "types": ["interactable_crate_roof"]
-    },
-    {
-      "pos": [-0.5625,3.8125,-1.25],
-      "maxValue": 3.0,
-      "types": ["interactable_crate_roof"]
-    },
-    {
-      "pos": [0.5625,3.8125,-1.25],
-      "maxValue": 3.0,
-      "types": ["interactable_crate_roof"]
-    },
-    {
-      "pos": [0.0,3.8125,7.1875],
-      "maxValue": 3.0,
-      "types": ["generic_lightbar"]
-    },
-    {
-      "pos": [0.0,0.14063,8.6875],
-      "maxValue": 2.0,
-      "types": ["generic_bullbar"]
-    },
-    {
-      "pos": [1.0,3.0625,-2.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [1.0,2.0625,-2.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [1.0,1.0625,-2.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [0.0,3.0625,-2.0],
-      "rot": [0.0,0.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [0.0,2.0625,-2.0],
-      "rot": [0.0,0.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [0.0,1.0625,-2.0],
-      "rot": [0.0,0.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [-1.0,3.0625,-2.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [-1.0,2.0625,-2.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [-1.0,1.0625,-2.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [1.0,3.0625,-1.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [1.0,2.0625,-1.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [1.0,1.0625,-1.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [0.0,3.0625,-1.0],
-      "rot": [0.0,0.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [0.0,2.0625,-1.0],
-      "rot": [0.0,0.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [0.0,1.0625,-1.0],
-      "rot": [0.0,0.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [-1.0,3.0625,-1.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [1.0,3.0625,0.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [1.0,2.0625,0.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [1.0,1.0625,0.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [0.0,3.0625,0.0],
-      "rot": [0.0,0.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [0.0,2.0625,0.0],
-      "rot": [0.0,0.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [0.0,1.0625,0.0],
-      "rot": [0.0,0.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [1.0,3.0625,1.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [1.0,2.0625,1.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [1.0,1.0625,1.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [0.0,3.0625,1.0],
-      "rot": [0.0,270.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [1.0,3.0625,2.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [1.0,2.0625,2.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [1.0,1.0625,2.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [0.0,3.0625,2.0],
-      "rot": [0.0,0.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [0.0,2.0625,2.0],
-      "rot": [0.0,0.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [0.0,1.0625,2.0],
-      "rot": [0.0,0.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [-1.0,3.0625,2.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [1.0,3.0625,3.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [1.0,2.0625,3.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [1.0,1.0625,3.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [0.0,3.0625,3.0],
-      "rot": [0.0,0.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [0.0,2.0625,3.0],
-      "rot": [0.0,0.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [0.0,1.0625,3.0],
-      "rot": [0.0,0.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [-1.0,3.0625,3.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [-1.0,2.0625,3.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [-1.0,1.0625,3.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [1.0,3.0625,4.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [1.0,2.0625,4.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [1.0,1.0625,4.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [1.0,1.0625,5.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [1.0,3.0625,5.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [0.0,3.0625,5.0],
-      "rot": [0.0,0.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [1.0,3.0625,6.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [0.0,3.0625,6.0],
-      "rot": [0.0,0.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    },
-    {
-      "pos": [-1.0,3.0625,6.0],
-      "rot": [0.0,90.0,0.0],
-      "maxValue": 3.0,
-      "types": ["seat_furniture","interactable_furniture","generic_furniture"]
-    }
-  ],
-  "collisionGroups": [
-    {
-      "collisions": [
-        {
-          "pos": [0.0,3.75,6.625],
-          "width": 1.25,
-          "height": 0.125,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [0.0,3.75,4.375],
-          "width": 2.5,
-          "height": 0.125,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [0.0,3.75,1.625],
-          "width": 2.5,
-          "height": 0.125,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [0.0,3.75,-1.125],
-          "width": 2.5,
-          "height": 0.125,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [-1.0,0.5,5.1875],
-          "width": 0.5,
-          "height": 0.125,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [1.0,0.5,5.1875],
-          "width": 0.5,
-          "height": 0.125,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [-0.6875,0.5,3.9375],
-          "width": 1.75,
-          "height": 0.125,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [0.6875,0.5,3.9375],
-          "width": 1.75,
-          "height": 0.125,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [0.0,0.5,1.625],
-          "width": 2.625,
-          "height": 0.125,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [0.0,0.5,-1.125],
-          "width": 2.625,
-          "height": 0.125,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [-1.5625,2.0,5.0],
-          "width": 0.0625,
-          "height": 2.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [-1.5625,2.0,3.5],
-          "width": 0.0625,
-          "height": 2.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [-1.5625,2.0,3.0],
-          "width": 0.0625,
-          "height": 2.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [-1.5625,2.0,2.5],
-          "width": 0.0625,
-          "height": 2.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [-1.5625,2.0,2.0],
-          "width": 0.0625,
-          "height": 2.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [-1.5625,2.0,1.5],
-          "width": 0.0625,
-          "height": 2.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [-1.5625,2.0,0.0],
-          "width": 0.0625,
-          "height": 2.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [-1.5625,2.0,1.5],
-          "width": 0.0625,
-          "height": 2.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [-1.5625,2.0,1.0],
-          "width": 0.0625,
-          "height": 2.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [-1.5625,2.0,0.5],
-          "width": 0.0625,
-          "height": 2.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [-1.5625,2.0,0.0],
-          "width": 0.0625,
-          "height": 2.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [-1.5625,2.0,-0.5],
-          "width": 0.0625,
-          "height": 2.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [-1.5625,2.0,-1.0],
-          "width": 0.0625,
-          "height": 2.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [-1.5625,2.0,-1.5],
-          "width": 0.0625,
-          "height": 2.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [1.5625,2.0,5.0],
-          "width": 0.0625,
-          "height": 2.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [1.5625,2.0,4.5],
-          "width": 0.0625,
-          "height": 2.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [1.5625,2.0,4.0],
-          "width": 0.0625,
-          "height": 2.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [1.5625,2.0,3.5],
-          "width": 0.0625,
-          "height": 2.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [1.5625,2.0,3.0],
-          "width": 0.0625,
-          "height": 2.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [1.5625,2.0,2.5],
-          "width": 0.0625,
-          "height": 2.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [1.5625,2.0,2.0],
-          "width": 0.0625,
-          "height": 2.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [1.5625,2.0,1.5],
-          "width": 0.0625,
-          "height": 2.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [1.5625,2.0,0.0],
-          "width": 0.0625,
-          "height": 2.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [1.5625,2.0,1.5],
-          "width": 0.0625,
-          "height": 2.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [1.5625,2.0,1.0],
-          "width": 0.0625,
-          "height": 2.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [1.5625,2.0,0.5],
-          "width": 0.0625,
-          "height": 2.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [1.5625,2.0,0.0],
-          "width": 0.0625,
-          "height": 2.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [1.5625,2.0,-0.5],
-          "width": 0.0625,
-          "height": 2.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [1.5625,2.0,-1.0],
-          "width": 0.0625,
-          "height": 2.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [1.5625,2.0,-1.5],
-          "width": 0.0625,
-          "height": 2.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [-1.0,2.0,-2.5625],
-          "width": 0.0625,
-          "height": 3.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [-0.5,2.0,-2.5625],
-          "width": 0.0625,
-          "height": 3.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [0.0,2.0,-2.5625],
-          "width": 0.0625,
-          "height": 3.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [0.5,2.0,-2.5625],
-          "width": 0.0625,
-          "height": 3.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [1.0,2.0,-2.5625],
-          "width": 0.0625,
-          "height": 3.0,
-          "variableValue": 0.0
-        },
-        {
-          "pos": [0.0,1.25,7.9375],
-          "width": 1.5,
-          "height": 0.125,
-          "variableValue": 0.0
-        }
-      ]
-    }
-  ],
-  "connectionGroups": [
-    {
-      "groupName": "HOOKUP",
-      "hookup": true,
-      "connections": [
-        {
-          "type": "tow_bumper_heavy",
-          "pos": [0.0,0.0,8.76625],
-          "distance": 0.0
-        },
-        {
-          "type": "tow_bumper_heavy",
-          "pos": [0.0,0.625,-2.64125],
-          "distance": 0.0
-        },
-        {
-          "type": "tow_wheel_heavy",
-          "pos": [0.0,-0.5,7.59375],
-          "distance": 0.0
-        }
-      ]
-    },
-    {
-      "groupName": "TRAILER",
-      "canIntiateConnections": true,
-      "connections": [
-        {
-          "type": "trailer_standard",
-          "pos": [0.0,0.625,-2.64125],
-          "distance": 0.0
-        }
-      ]
-    }
-  ],
-  "instruments": [
-    {
-      "pos": [0.9375,1.03125,6.96188],
-      "rot": [0.0,0.0,0.0],
-      "scale": 0.015625,
-      "hudX": 80,
-      "hudY": 36,
-      "hudScale": 0.25
-    },
-    {
-      "pos": [0.8125,1.21875,6.96188],
-      "rot": [0.0,0.0,0.0],
-      "scale": 0.015625,
-      "hudX": 160,
-      "hudY": 36,
-      "hudScale": 0.5
-    },
-    {
-      "pos": [0.625,1.21875,6.96188],
-      "rot": [0.0,0.0,0.0],
-      "scale": 0.015625,
-      "hudX": 240,
-      "hudY": 36,
-      "hudScale": 0.5
-    },
-    {
-      "pos": [0.4375,1.21875,6.96188],
-      "rot": [0.0,0.0,0.0],
-      "scale": 0.015625,
-      "hudX": 320,
-      "hudY": 36,
-      "hudScale": 0.25
-    }
-  ],
-  "definitions": [
-    {
-      "subName": "_blue",
-      "name": "Trin Camporal N",
-      "extraMaterials": ["minecraft:dye:4:5"]
-    },
-    {
-      "subName": "_brown",
-      "name": "Trin Camporal N",
-      "extraMaterials": ["minecraft:dye:3:5"]
-    },
-    {
-      "subName": "_light_blue",
-      "name": "Trin Camporal N",
-      "extraMaterials": ["minecraft:dye:12:5"]
-    },
-    {
-      "subName": "_light_gray",
-      "name": "Trin Camporal N",
-      "extraMaterials": ["minecraft:dye:7:5"]
-    },
-    {
-      "subName": "_olive",
-      "name": "Trin Camporal N",
-      "extraMaterials": ["minecraft:dye:2:5"]
-    },
-    {
-      "subName": "_red",
-      "name": "Trin Camporal N",
-      "extraMaterials": ["minecraft:dye:1:5"]
-    },
-    {
-      "subName": "_pure_black",
-      "name": "Trin Camporal N",
-      "extraMaterials": ["minecraft:dye:0:10"]
-    },
-    {
-      "subName": "_pure_white",
-      "name": "Trin Camporal N",
-      "extraMaterials": ["minecraft:dye:15:10"]
-    },
-    {
-      "subName": "_diamond",
-      "name": "Trin Camporal N",
-      "extraMaterials": ["minecraft:dye:12:4","minecraft:diamond:0:1"]
-    }
-  ],
-  "rendering": {
-    "textObjects": [
-      {
-        "pos": [0.0,0.3125,8.76625],
-        "rot": [0.0,0.0,0.0],
-        "scale": 0.13,
-        "fieldName": "Text",
-        "defaultText": "tcp-000",
-        "maxLength": 7,
-        "color": "000000"
-      },
-      {
-        "pos": [0.0,0.625,-2.64125],
-        "rot": [0.0,180.0,0.0],
-        "scale": 0.13,
-        "fieldName": "Text",
-        "defaultText": "tcp-000",
-        "maxLength": 7,
-        "color": "000000"
-      }
     ],
-    "animatedObjects": [
-      {
-        "objectName": "$gas",
-        "animations": [
-          {
-            "animationType": "rotation",
-            "variable": "throttle",
-            "centerPoint": [0.625,0.125,7.0],
-            "axis": [12.5,0.0,0.0]
-          }
-        ]
-      },
-      {
-        "objectName": "$brake",
-        "animations": [
-          {
-            "animationType": "rotation",
-            "variable": "brake",
-            "centerPoint": [0.625,0.125,7.0],
-            "axis": [12.5,0.0,0.0]
-          }
-        ]
-      },
-      {
-        "objectName": "$shift",
-        "animations": [
-          {
-            "animationType": "rotation",
-            "variable": "engine_gearshift_1",
-            "centerPoint": [0.0,0.125,7.0],
-            "axis": [1.0,0.0,0.0]
-          }
-        ]
-      },
-      {
-        "objectName": "$p_brake",
-        "animations": [
-          {
-            "animationType": "rotation",
-            "variable": "p_brake",
-            "centerPoint": [0.1875,0.8125,6.96875],
-            "axis": [-30.0,0.0,0.0]
-          }
-        ]
-      },
-      {
-        "objectName": "$steer",
-        "animations": [
-          {
-            "animationType": "rotation",
-            "variable": "rudder",
-            "centerPoint": [0.625,1.0,6.875],
-            "axis": [-0.0,-0.0,1.0]
-          }
-        ]
-      },
-      {
-        "objectName": "$hood",
-        "animations": [
-          {
-            "animationType": "rotation",
-            "variable": "!part_present_9",
-            "centerPoint": [0.0,1.1875,7.3125],
-            "axis": [-60.0,0.0,0.0]
-          }
-        ]
-      },
-      {
-        "objectName": "$doorFL",
-        "animations": [
-          {
-            "animationType": "rotation",
-            "variable": "door",
-            "centerPoint": [1.25,1.1875,6.9375],
-            "axis": [0.0,-60.0,0.0],
-            "duration": 30
-          }
-        ]
-      },
-      {
-        "objectName": "$doorwindowFL",
-        "animations": [
-          {
-            "animationType": "rotation",
-            "variable": "door",
-            "centerPoint": [1.25,1.1875,6.9375],
-            "axis": [0.0,-60.0,0.0],
-            "duration": 30
-          }
-        ]
-      },
-      {
-        "objectName": "$doorFR",
-        "animations": [
-          {
-            "animationType": "rotation",
-            "variable": "door",
-            "centerPoint": [-1.25,1.1875,6.9375],
-            "axis": [0.0,60.0,0.0],
-            "duration": 30
-          }
-        ]
-      },
-      {
-        "objectName": "$doorwindowFR",
-        "animations": [
-          {
-            "animationType": "rotation",
-            "variable": "door",
-            "centerPoint": [-1.25,1.1875,6.9375],
-            "axis": [0.0,60.0,0.0],
-            "duration": 30
-          }
-        ]
-      },
-      {
-        "objectName": "$doorRR",
-        "animations": [
-          {
-            "animationType": "rotation",
-            "variable": "door",
-            "centerPoint": [-1.59375,1.5625,5.0],
-            "axis": [0.0,60.0,0.0],
-            "duration": 30
-          }
-        ]
-      },
-      {
-        "objectName": "$doorWC",
-        "animations": [
-          {
-            "animationType": "rotation",
-            "variable": "door",
-            "centerPoint": [-0.53125,1.5625,1.4375],
-            "axis": [0.0,120.0,0.0],
-            "duration": 30
-          }
-        ]
-      }
+    "collisionGroups": [
+        {
+            "collisions": [
+                {
+                    "pos": [
+                        0.0,
+                        3.75,
+                        6.625
+                    ],
+                    "width": 1.25,
+                    "height": 0.125,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        0.0,
+                        3.75,
+                        4.375
+                    ],
+                    "width": 2.5,
+                    "height": 0.125,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        0.0,
+                        3.75,
+                        1.625
+                    ],
+                    "width": 2.5,
+                    "height": 0.125,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        0.0,
+                        3.75,
+                        -1.125
+                    ],
+                    "width": 2.5,
+                    "height": 0.125,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        -1.0,
+                        0.5,
+                        5.1875
+                    ],
+                    "width": 0.5,
+                    "height": 0.125,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        1.0,
+                        0.5,
+                        5.1875
+                    ],
+                    "width": 0.5,
+                    "height": 0.125,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        -0.6875,
+                        0.5,
+                        3.9375
+                    ],
+                    "width": 1.75,
+                    "height": 0.125,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        0.6875,
+                        0.5,
+                        3.9375
+                    ],
+                    "width": 1.75,
+                    "height": 0.125,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        0.0,
+                        0.5,
+                        1.625
+                    ],
+                    "width": 2.625,
+                    "height": 0.125,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        0.0,
+                        0.5,
+                        -1.125
+                    ],
+                    "width": 2.625,
+                    "height": 0.125,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        -1.5625,
+                        2.0,
+                        5.0
+                    ],
+                    "width": 0.0625,
+                    "height": 2.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        -1.5625,
+                        2.0,
+                        3.5
+                    ],
+                    "width": 0.0625,
+                    "height": 2.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        -1.5625,
+                        2.0,
+                        3.0
+                    ],
+                    "width": 0.0625,
+                    "height": 2.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        -1.5625,
+                        2.0,
+                        2.5
+                    ],
+                    "width": 0.0625,
+                    "height": 2.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        -1.5625,
+                        2.0,
+                        2.0
+                    ],
+                    "width": 0.0625,
+                    "height": 2.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        -1.5625,
+                        2.0,
+                        1.5
+                    ],
+                    "width": 0.0625,
+                    "height": 2.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        -1.5625,
+                        2.0,
+                        0.0
+                    ],
+                    "width": 0.0625,
+                    "height": 2.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        -1.5625,
+                        2.0,
+                        1.5
+                    ],
+                    "width": 0.0625,
+                    "height": 2.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        -1.5625,
+                        2.0,
+                        1.0
+                    ],
+                    "width": 0.0625,
+                    "height": 2.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        -1.5625,
+                        2.0,
+                        0.5
+                    ],
+                    "width": 0.0625,
+                    "height": 2.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        -1.5625,
+                        2.0,
+                        0.0
+                    ],
+                    "width": 0.0625,
+                    "height": 2.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        -1.5625,
+                        2.0,
+                        -0.5
+                    ],
+                    "width": 0.0625,
+                    "height": 2.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        -1.5625,
+                        2.0,
+                        -1.0
+                    ],
+                    "width": 0.0625,
+                    "height": 2.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        -1.5625,
+                        2.0,
+                        -1.5
+                    ],
+                    "width": 0.0625,
+                    "height": 2.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        1.5625,
+                        2.0,
+                        5.0
+                    ],
+                    "width": 0.0625,
+                    "height": 2.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        1.5625,
+                        2.0,
+                        4.5
+                    ],
+                    "width": 0.0625,
+                    "height": 2.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        1.5625,
+                        2.0,
+                        4.0
+                    ],
+                    "width": 0.0625,
+                    "height": 2.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        1.5625,
+                        2.0,
+                        3.5
+                    ],
+                    "width": 0.0625,
+                    "height": 2.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        1.5625,
+                        2.0,
+                        3.0
+                    ],
+                    "width": 0.0625,
+                    "height": 2.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        1.5625,
+                        2.0,
+                        2.5
+                    ],
+                    "width": 0.0625,
+                    "height": 2.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        1.5625,
+                        2.0,
+                        2.0
+                    ],
+                    "width": 0.0625,
+                    "height": 2.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        1.5625,
+                        2.0,
+                        1.5
+                    ],
+                    "width": 0.0625,
+                    "height": 2.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        1.5625,
+                        2.0,
+                        0.0
+                    ],
+                    "width": 0.0625,
+                    "height": 2.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        1.5625,
+                        2.0,
+                        1.5
+                    ],
+                    "width": 0.0625,
+                    "height": 2.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        1.5625,
+                        2.0,
+                        1.0
+                    ],
+                    "width": 0.0625,
+                    "height": 2.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        1.5625,
+                        2.0,
+                        0.5
+                    ],
+                    "width": 0.0625,
+                    "height": 2.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        1.5625,
+                        2.0,
+                        0.0
+                    ],
+                    "width": 0.0625,
+                    "height": 2.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        1.5625,
+                        2.0,
+                        -0.5
+                    ],
+                    "width": 0.0625,
+                    "height": 2.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        1.5625,
+                        2.0,
+                        -1.0
+                    ],
+                    "width": 0.0625,
+                    "height": 2.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        1.5625,
+                        2.0,
+                        -1.5
+                    ],
+                    "width": 0.0625,
+                    "height": 2.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        -1.0,
+                        2.0,
+                        -2.5625
+                    ],
+                    "width": 0.0625,
+                    "height": 3.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        -0.5,
+                        2.0,
+                        -2.5625
+                    ],
+                    "width": 0.0625,
+                    "height": 3.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        0.0,
+                        2.0,
+                        -2.5625
+                    ],
+                    "width": 0.0625,
+                    "height": 3.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        0.5,
+                        2.0,
+                        -2.5625
+                    ],
+                    "width": 0.0625,
+                    "height": 3.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        1.0,
+                        2.0,
+                        -2.5625
+                    ],
+                    "width": 0.0625,
+                    "height": 3.0,
+                    "variableValue": 0.0
+                },
+                {
+                    "pos": [
+                        0.0,
+                        1.25,
+                        7.9375
+                    ],
+                    "width": 1.5,
+                    "height": 0.125,
+                    "variableValue": 0.0
+                }
+            ]
+        }
     ],
-    "lightObjects": [
-      {
-        "objectName": "&BrakeLight_e60000_FFFFF_111",
-        "emissive": true,
-        "covered": true,
-        "isElectric": true,
-        "color": "E60000",
-        "brightnessAnimations": [
-          {
-            "animationType": "visibility",
-            "variable": "brake",
-            "clampMin": 0.01,
-            "clampMax": 1.0
-          }
-        ],
-        "blendableComponents": [
-          {
-            "pos": [1.21875,1.40625,-2.65625],
-            "axis": [0.0,0.0,-1.0],
-            "flareHeight": 0.375,
-            "flareWidth": 0.375
-          },
-          {
-            "pos": [-1.21875,1.40625,-2.65625],
-            "axis": [0.0,0.0,-1.0],
-            "flareHeight": 0.375,
-            "flareWidth": 0.375
-          },
-          {
-            "pos": [0.0,3.359375,-2.640625],
-            "axis": [0.0,0.0,-1.0],
-            "flareHeight": 0.75,
-            "flareWidth": 0.75
-          }
-        ]
-      },
-      {
-        "objectName": "&RunningLight_e60000_FFFFF_111",
-        "emissive": true,
-        "covered": true,
-        "isElectric": true,
-        "color": "E60000",
-        "brightnessAnimations": [
-          {
-            "animationType": "visibility",
-            "variable": "running_light",
-            "clampMin": 1.0,
-            "clampMax": 1.0
-          }
-        ],
-        "blendableComponents": [
-          {
-            "pos": [1.21875,1.25,-2.65625],
-            "axis": [0.0,0.0,-1.0],
-            "flareHeight": 0.375,
-            "flareWidth": 0.375
-          },
-          {
-            "pos": [-1.21875,1.25,-2.65625],
-            "axis": [0.0,0.0,-1.0],
-            "flareHeight": 0.375,
-            "flareWidth": 0.375
-          }
-        ]
-      },
-      {
-        "objectName": "&BackupLight_ffffcc_FFFFF_111",
-        "emissive": true,
-        "covered": true,
-        "isElectric": true,
-        "color": "FFFFCC",
-        "brightnessAnimations": [
-          {
-            "animationType": "visibility",
-            "variable": "engine_reversed_1",
-            "clampMin": 1.0,
-            "clampMax": 1.0
-          }
-        ],
-        "blendableComponents": [
-          {
-            "pos": [1.21875,1.09375,-2.65625],
-            "axis": [0.0,0.0,-1.0],
-            "flareHeight": 0.375,
-            "flareWidth": 0.375
-          },
-          {
-            "pos": [-1.21875,1.09375,-2.65625],
-            "axis": [0.0,0.0,-1.0],
-            "flareHeight": 0.375,
-            "flareWidth": 0.375
-          }
-        ]
-      },
-      {
-        "objectName": "&RunningLight_ffcc00_FFFFF_111",
-        "emissive": true,
-        "covered": true,
-        "isElectric": true,
-        "color": "FFCC00",
-        "brightnessAnimations": [
-          {
-            "animationType": "visibility",
-            "variable": "running_light",
-            "clampMin": 1.0,
-            "clampMax": 1.0
-          }
-        ],
-        "blendableComponents": [
-          {
-            "pos": [0.5,0.96875,6.962500095367432],
-            "axis": [0.0,0.0,-1.0],
-            "flareHeight": 0.1875,
-            "flareWidth": 0.1875
-          },
-          {
-            "pos": [-0.6250010132789612,0.9375,8.6875],
-            "axis": [0.0,0.0,1.0],
-            "flareHeight": 0.375,
-            "flareWidth": 0.375
-          },
-          {
-            "pos": [0.6249989867210388,0.9375,8.6875],
-            "axis": [0.0,0.0,1.0],
-            "flareHeight": 0.375,
-            "flareWidth": 0.375
-          }
-        ]
-      },
-      {
-        "objectName": "&Headlight_ffcc00_FFFFF_111",
-        "emissive": true,
-        "covered": true,
-        "isElectric": true,
-        "color": "FFCC00",
-        "brightnessAnimations": [
-          {
-            "animationType": "visibility",
-            "variable": "headlight",
-            "clampMin": 1.0,
-            "clampMax": 1.0
-          }
-        ],
-        "blendableComponents": [
-          {
-            "pos": [0.8124989867210388,0.9375,8.640625],
-            "axis": [0.0,0.0,1.0],
-            "flareHeight": 0.375,
-            "flareWidth": 0.375,
-            "beamDiameter": 8.0,
-            "beamLength": 24.0
-          },
-          {
-            "pos": [-0.8125010132789612,0.9375,8.640625],
-            "axis": [0.0,0.0,1.0],
-            "flareHeight": 0.375,
-            "flareWidth": 0.375,
-            "beamDiameter": 8.0,
-            "beamLength": 24.0
-          }
-        ]
-      },
-      {
-        "objectName": "&RightTurnLight_ff6600_FFC00_111",
-        "emissive": true,
-        "covered": true,
-        "isElectric": true,
-        "color": "FF6600",
-        "brightnessAnimations": [
-          {
-            "animationType": "visibility",
-            "variable": "right_turn_signal",
-            "clampMin": 1.0,
-            "clampMax": 1.0
-          },
-          {
-            "animationType": "visibility",
-            "variable": "10_10_0_cycle",
-            "clampMin": 1.0,
-            "clampMax": 1.0
-          }
-        ],
-        "blendableComponents": [
-          {
-            "pos": [0.5,1.09375,6.962500095367432],
-            "axis": [0.0,0.0,-1.0],
-            "flareHeight": 0.1875,
-            "flareWidth": 0.1875
-          },
-          {
-            "pos": [-1.0000009834766388,0.9375,8.606249809265137],
-            "axis": [0.0,0.0,1.0],
-            "flareHeight": 0.375,
-            "flareWidth": 0.375
-          },
-          {
-            "pos": [-1.21875,0.9375,-2.65625],
-            "axis": [0.0,0.0,-1.0],
-            "flareHeight": 0.375,
-            "flareWidth": 0.375
-          }
-        ]
-      },
-      {
-        "objectName": "&LeftTurnLight_ff6600_FFC00_111",
-        "emissive": true,
-        "covered": true,
-        "isElectric": true,
-        "color": "FF6600",
-        "brightnessAnimations": [
-          {
-            "animationType": "visibility",
-            "variable": "left_turn_signal",
-            "clampMin": 1.0,
-            "clampMax": 1.0
-          },
-          {
-            "animationType": "visibility",
-            "variable": "10_10_0_cycle",
-            "clampMin": 1.0,
-            "clampMax": 1.0
-          }
-        ],
-        "blendableComponents": [
-          {
-            "pos": [0.75,1.09375,6.962500095367432],
-            "axis": [0.0,0.0,-1.0],
-            "flareHeight": 0.1875,
-            "flareWidth": 0.1875
-          },
-          {
-            "pos": [0.9999994933605194,0.9375,8.606249809265137],
-            "axis": [0.0,0.0,1.0],
-            "flareHeight": 0.37500304,
-            "flareWidth": 0.37500304
-          },
-          {
-            "pos": [1.21875,0.9375,-2.65625],
-            "axis": [0.0,0.0,-1.0],
-            "flareHeight": 0.375,
-            "flareWidth": 0.375
-          }
-        ]
-      }
+    "connectionGroups": [
+        {
+            "groupName": "HOOKUP",
+            "hookup": true,
+            "connections": [
+                {
+                    "type": "tow_bumper_heavy",
+                    "pos": [
+                        0.0,
+                        0.0,
+                        8.76625
+                    ],
+                    "distance": 0.0
+                },
+                {
+                    "type": "tow_bumper_heavy",
+                    "pos": [
+                        0.0,
+                        0.625,
+                        -2.64125
+                    ],
+                    "distance": 0.0
+                },
+                {
+                    "type": "tow_wheel_heavy",
+                    "pos": [
+                        0.0,
+                        -0.5,
+                        7.59375
+                    ],
+                    "distance": 0.0
+                }
+            ]
+        },
+        {
+            "groupName": "TRAILER",
+            "canIntiateConnections": true,
+            "connections": [
+                {
+                    "type": "trailer_standard",
+                    "pos": [
+                        0.0,
+                        0.625,
+                        -2.64125
+                    ],
+                    "distance": 0.0
+                }
+            ]
+        }
     ],
-    "sounds": [
-      {
-        "name": "iv_tcp:horn_1",
-        "activeAnimations": [
-          {
-            "animationType": "visibility",
-            "variable": "horn",
-            "clampMin": 1.0,
-            "clampMax": 1.0
-          }
-        ],
-        "looping": true
-      }
+    "instruments": [
+        {
+            "pos": [
+                0.9375,
+                1.03125,
+                6.96188
+            ],
+            "rot": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scale": 0.015625,
+            "hudX": 80,
+            "hudY": 36,
+            "hudScale": 0.25
+        },
+        {
+            "pos": [
+                0.8125,
+                1.21875,
+                6.96188
+            ],
+            "rot": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scale": 0.015625,
+            "hudX": 160,
+            "hudY": 36,
+            "hudScale": 0.5
+        },
+        {
+            "pos": [
+                0.625,
+                1.21875,
+                6.96188
+            ],
+            "rot": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scale": 0.015625,
+            "hudX": 240,
+            "hudY": 36,
+            "hudScale": 0.5
+        },
+        {
+            "pos": [
+                0.4375,
+                1.21875,
+                6.96188
+            ],
+            "rot": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scale": 0.015625,
+            "hudX": 320,
+            "hudY": 36,
+            "hudScale": 0.25
+        }
     ],
-    "particles": []
-  },
-  "general": {
-    "description": "Recommended parts:\nLareg Sized Wheels\nV10 Engine\nModel 2 Seats",
-    "materials": ["mts:iv_tcp_v2.pile_of_v2_junk:0:12"]
-  }
+    "definitions": [
+        {
+            "subName": "_blue",
+            "name": "Trin Camporal N - Electric Blue Paint, Gray Interior",
+            "extraMaterials": [
+                "minecraft:dye:4:5"
+            ],
+            "extraMaterialLists": [
+                [
+                    "mts:iv_tpp.paint_bucket_electricblue:0:1",
+                    "minecraft:wool:4:2",
+                    "minecraft:wool:0:3"
+                ]
+            ],
+            "partTones": [
+                "_gray"
+            ]
+        },
+        {
+            "subName": "_brown",
+            "name": "Trin Camporal N - Milk Coffee Paint, Tan Interior",
+            "extraMaterials": [
+                "minecraft:dye:3:5"
+            ],
+            "extraMaterialLists": [
+                [
+                    "mts:iv_tpp.paint_bucket_milkcoffee:0:1",
+                    "minecraft:wool:4:2",
+                    "minecraft:wool:0:3"
+                ]
+            ],
+            "partTones": [
+                "_beige"
+            ]
+        },
+        {
+            "subName": "_light_blue",
+            "name": "Trin Camporal N - Sky Blue Paint, Gray Interior",
+            "extraMaterials": [
+                "minecraft:dye:12:5"
+            ],
+            "extraMaterialLists": [
+                [
+                    "mts:iv_tpp.paint_bucket_skyblue:0:1",
+                    "minecraft:wool:7:2",
+                    "minecraft:wool:8:3"
+                ]
+            ],
+            "partTones": [
+                "_gray"
+            ]
+        },
+        {
+            "subName": "_light_gray",
+            "name": "Trin Camporal N - Silver Paint, Black Interior",
+            "extraMaterials": [
+                "minecraft:dye:7:5"
+            ],
+            "extraMaterialLists": [
+                [
+                    "mts:iv_tpp.paint_bucket_silver:0:1",
+                    "minecraft:wool:7:2",
+                    "minecraft:wool:15:3"
+                ]
+            ],
+            "partTones": [
+                "_black"
+            ]
+        },
+        {
+            "subName": "_olive",
+            "name": "Trin Camporal N - Soft Green Paint, Tan Interior",
+            "extraMaterials": [
+                "minecraft:dye:2:5"
+            ],
+            "extraMaterialLists": [
+                [
+                    "mts:iv_tpp.paint_bucket_softgreen:0:1",
+                    "minecraft:wool:4:2",
+                    "minecraft:wool:0:3"
+                ]
+            ],
+            "partTones": [
+                "_beige"
+            ]
+        },
+        {
+            "subName": "_red",
+            "name": "Trin Camporal N - Red Paint, Tan Interior",
+            "extraMaterials": [
+                "minecraft:dye:1:5"
+            ],
+            "extraMaterialLists": [
+                [
+                    "mts:iv_tpp.paint_bucket_carminred:0:1",
+                    "minecraft:wool:4:2",
+                    "minecraft:wool:0:3"
+                ]
+            ],
+            "partTones": [
+                "_beige"
+            ]
+        },
+        {
+            "subName": "_pure_black",
+            "name": "Trin Camporal N - Pure Black Paint, Red Interior",
+            "extraMaterials": [
+                "minecraft:dye:0:10"
+            ],
+            "extraMaterialLists": [
+                [
+                    "mts:iv_tpp.paint_bucket_pureblack:0:1",
+                    "minecraft:wool:7:2",
+                    "minecraft:wool:14:3"
+                ]
+            ],
+            "partTones": [
+                "_red"
+            ]
+        },
+        {
+            "subName": "_pure_white",
+            "name": "Trin Camporal N - Pure White Paint, Red Interior",
+            "extraMaterials": [
+                "minecraft:dye:15:10"
+            ],
+            "extraMaterialLists": [
+                [
+                    "mts:iv_tpp.paint_bucket_purewhite:0:1",
+                    "minecraft:wool:7:2",
+                    "minecraft:wool:14:3"
+                ]
+            ],
+            "partTones": [
+                "_red"
+            ]
+        },
+        {
+            "subName": "_diamond",
+            "name": "Trin Camporal N - Diamond Wrap, White Interior",
+            "extraMaterials": [
+                "minecraft:dye:12:4",
+                "minecraft:diamond:0:1"
+            ],
+            "extraMaterialLists": [
+                [
+                    "mts:iv_tpp.wrap_roll_diamond:0:1",
+                    "minecraft:wool:7:2",
+                    "minecraft:wool:11:3"
+                ]
+            ],
+            "partTones": [
+                "_white"
+            ]
+        }
+    ],
+    "rendering": {
+        "textObjects": [
+            {
+                "pos": [
+                    0.0,
+                    0.3125,
+                    8.76625
+                ],
+                "rot": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "scale": 0.13,
+                "fieldName": "Text",
+                "defaultText": "tcp-000",
+                "maxLength": 7,
+                "color": "000000"
+            },
+            {
+                "pos": [
+                    0.0,
+                    0.625,
+                    -2.64125
+                ],
+                "rot": [
+                    0.0,
+                    180.0,
+                    0.0
+                ],
+                "scale": 0.13,
+                "fieldName": "Text",
+                "defaultText": "tcp-000",
+                "maxLength": 7,
+                "color": "000000"
+            }
+        ],
+        "animatedObjects": [
+            {
+                "objectName": "$gas",
+                "animations": [
+                    {
+                        "animationType": "rotation",
+                        "variable": "throttle",
+                        "centerPoint": [
+                            0.625,
+                            0.125,
+                            7.0
+                        ],
+                        "axis": [
+                            12.5,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ]
+            },
+            {
+                "objectName": "$brake",
+                "animations": [
+                    {
+                        "animationType": "rotation",
+                        "variable": "brake",
+                        "centerPoint": [
+                            0.625,
+                            0.125,
+                            7.0
+                        ],
+                        "axis": [
+                            12.5,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ]
+            },
+            {
+                "objectName": "$shift",
+                "animations": [
+                    {
+                        "animationType": "rotation",
+                        "variable": "engine_gearshift_1",
+                        "centerPoint": [
+                            0.0,
+                            0.125,
+                            7.0
+                        ],
+                        "axis": [
+                            1.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ]
+            },
+            {
+                "objectName": "$p_brake",
+                "animations": [
+                    {
+                        "animationType": "rotation",
+                        "variable": "p_brake",
+                        "centerPoint": [
+                            0.1875,
+                            0.8125,
+                            6.96875
+                        ],
+                        "axis": [
+                            -30.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ]
+            },
+            {
+                "objectName": "$steer",
+                "animations": [
+                    {
+                        "animationType": "rotation",
+                        "variable": "rudder",
+                        "centerPoint": [
+                            0.625,
+                            1.0,
+                            6.875
+                        ],
+                        "axis": [
+                            -0.0,
+                            -0.0,
+                            1.0
+                        ]
+                    }
+                ]
+            },
+            {
+                "objectName": "$hood",
+                "animations": [
+                    {
+                        "animationType": "rotation",
+                        "variable": "!part_present_9",
+                        "centerPoint": [
+                            0.0,
+                            1.1875,
+                            7.3125
+                        ],
+                        "axis": [
+                            -60.0,
+                            0.0,
+                            0.0
+                        ]
+                    }
+                ]
+            },
+            {
+                "objectName": "$doorFL",
+                "animations": [
+                    {
+                        "animationType": "rotation",
+                        "variable": "door",
+                        "centerPoint": [
+                            1.25,
+                            1.1875,
+                            6.9375
+                        ],
+                        "axis": [
+                            0.0,
+                            -60.0,
+                            0.0
+                        ],
+                        "duration": 30
+                    }
+                ]
+            },
+            {
+                "objectName": "$doorwindowFL",
+                "animations": [
+                    {
+                        "animationType": "rotation",
+                        "variable": "door",
+                        "centerPoint": [
+                            1.25,
+                            1.1875,
+                            6.9375
+                        ],
+                        "axis": [
+                            0.0,
+                            -60.0,
+                            0.0
+                        ],
+                        "duration": 30
+                    }
+                ]
+            },
+            {
+                "objectName": "$doorFR",
+                "animations": [
+                    {
+                        "animationType": "rotation",
+                        "variable": "door",
+                        "centerPoint": [
+                            -1.25,
+                            1.1875,
+                            6.9375
+                        ],
+                        "axis": [
+                            0.0,
+                            60.0,
+                            0.0
+                        ],
+                        "duration": 30
+                    }
+                ]
+            },
+            {
+                "objectName": "$doorwindowFR",
+                "animations": [
+                    {
+                        "animationType": "rotation",
+                        "variable": "door",
+                        "centerPoint": [
+                            -1.25,
+                            1.1875,
+                            6.9375
+                        ],
+                        "axis": [
+                            0.0,
+                            60.0,
+                            0.0
+                        ],
+                        "duration": 30
+                    }
+                ]
+            },
+            {
+                "objectName": "$doorRR",
+                "animations": [
+                    {
+                        "animationType": "rotation",
+                        "variable": "door",
+                        "centerPoint": [
+                            -1.59375,
+                            1.5625,
+                            5.0
+                        ],
+                        "axis": [
+                            0.0,
+                            60.0,
+                            0.0
+                        ],
+                        "duration": 30
+                    }
+                ]
+            },
+            {
+                "objectName": "$doorWC",
+                "animations": [
+                    {
+                        "animationType": "rotation",
+                        "variable": "door",
+                        "centerPoint": [
+                            -0.53125,
+                            1.5625,
+                            1.4375
+                        ],
+                        "axis": [
+                            0.0,
+                            120.0,
+                            0.0
+                        ],
+                        "duration": 30
+                    }
+                ]
+            }
+        ],
+        "lightObjects": [
+            {
+                "objectName": "&BrakeLight_e60000_FFFFF_111",
+                "emissive": true,
+                "covered": true,
+                "isElectric": true,
+                "color": "E60000",
+                "brightnessAnimations": [
+                    {
+                        "animationType": "visibility",
+                        "variable": "brake",
+                        "clampMin": 0.01,
+                        "clampMax": 1.0
+                    }
+                ],
+                "blendableComponents": [
+                    {
+                        "pos": [
+                            1.21875,
+                            1.40625,
+                            -2.65625
+                        ],
+                        "axis": [
+                            0.0,
+                            0.0,
+                            -1.0
+                        ],
+                        "flareHeight": 0.375,
+                        "flareWidth": 0.375
+                    },
+                    {
+                        "pos": [
+                            -1.21875,
+                            1.40625,
+                            -2.65625
+                        ],
+                        "axis": [
+                            0.0,
+                            0.0,
+                            -1.0
+                        ],
+                        "flareHeight": 0.375,
+                        "flareWidth": 0.375
+                    },
+                    {
+                        "pos": [
+                            0.0,
+                            3.359375,
+                            -2.640625
+                        ],
+                        "axis": [
+                            0.0,
+                            0.0,
+                            -1.0
+                        ],
+                        "flareHeight": 0.75,
+                        "flareWidth": 0.75
+                    }
+                ]
+            },
+            {
+                "objectName": "&RunningLight_e60000_FFFFF_111",
+                "emissive": true,
+                "covered": true,
+                "isElectric": true,
+                "color": "E60000",
+                "brightnessAnimations": [
+                    {
+                        "animationType": "visibility",
+                        "variable": "running_light",
+                        "clampMin": 1.0,
+                        "clampMax": 1.0
+                    }
+                ],
+                "blendableComponents": [
+                    {
+                        "pos": [
+                            1.21875,
+                            1.25,
+                            -2.65625
+                        ],
+                        "axis": [
+                            0.0,
+                            0.0,
+                            -1.0
+                        ],
+                        "flareHeight": 0.375,
+                        "flareWidth": 0.375
+                    },
+                    {
+                        "pos": [
+                            -1.21875,
+                            1.25,
+                            -2.65625
+                        ],
+                        "axis": [
+                            0.0,
+                            0.0,
+                            -1.0
+                        ],
+                        "flareHeight": 0.375,
+                        "flareWidth": 0.375
+                    }
+                ]
+            },
+            {
+                "objectName": "&BackupLight_ffffcc_FFFFF_111",
+                "emissive": true,
+                "covered": true,
+                "isElectric": true,
+                "color": "FFFFCC",
+                "brightnessAnimations": [
+                    {
+                        "animationType": "visibility",
+                        "variable": "engine_reversed_1",
+                        "clampMin": 1.0,
+                        "clampMax": 1.0
+                    }
+                ],
+                "blendableComponents": [
+                    {
+                        "pos": [
+                            1.21875,
+                            1.09375,
+                            -2.65625
+                        ],
+                        "axis": [
+                            0.0,
+                            0.0,
+                            -1.0
+                        ],
+                        "flareHeight": 0.375,
+                        "flareWidth": 0.375
+                    },
+                    {
+                        "pos": [
+                            -1.21875,
+                            1.09375,
+                            -2.65625
+                        ],
+                        "axis": [
+                            0.0,
+                            0.0,
+                            -1.0
+                        ],
+                        "flareHeight": 0.375,
+                        "flareWidth": 0.375
+                    }
+                ]
+            },
+            {
+                "objectName": "&RunningLight_ffcc00_FFFFF_111",
+                "emissive": true,
+                "covered": true,
+                "isElectric": true,
+                "color": "FFCC00",
+                "brightnessAnimations": [
+                    {
+                        "animationType": "visibility",
+                        "variable": "running_light",
+                        "clampMin": 1.0,
+                        "clampMax": 1.0
+                    }
+                ],
+                "blendableComponents": [
+                    {
+                        "pos": [
+                            0.5,
+                            0.96875,
+                            6.962500095367432
+                        ],
+                        "axis": [
+                            0.0,
+                            0.0,
+                            -1.0
+                        ],
+                        "flareHeight": 0.1875,
+                        "flareWidth": 0.1875
+                    },
+                    {
+                        "pos": [
+                            -0.6250010132789612,
+                            0.9375,
+                            8.6875
+                        ],
+                        "axis": [
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "flareHeight": 0.375,
+                        "flareWidth": 0.375
+                    },
+                    {
+                        "pos": [
+                            0.6249989867210388,
+                            0.9375,
+                            8.6875
+                        ],
+                        "axis": [
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "flareHeight": 0.375,
+                        "flareWidth": 0.375
+                    }
+                ]
+            },
+            {
+                "objectName": "&Headlight_ffcc00_FFFFF_111",
+                "emissive": true,
+                "covered": true,
+                "isElectric": true,
+                "color": "FFCC00",
+                "brightnessAnimations": [
+                    {
+                        "animationType": "visibility",
+                        "variable": "headlight",
+                        "clampMin": 1.0,
+                        "clampMax": 1.0
+                    }
+                ],
+                "blendableComponents": [
+                    {
+                        "pos": [
+                            0.8124989867210388,
+                            0.9375,
+                            8.640625
+                        ],
+                        "axis": [
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "flareHeight": 0.375,
+                        "flareWidth": 0.375,
+                        "beamDiameter": 8.0,
+                        "beamLength": 24.0
+                    },
+                    {
+                        "pos": [
+                            -0.8125010132789612,
+                            0.9375,
+                            8.640625
+                        ],
+                        "axis": [
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "flareHeight": 0.375,
+                        "flareWidth": 0.375,
+                        "beamDiameter": 8.0,
+                        "beamLength": 24.0
+                    }
+                ]
+            },
+            {
+                "objectName": "&RightTurnLight_ff6600_FFC00_111",
+                "emissive": true,
+                "covered": true,
+                "isElectric": true,
+                "color": "FF6600",
+                "brightnessAnimations": [
+                    {
+                        "animationType": "visibility",
+                        "variable": "right_turn_signal",
+                        "clampMin": 1.0,
+                        "clampMax": 1.0
+                    },
+                    {
+                        "animationType": "visibility",
+                        "variable": "10_10_0_cycle",
+                        "clampMin": 1.0,
+                        "clampMax": 1.0
+                    }
+                ],
+                "blendableComponents": [
+                    {
+                        "pos": [
+                            0.5,
+                            1.09375,
+                            6.962500095367432
+                        ],
+                        "axis": [
+                            0.0,
+                            0.0,
+                            -1.0
+                        ],
+                        "flareHeight": 0.1875,
+                        "flareWidth": 0.1875
+                    },
+                    {
+                        "pos": [
+                            -1.0000009834766388,
+                            0.9375,
+                            8.606249809265137
+                        ],
+                        "axis": [
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "flareHeight": 0.375,
+                        "flareWidth": 0.375
+                    },
+                    {
+                        "pos": [
+                            -1.21875,
+                            0.9375,
+                            -2.65625
+                        ],
+                        "axis": [
+                            0.0,
+                            0.0,
+                            -1.0
+                        ],
+                        "flareHeight": 0.375,
+                        "flareWidth": 0.375
+                    }
+                ]
+            },
+            {
+                "objectName": "&LeftTurnLight_ff6600_FFC00_111",
+                "emissive": true,
+                "covered": true,
+                "isElectric": true,
+                "color": "FF6600",
+                "brightnessAnimations": [
+                    {
+                        "animationType": "visibility",
+                        "variable": "left_turn_signal",
+                        "clampMin": 1.0,
+                        "clampMax": 1.0
+                    },
+                    {
+                        "animationType": "visibility",
+                        "variable": "10_10_0_cycle",
+                        "clampMin": 1.0,
+                        "clampMax": 1.0
+                    }
+                ],
+                "blendableComponents": [
+                    {
+                        "pos": [
+                            0.75,
+                            1.09375,
+                            6.962500095367432
+                        ],
+                        "axis": [
+                            0.0,
+                            0.0,
+                            -1.0
+                        ],
+                        "flareHeight": 0.1875,
+                        "flareWidth": 0.1875
+                    },
+                    {
+                        "pos": [
+                            0.9999994933605194,
+                            0.9375,
+                            8.606249809265137
+                        ],
+                        "axis": [
+                            0.0,
+                            0.0,
+                            1.0
+                        ],
+                        "flareHeight": 0.37500304,
+                        "flareWidth": 0.37500304
+                    },
+                    {
+                        "pos": [
+                            1.21875,
+                            0.9375,
+                            -2.65625
+                        ],
+                        "axis": [
+                            0.0,
+                            0.0,
+                            -1.0
+                        ],
+                        "flareHeight": 0.375,
+                        "flareWidth": 0.375
+                    }
+                ]
+            }
+        ],
+        "sounds": [
+            {
+                "name": "iv_tcp:horn_1",
+                "activeAnimations": [
+                    {
+                        "animationType": "visibility",
+                        "variable": "horn",
+                        "clampMin": 1.0,
+                        "clampMax": 1.0
+                    }
+                ],
+                "looping": true
+            }
+        ],
+        "particles": []
+    },
+    "general": {
+        "description": "Recommended parts:\nLareg Sized Wheels\ni4 Engine\nModel 2 Seats",
+        "materials": [
+            "mts:iv_tcp_v2.pile_of_v2_junk:0:12"
+        ]
+    }
 }
