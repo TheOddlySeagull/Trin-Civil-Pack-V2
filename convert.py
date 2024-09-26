@@ -149,14 +149,14 @@ for file in files:
             for definition in data["definitions"]:
                 # switch on the "subName"
                 if definition["subName"] == "_blue":
-                    definition["name"] =  definition["name"] + " - Electric Blue Paint, Tan Interior"
+                    definition["name"] =  definition["name"] + " - Electric Blue Paint, Gray Interior"
                     definition["extraMaterialLists"] = [[
                         "mts:iv_tpp.paint_bucket_electricblue:0:1",
                         "minecraft:wool:4:2",
                         "minecraft:wool:0:3"
                     ]]
                     definition["partTones"] = [
-                        "_beige"
+                        "_gray"
                     ]
                 elif definition["subName"] == "_brown":
                     definition["name"] =  definition["name"] + " - Milk Coffee Paint, Tan Interior"
@@ -187,6 +187,16 @@ for file in files:
                     ]]
                     definition["partTones"] = [
                         "_black"
+                    ]
+                elif definition["subName"] == "_red":
+                    definition["name"] =  definition["name"] + " - Red Paint, Tan Interior"
+                    definition["extraMaterialLists"] = [[
+                        "mts:iv_tpp.paint_bucket_carminred:0:1",
+                        "minecraft:wool:4:2",
+                        "minecraft:wool:0:3"
+                    ]]
+                    definition["partTones"] = [
+                        "_beige"
                     ]
                 elif definition["subName"] == "_olive":
                     definition["name"] =  definition["name"] + " - Soft Green Paint, Tan Interior"
@@ -219,14 +229,14 @@ for file in files:
                         "_red"
                     ]
                 elif definition["subName"] == "_diamond":
-                    definition["name"] =  definition["name"] + " - Diamond Wrap, Gray & Blue Interior"
+                    definition["name"] =  definition["name"] + " - Diamond Wrap, White Interior"
                     definition["extraMaterialLists"] = [[
                         "mts:iv_tpp.wrap_roll_diamond:0:1",
                         "minecraft:wool:7:2",
                         "minecraft:wool:11:3"
                     ]]
                     definition["partTones"] = [
-                        "_gray_blue"
+                        "_white"
                     ]
 
         # If the user wants to convert general
