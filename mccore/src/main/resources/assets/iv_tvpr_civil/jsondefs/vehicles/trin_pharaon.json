@@ -549,27 +549,36 @@
         {
           "type": "tow_bumper",
           "pos": [
-            0.0,
-            0.0,
-            7.305
+            0,
+            0.15625,
+            7.32813
           ],
           "distance": 2.0
         },
         {
           "type": "tow_bumper",
           "pos": [
-            0.0,
-            0.53125,
-            -2.05375
+            0,
+            0,
+            -2
           ],
           "distance": 2.0
         },
         {
           "type": "tow_wheel",
           "pos": [
-            0.0,
+            0,
             -0.5,
-            5.563
+            5.625
+          ],
+          "distance": 2.0
+        },
+        {
+          "type": "tow_flatbed",
+          "pos": [
+            0,
+            0.15625,
+            5.625
           ],
           "distance": 2.0
         }
@@ -583,9 +592,9 @@
         {
           "type": "trailer_standard",
           "pos": [
-            0.0,
-            0.53125,
-            -2.05375
+            0,
+            0,
+            -2
           ],
           "distance": 2.0
         }
