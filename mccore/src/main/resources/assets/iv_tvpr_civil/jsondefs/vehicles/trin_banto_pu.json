@@ -129,7 +129,9 @@
             "defaultPart": "iv_tpp:trin_seat_1_gray",
             "toneIndex": 1,
             "interactableVariables": [
-                []
+                [
+                    "door_l"
+                ]
             ]
         },
         {
@@ -144,27 +146,8 @@
             "defaultPart": "iv_tpp:trin_seat_1_gray",
             "toneIndex": 1,
             "interactableVariables": [
-                []
-            ]
-        },
-        {
-            "pos": [
-                -0.469,
-                0.5,
-                1.4
-            ],
-            "rot": [
-                0.0,
-                90.0,
-                0.0
-            ],
-            "maxValue": 2.0,
-            "types": [
-                "interactable_luggage"
-            ],
-            "interactableVariables": [
                 [
-                    "part_present_6"
+                    "door_r"
                 ]
             ]
         },
@@ -332,8 +315,8 @@
                         0.875,
                         3.375
                     ],
-                    "width": 0.5,
-                    "height": 0.25,
+                    "width": 1.0,
+                    "height": 0.5,
                     "variableName": "door_hood",
                     "variableType": "toggle"
                 }
