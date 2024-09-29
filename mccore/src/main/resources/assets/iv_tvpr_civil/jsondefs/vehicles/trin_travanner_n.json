@@ -251,7 +251,7 @@
         {
             "pos": [
                 0.438,
-                0.438,
+                0.063,
                 1.938
             ],
             "rot": [
@@ -268,7 +268,7 @@
                 {
                     "pos": [
                         0.438,
-                        1.188,
+                        0.7505,
                         1.938
                     ],
                     "rot": [
@@ -278,13 +278,14 @@
                     ],
                     "maxValue": 3.0,
                     "types": [
-                        "interactable_crate"
+                        "interactable_crate",
+                        "interactable_barrel"
                     ],
                     "additionalParts": [
                         {
                             "pos": [
                                 0.438,
-                                1.938,
+                                1.5005,
                                 1.938
                             ],
                             "rot": [
@@ -294,7 +295,8 @@
                             ],
                             "maxValue": 3.0,
                             "types": [
-                                "interactable_crate"
+                                "interactable_crate",
+                                "interactable_barrel"
                             ]
                         }
                     ]
@@ -304,7 +306,7 @@
         {
             "pos": [
                 -0.438,
-                0.438,
+                0.063,
                 1.938
             ],
             "rot": [
@@ -321,7 +323,7 @@
                 {
                     "pos": [
                         -0.438,
-                        1.188,
+                        0.7505,
                         1.938
                     ],
                     "rot": [
@@ -331,13 +333,14 @@
                     ],
                     "maxValue": 3.0,
                     "types": [
-                        "interactable_crate"
+                        "interactable_crate",
+                        "interactable_barrel"
                     ],
                     "additionalParts": [
                         {
                             "pos": [
                                 -0.438,
-                                1.938,
+                                1.5005,
                                 1.938
                             ],
                             "rot": [
@@ -347,7 +350,8 @@
                             ],
                             "maxValue": 3.0,
                             "types": [
-                                "interactable_crate"
+                                "interactable_crate",
+                                "interactable_barrel"
                             ]
                         }
                     ]
@@ -357,7 +361,7 @@
         {
             "pos": [
                 0.438,
-                0.438,
+                0.063,
                 1.063
             ],
             "rot": [
@@ -374,7 +378,7 @@
                 {
                     "pos": [
                         0.438,
-                        1.188,
+                        0.7505,
                         1.063
                     ],
                     "rot": [
@@ -384,13 +388,14 @@
                     ],
                     "maxValue": 3.0,
                     "types": [
-                        "interactable_crate"
+                        "interactable_crate",
+                        "interactable_barrel"
                     ],
                     "additionalParts": [
                         {
                             "pos": [
                                 0.438,
-                                1.938,
+                                1.5005,
                                 1.063
                             ],
                             "rot": [
@@ -400,7 +405,8 @@
                             ],
                             "maxValue": 3.0,
                             "types": [
-                                "interactable_crate"
+                                "interactable_crate",
+                                "interactable_barrel"
                             ]
                         }
                     ]
@@ -410,7 +416,7 @@
         {
             "pos": [
                 -0.438,
-                0.438,
+                0.063,
                 1.063
             ],
             "rot": [
@@ -427,7 +433,7 @@
                 {
                     "pos": [
                         -0.438,
-                        1.188,
+                        0.7505,
                         1.063
                     ],
                     "rot": [
@@ -437,13 +443,14 @@
                     ],
                     "maxValue": 3.0,
                     "types": [
-                        "interactable_crate"
+                        "interactable_crate",
+                        "interactable_barrel"
                     ],
                     "additionalParts": [
                         {
                             "pos": [
                                 -0.438,
-                                1.938,
+                                1.5005,
                                 1.063
                             ],
                             "rot": [
@@ -453,7 +460,8 @@
                             ],
                             "maxValue": 3.0,
                             "types": [
-                                "interactable_crate"
+                                "interactable_crate",
+                                "interactable_barrel"
                             ]
                         }
                     ]
@@ -463,7 +471,7 @@
         {
             "pos": [
                 0.438,
-                0.438,
+                0.063,
                 0.188
             ],
             "rot": [
@@ -480,7 +488,7 @@
                 {
                     "pos": [
                         0.438,
-                        1.188,
+                        0.7505,
                         0.188
                     ],
                     "rot": [
@@ -490,13 +498,14 @@
                     ],
                     "maxValue": 3.0,
                     "types": [
-                        "interactable_crate"
+                        "interactable_crate",
+                        "interactable_barrel"
                     ],
                     "additionalParts": [
                         {
                             "pos": [
                                 0.438,
-                                1.938,
+                                1.5005,
                                 0.188
                             ],
                             "rot": [
@@ -506,7 +515,8 @@
                             ],
                             "maxValue": 3.0,
                             "types": [
-                                "interactable_crate"
+                                "interactable_crate",
+                                "interactable_barrel"
                             ]
                         }
                     ]
@@ -516,7 +526,7 @@
         {
             "pos": [
                 -0.438,
-                0.438,
+                0.063,
                 0.188
             ],
             "rot": [
@@ -533,7 +543,7 @@
                 {
                     "pos": [
                         -0.438,
-                        1.188,
+                        0.7505,
                         0.188
                     ],
                     "rot": [
@@ -543,13 +553,14 @@
                     ],
                     "maxValue": 3.0,
                     "types": [
-                        "interactable_crate"
+                        "interactable_crate",
+                        "interactable_barrel"
                     ],
                     "additionalParts": [
                         {
                             "pos": [
                                 -0.438,
-                                1.938,
+                                1.5005,
                                 0.188
                             ],
                             "rot": [
@@ -559,7 +570,8 @@
                             ],
                             "maxValue": 3.0,
                             "types": [
-                                "interactable_crate"
+                                "interactable_crate",
+                                "interactable_barrel"
                             ]
                         }
                     ]

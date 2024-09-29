@@ -309,16 +309,15 @@
                 92.0,
                 2.0
             ],
-            "maxValue": 2.0,
+            "maxValue": 3.0,
             "types": [
-                "interactable_crate",
-                "interactable_barrel"
+                "interactable_luggage"
             ],
             "additionalParts": [
                 {
                     "pos": [
                         0.0,
-                        0.4375,
+                        0.3125,
                         0.0
                     ],
                     "rot": [
@@ -326,12 +325,9 @@
                         86.0,
                         2.0
                     ],
-                    "maxValue": 2.0,
+                    "maxValue": 3.0,
                     "types": [
-                        "interactable_crate"
-                    ],
-                    "customTypes": [
-                        "luggage"
+                        "interactable_luggage"
                     ]
                 }
             ]
