@@ -693,6 +693,42 @@
                 "interactable_furniture",
                 "generic_furniture"
             ]
+        },
+        {
+            "pos": [
+                0.0,
+                0.26563,
+                7.157
+            ],
+            "rot": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "defaultPart": "iv_tpp:plate_gramados",
+            "types": [
+                "generic_licenseplate_us",
+                "generic_licenseplate_euro"
+            ]
+        },
+        {
+            "pos": [
+                0.0,
+                0.51563,
+                -1.594
+            ],
+            "rot": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "defaultPart": "iv_tpp:plate_gramados",
+            "types": [
+                "generic_licenseplate_us",
+                "generic_licenseplate_euro"
+            ]
         }
     ],
     "collisionGroups": [
@@ -1256,42 +1292,7 @@
         }
     ],
     "rendering": {
-        "textObjects": [
-            {
-                "pos": [
-                    0.0,
-                    0.26563,
-                    7.157
-                ],
-                "rot": [
-                    0.0,
-                    0.0,
-                    0.0
-                ],
-                "scale": 0.13,
-                "fieldName": "Text",
-                "defaultText": "tcp-000",
-                "maxLength": 7,
-                "color": "000000"
-            },
-            {
-                "pos": [
-                    0.0,
-                    0.51563,
-                    -1.594
-                ],
-                "rot": [
-                    0.0,
-                    180.0,
-                    0.0
-                ],
-                "scale": 0.13,
-                "fieldName": "Text",
-                "defaultText": "tcp-000",
-                "maxLength": 7,
-                "color": "000000"
-            }
-        ],
+        "textObjects": [],
         "animatedObjects": [
             {
                 "objectName": "$gas",

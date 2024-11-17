@@ -405,6 +405,42 @@
             "types": [
                 "generic_bumpersticker"
             ]
+        },
+        {
+            "pos": [
+                -0.71875,
+                -0.0625,
+                4.34438
+            ],
+            "rot": [
+                0.0,
+                -10.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "defaultPart": "iv_tpp:plate_gramados",
+            "types": [
+                "generic_licenseplate_us",
+                "generic_licenseplate_euro"
+            ]
+        },
+        {
+            "pos": [
+                0.0,
+                0.40625,
+                -0.72563
+            ],
+            "rot": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "defaultPart": "iv_tpp:plate_gramados",
+            "types": [
+                "generic_licenseplate_us",
+                "generic_licenseplate_euro"
+            ]
         }
     ],
     "collisionGroups": [
@@ -800,42 +836,7 @@
         }
     ],
     "rendering": {
-        "textObjects": [
-            {
-                "pos": [
-                    -0.71875,
-                    -0.0625,
-                    4.34438
-                ],
-                "rot": [
-                    0.0,
-                    -10.0,
-                    0.0
-                ],
-                "scale": 0.125,
-                "fieldName": "License Plate",
-                "defaultText": "Devom",
-                "maxLength": 8,
-                "color": "000000"
-            },
-            {
-                "pos": [
-                    0.0,
-                    0.40625,
-                    -0.72563
-                ],
-                "rot": [
-                    0.0,
-                    180.0,
-                    0.0
-                ],
-                "scale": 0.125,
-                "fieldName": "License Plate",
-                "defaultText": "Devom",
-                "maxLength": 8,
-                "color": "000000"
-            }
-        ],
+        "textObjects": [],
         "animatedObjects": [
             {
                 "objectName": "$steer",
