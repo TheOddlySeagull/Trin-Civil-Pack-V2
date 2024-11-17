@@ -15,3 +15,4 @@ build/*
 compile.py
 .vscode/*
 *convert.py
+*convert_plate.py
