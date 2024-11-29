@@ -37,12 +37,6 @@
                 0.0,
                 0.0
             ],
-            "rot": [
-                0.0,
-                0.0,
-                0.0
-            ],
-            "isMirrored": true,
             "minValue": 0.4,
             "maxValue": 1.125,
             "types": [
@@ -86,13 +80,7 @@
                 0.0,
                 3.094
             ],
-            "rot": [
-                0.0,
-                0.0,
-                0.0
-            ],
             "turnsWithSteer": true,
-            "isMirrored": true,
             "minValue": 0.4,
             "maxValue": 1.125,
             "types": [
