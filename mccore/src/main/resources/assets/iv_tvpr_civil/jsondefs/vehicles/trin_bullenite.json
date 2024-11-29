@@ -116,7 +116,9 @@
             "defaultPart": "iv_tpp:trin_seat_1_gray",
             "toneIndex": 1,
             "interactableVariables": [
-                []
+                [
+                    "door_l"
+                ]
             ]
         },
         {
@@ -128,28 +130,12 @@
             "types": [
                 "seat"
             ],
-            "additionalParts": [
-                {
-                    "pos": [
-                        -0.625,
-                        0.1,
-                        2.3125
-                    ],
-                    "rot": [
-                        0.0,
-                        90.0,
-                        0.0
-                    ],
-                    "maxValue": 2.0,
-                    "types": [
-                        "interactable_luggage"
-                    ]
-                }
-            ],
             "defaultPart": "iv_tpp:trin_seat_1_gray",
             "toneIndex": 1,
             "interactableVariables": [
-                []
+                [
+                    "door_r"
+                ]
             ]
         },
         {
@@ -364,6 +350,156 @@
                     "width": 2.0,
                     "height": 0.125,
                     "variableValue": 0.0
+                }
+            ]
+        },
+        {
+            "isInterior": true,
+            "collisions": [
+                {
+                    "pos": [
+                        0,
+                        0.9375,
+                        0.125
+                    ],
+                    "width": 1.0,
+                    "height": 0.5,
+                    "variableName": "door_hood",
+                    "variableType": "toggle"
+                }
+            ],
+            "animations": [
+                {
+                    "animationType": "rotation",
+                    "variable": "door_hood",
+                    "centerPoint": [
+                        0.0,
+                        1.4375,
+                        1.4375
+                    ],
+                    "axis": [
+                        60.0,
+                        0.0,
+                        0.0
+                    ],
+                    "duration": 25
+                }
+            ]
+        },
+        {
+            "isInterior": true,
+            "collisions": [
+                {
+                    "pos": [
+                        0,
+                        0.6875,
+                        4.4375
+                    ],
+                    "width": 1.0,
+                    "height": 0.5,
+                    "variableName": "door_boot",
+                    "variableType": "toggle"
+                }
+            ],
+            "animations": [
+                {
+                    "animationType": "rotation",
+                    "variable": "door_boot",
+                    "centerPoint": [
+                        0.0,
+                        0.67188,
+                        3.75
+                    ],
+                    "axis": [
+                        -60.0,
+                        0.0,
+                        0.0
+                    ],
+                    "duration": 25
+                }
+            ]
+        },
+        {
+            "isInterior": true,
+            "collisions": [
+                {
+                    "pos": [1.40625, 0.53125, 2.90625]	
+                    ,
+                    "width": 0.3125,
+                    "height": 0.125,
+                    "variableName": "door_l",
+                    "variableType": "toggle"
+                },
+                {
+                    "pos": [1.40625, 0.53125, 1.84375]	
+                    ,
+                    "width": 0.3125,
+                    "height": 0.125,
+                    "variableName": "door_l",
+                    "variableType": "toggle"
+                }
+            ],
+            "animations": [
+                {
+                    "animationType": "rotation",
+                    "variable": "door_l",
+                    "centerPoint": [
+                            0.125,
+                            1.4375,
+                            2.0
+                        ],
+                        "axis": [
+                            0.0,
+                            0.0,
+                            60.0
+                        ],
+                        "duration": 30,
+                        "forwardsEasing": "easeoutback",
+                        "reverseEasing": "easeincubic",
+                        "forwardsStartSound": "iv_tpp:dooropen",
+                        "reverseEndSound": "iv_tpp:doorclose"
+                }
+            ]
+        },
+        {
+            "isInterior": true,
+            "collisions": [
+                {
+                    "pos": [-1.40625, 0.53125, 2.90625]	
+                    ,
+                    "width": 0.3125,
+                    "height": 0.125,
+                    "variableName": "door_r",
+                    "variableType": "toggle"
+                },
+                {
+                    "pos": [-1.40625, 0.53125, 1.84375]	
+                    ,
+                    "width": 0.3125,
+                    "height": 0.125,
+                    "variableName": "door_r",
+                    "variableType": "toggle"
+                }
+            ],
+            "animations": [
+                {
+                    "animationType": "rotation",
+                    "variable": "door_r",
+                    "centerPoint": [
+                            -0.125,
+                            1.4375,
+                            2.0
+                        ],
+                        "axis": [
+                            0.0,
+                            0.0,
+                            -60.0
+                        ],
+                        "duration": 30,
+                        "forwardsEasing": "easeoutback",
+                        "reverseEasing": "easeincubic",
+                        "forwardsStartSound": "iv_tpp:dooropen",
+                        "reverseEndSound": "iv_tpp:doorclose"
                 }
             ]
         }
@@ -715,7 +851,7 @@
                 "animations": [
                     {
                         "animationType": "rotation",
-                        "variable": "door",
+                        "variable": "door_l",
                         "centerPoint": [
                             0.125,
                             1.4375,
@@ -732,50 +868,20 @@
             },
             {
                 "objectName": "$doorwindowFLa",
-                "animations": [
-                    {
-                        "animationType": "rotation",
-                        "variable": "door",
-                        "centerPoint": [
-                            0.125,
-                            1.4375,
-                            2.0
-                        ],
-                        "axis": [
-                            0.0,
-                            0.0,
-                            60.0
-                        ],
-                        "duration": 30
-                    }
-                ]
+                "applyAfter": "$doorFL",
+                "animations": []
             },
             {
                 "objectName": "$doorwindowFLb",
-                "animations": [
-                    {
-                        "animationType": "rotation",
-                        "variable": "door",
-                        "centerPoint": [
-                            0.125,
-                            1.4375,
-                            2.0
-                        ],
-                        "axis": [
-                            0.0,
-                            0.0,
-                            60.0
-                        ],
-                        "duration": 30
-                    }
-                ]
+                "applyAfter": "$doorFL",
+                "animations": []
             },
             {
                 "objectName": "$doorFR",
                 "animations": [
                     {
                         "animationType": "rotation",
-                        "variable": "door",
+                        "variable": "door_r",
                         "centerPoint": [
                             -0.125,
                             1.4375,
@@ -792,50 +898,20 @@
             },
             {
                 "objectName": "$doorwindowFRa",
-                "animations": [
-                    {
-                        "animationType": "rotation",
-                        "variable": "door",
-                        "centerPoint": [
-                            -0.125,
-                            1.4375,
-                            2.0
-                        ],
-                        "axis": [
-                            0.0,
-                            0.0,
-                            -60.0
-                        ],
-                        "duration": 30
-                    }
-                ]
+                "applyAfter": "$doorFR",
+                "animations": []
             },
             {
                 "objectName": "$doorwindowFRb",
-                "animations": [
-                    {
-                        "animationType": "rotation",
-                        "variable": "door",
-                        "centerPoint": [
-                            -0.125,
-                            1.4375,
-                            2.0
-                        ],
-                        "axis": [
-                            0.0,
-                            0.0,
-                            -60.0
-                        ],
-                        "duration": 30
-                    }
-                ]
+                "applyAfter": "$doorFR",
+                "animations": []
             },
             {
                 "objectName": "$doorR",
                 "animations": [
                     {
                         "animationType": "rotation",
-                        "variable": "door",
+                        "variable": "door_boot",
                         "centerPoint": [
                             0.0,
                             0.67188,
@@ -846,7 +922,11 @@
                             0.0,
                             0.0
                         ],
-                        "duration": 30
+                        "duration": 25,
+                        "forwardsEasing": "easeoutquint",
+                        "reverseEasing": "easeincubic",
+                        "forwardsStartSound": "iv_tpp:hoodopen",
+                        "reverseStartSound": "iv_tpp:hoodclose"
                     }
                 ]
             },
@@ -855,7 +935,7 @@
                 "animations": [
                     {
                         "animationType": "rotation",
-                        "variable": "hood",
+                        "variable": "door_hood",
                         "centerPoint": [
                             0.0,
                             1.4375,
@@ -865,28 +945,19 @@
                             60.0,
                             0.0,
                             0.0
-                        ]
+                        ],
+                        "duration": 25,
+                        "forwardsEasing": "easeoutquint",
+                        "reverseEasing": "easeincubic",
+                        "forwardsStartSound": "iv_tpp:hoodopen",
+                        "reverseStartSound": "iv_tpp:hoodclose"
                     }
                 ]
             },
             {
                 "objectName": "$windowhood",
-                "animations": [
-                    {
-                        "animationType": "rotation",
-                        "variable": "hood",
-                        "centerPoint": [
-                            0.0,
-                            1.4375,
-                            1.4375
-                        ],
-                        "axis": [
-                            60.0,
-                            0.0,
-                            0.0
-                        ]
-                    }
-                ]
+                "applyAfter": "$hood",
+                "animations": []
             }
         ],
         "lightObjects": [
