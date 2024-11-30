@@ -1,20 +1,21 @@
 {
     "motorized": {
-        "isRearWheelDrive": true,
         "hasOpenTop": true,
         "hasRunningLights": true,
         "hasHeadlights": true,
         "emptyMass": 100,
         "fuelCapacity": 1000,
-        "downForce": 0.7,
+        "steeringForceFactor": 0.7,
         "overSteer": 0.25,
-        "underSteer": 3,
+        "underSteer": 3.0,
         "overSteerAccel": 0.5,
         "overSteerDecel": -0.5,
         "axleRatio": 1.25,
         "brakingFactor": 0.15,
         "maxTiltAngle": 17.5,
-        "dragCoefficient": 0.3
+        "dragCoefficient": 0.3,
+        "litVariable": "running_light",
+        "panel": "mts:default_car"
     },
     "parts": [
         {
@@ -25,6 +26,7 @@
             ],
             "minValue": 0.8,
             "maxValue": 0.9,
+            "defaultPart": "iv_tpp:trin_wheel_bike",
             "types": [
                 "ground_wheel_bicycle"
             ]
@@ -43,8 +45,25 @@
             "turnsWithSteer": true,
             "minValue": 0.8,
             "maxValue": 0.9,
+            "defaultPart": "iv_tpp:trin_wheel_bike",
             "types": [
                 "ground_wheel_bicycle"
+            ],
+            "animations": [
+                {
+                    "animationType": "rotation",
+                    "variable": "rudder",
+                    "centerPoint": [
+                        0.0,
+                        0.0,
+                        1.375
+                    ],
+                    "axis": [
+                        0.0,
+                        -1.0,
+                        0.0
+                    ]
+                }
             ]
         },
         {
@@ -54,6 +73,7 @@
                 0.125
             ],
             "isController": true,
+            "defaultPart": "iv_tpp:trin_bike_seat",
             "types": [
                 "seat_motorcycle"
             ]
@@ -70,8 +90,12 @@
                 0.0
             ],
             "maxValue": 1.0,
+            "defaultPart": "iv_tpp:trin_electric_bike_engine",
             "types": [
                 "engine_bike"
+            ],
+            "linkedParts": [
+                1
             ]
         },
         {
@@ -97,7 +121,7 @@
                 180.0,
                 0.0
             ],
-            "maxValue": 0.1,
+            "maxValue": 0.5,
             "types": [
                 "generic_ledlight"
             ]
@@ -113,8 +137,7 @@
                         1.25
                     ],
                     "width": 0.25,
-                    "height": 0.125,
-                    "variableValue": 0.0
+                    "height": 0.125
                 },
                 {
                     "pos": [
@@ -123,8 +146,7 @@
                         0.375
                     ],
                     "width": 0.25,
-                    "height": 0.125,
-                    "variableValue": 0.0
+                    "height": 0.125
                 }
             ]
         }
@@ -152,65 +174,83 @@
         {
             "subName": "_blue",
             "name": "Trin E-Cycle",
-            "extraMaterials": [
-                "minecraft:dye:4:5"
+            "extraMaterialLists": [
+                [
+                    "minecraft:dye:4:5"
+                ]
             ]
         },
         {
             "subName": "_brown",
             "name": "Trin E-Cycle",
-            "extraMaterials": [
-                "minecraft:dye:3:5"
+            "extraMaterialLists": [
+                [
+                    "minecraft:dye:3:5"
+                ]
             ]
         },
         {
             "subName": "_light_blue",
             "name": "Trin E-Cycle",
-            "extraMaterials": [
-                "minecraft:dye:12:5"
+            "extraMaterialLists": [
+                [
+                    "minecraft:dye:12:5"
+                ]
             ]
         },
         {
             "subName": "_light_gray",
             "name": "Trin E-Cycle",
-            "extraMaterials": [
-                "minecraft:dye:7:5"
+            "extraMaterialLists": [
+                [
+                    "minecraft:dye:7:5"
+                ]
             ]
         },
         {
             "subName": "_olive",
             "name": "Trin E-Cycle",
-            "extraMaterials": [
-                "minecraft:dye:2:5"
+            "extraMaterialLists": [
+                [
+                    "minecraft:dye:2:5"
+                ]
             ]
         },
         {
             "subName": "_red",
             "name": "Trin E-Cycle",
-            "extraMaterials": [
-                "minecraft:dye:1:5"
+            "extraMaterialLists": [
+                [
+                    "minecraft:dye:1:5"
+                ]
             ]
         },
         {
             "subName": "_pure_black",
             "name": "Trin E-Cycle",
-            "extraMaterials": [
-                "minecraft:dye:0:10"
+            "extraMaterialLists": [
+                [
+                    "minecraft:dye:0:10"
+                ]
             ]
         },
         {
             "subName": "_pure_white",
             "name": "Trin E-Cycle",
-            "extraMaterials": [
-                "minecraft:dye:15:10"
+            "extraMaterialLists": [
+                [
+                    "minecraft:dye:15:10"
+                ]
             ]
         },
         {
             "subName": "_diamond",
             "name": "Trin E-Cycle",
-            "extraMaterials": [
-                "minecraft:dye:12:4",
-                "minecraft:diamond:0:1"
+            "extraMaterialLists": [
+                [
+                    "minecraft:dye:12:4",
+                    "minecraft:diamond:0:1"
+                ]
             ]
         }
     ],
@@ -449,15 +489,27 @@
                         "clampMin": 1.0,
                         "clampMax": 1.0
                     }
-                ]
+                ],
+                "minDistance": 0.0,
+                "minDistanceVolume": 0.0,
+                "middleDistance": 0.0,
+                "middleDistanceVolume": 0.0,
+                "maxDistance": 0.0,
+                "maxDistanceVolume": 0.0
             }
         ],
-        "particles": []
+        "particles": [],
+        "modelType": "obj"
     },
     "general": {
         "description": "Recommended parts:\nBike Wheels\nElectric Bike Engine\nBike Seats",
-        "materials": [
-            "mts:iv_tcp_v2.pile_of_v2_junk:0:1"
-        ]
+        "health": 100,
+        "materialLists": [
+            [
+                "mts:iv_tcp_v2.pile_of_v2_junk:0:1"
+            ]
+        ],
+        "radarWidth": 0.0,
+        "radarRange": 0.0
     }
 }
