@@ -462,13 +462,19 @@
             ],
             "animations": [
                 {
-                    "animationType": "translation",
+                    "animationType": "rotation",
                     "variable": "door_fl",
+                    "centerPoint": [
+                        1.25,
+                        0.6875,
+                        2.75
+                    ],
                     "axis": [
-                        0.9375,
                         0.0,
-                        0.5
-                    ]
+                        -60.0,
+                        0.0
+                    ],
+                    "duration": 30
                 }
             ]
         },
@@ -490,13 +496,19 @@
             ],
             "animations": [
                 {
-                    "animationType": "translation",
+                    "animationType": "rotation",
                     "variable": "door_fr",
+                    "centerPoint": [
+                        -1.25,
+                        0.6875,
+                        2.75
+                    ],
                     "axis": [
-                        -0.9375,
                         0.0,
-                        0.5
-                    ]
+                        60.0,
+                        0.0
+                    ],
+                    "duration": 30
                 }
             ]
         },
@@ -518,13 +530,19 @@
             ],
             "animations": [
                 {
-                    "animationType": "translation",
+                    "animationType": "rotation",
                     "variable": "door_hood",
-                    "axis": [
+                    "centerPoint": [
                         0.0,
-                        1.1875,
-                        -0.4375
-                    ]
+                        0.75,
+                        2.75
+                    ],
+                    "axis": [
+                        -60.0,
+                        0.0,
+                        0.0
+                    ],
+                    "duration": 25
                 }
             ]
         },
@@ -546,13 +564,19 @@
             ],
             "animations": [
                 {
-                    "animationType": "translation",
+                    "animationType": "rotation",
                     "variable": "door_boot",
-                    "axis": [
+                    "centerPoint": [
                         0.0,
-                        0.625,
-                        0.3125
-                    ]
+                        0.8125,
+                        0.125
+                    ],
+                    "axis": [
+                        60.0,
+                        0.0,
+                        0.0
+                    ],
+                    "duration": 30
                 }
             ]
         },
@@ -949,7 +973,11 @@
                             60.0,
                             0.0
                         ],
-                        "duration": 5
+                        "duration": 30,
+                        "forwardsEasing": "easeoutback",
+                        "reverseEasing": "easeincubic",
+                        "forwardsStartSound": "iv_tpp:dooropen",
+                        "reverseEndSound": "iv_tpp:doorclose"
                     }
                 ]
             },
@@ -974,7 +1002,11 @@
                             -60.0,
                             0.0
                         ],
-                        "duration": 5
+                        "duration": 30,
+                        "forwardsEasing": "easeoutback",
+                        "reverseEasing": "easeincubic",
+                        "forwardsStartSound": "iv_tpp:dooropen",
+                        "reverseEndSound": "iv_tpp:doorclose"
                     }
                 ]
             },
@@ -999,7 +1031,11 @@
                             0.0,
                             0.0
                         ],
-                        "duration": 5
+                        "duration": 25,
+                        "forwardsEasing": "easeoutquint",
+                        "reverseEasing": "easeincubic",
+                        "forwardsStartSound": "iv_tpp:hoodopen",
+                        "reverseStartSound": "iv_tpp:hoodclose"
                     }
                 ]
             },
@@ -1019,7 +1055,11 @@
                             0.0,
                             0.0
                         ],
-                        "duration": 5
+                        "duration": 30,
+                        "forwardsEasing": "easeoutquint",
+                        "reverseEasing": "easeincubic",
+                        "forwardsStartSound": "iv_tpp:bootopen",
+                        "reverseEndSound": "iv_tpp:bootclose"
                     }
                 ]
             }
