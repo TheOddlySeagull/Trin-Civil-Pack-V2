@@ -578,8 +578,11 @@
             "isInterior": true,
             "collisions": [
                 {
-                    "pos": [0, 1.25, 6.5625]	
-                    ,
+                    "pos": [
+                        0,
+                        1.25,
+                        6.5625
+                    ],
                     "width": 2.0,
                     "height": 0.5,
                     "variableName": "door_hood",
@@ -608,8 +611,11 @@
             "isInterior": true,
             "collisions": [
                 {
-                    "pos": [0, 0.96875, -2.4375]	
-                    ,
+                    "pos": [
+                        0,
+                        0.96875,
+                        -2.4375
+                    ],
                     "width": 0.3125,
                     "height": 0.125,
                     "variableName": "door_boot",
@@ -638,16 +644,22 @@
             "isInterior": true,
             "collisions": [
                 {
-                    "pos": [1.375, 0.96875, 4.46875]	
-                    ,
+                    "pos": [
+                        1.375,
+                        0.96875,
+                        4.46875
+                    ],
                     "width": 0.3125,
                     "height": 0.125,
                     "variableName": "door_fl",
                     "variableType": "toggle"
                 },
                 {
-                    "pos": [1.375, 0.96875, 3.53125]	
-                    ,
+                    "pos": [
+                        1.375,
+                        0.96875,
+                        3.53125
+                    ],
                     "width": 0.3125,
                     "height": 0.125,
                     "variableName": "door_fl",
@@ -676,16 +688,22 @@
             "isInterior": true,
             "collisions": [
                 {
-                    "pos": [-1.375, 0.96875, 4.46875]	
-                    ,
+                    "pos": [
+                        -1.375,
+                        0.96875,
+                        4.46875
+                    ],
                     "width": 0.3125,
                     "height": 0.125,
                     "variableName": "door_fr",
                     "variableType": "toggle"
                 },
                 {
-                    "pos": [-1.375, 0.96875, 3.53125]	
-                    ,
+                    "pos": [
+                        -1.375,
+                        0.96875,
+                        3.53125
+                    ],
                     "width": 0.3125,
                     "height": 0.125,
                     "variableName": "door_fr",
@@ -714,17 +732,22 @@
             "isInterior": true,
             "collisions": [
                 {
-                    "pos": [1.375, 0.96875, 2.84375]	
-	
-                    ,
+                    "pos": [
+                        1.375,
+                        0.96875,
+                        2.84375
+                    ],
                     "width": 0.3125,
                     "height": 0.125,
                     "variableName": "door_rl",
                     "variableType": "toggle"
                 },
                 {
-                    "pos": [1.375, 0.96875, 1.90625]	
-                    ,
+                    "pos": [
+                        1.375,
+                        0.96875,
+                        1.90625
+                    ],
                     "width": 0.3125,
                     "height": 0.125,
                     "variableName": "door_rl",
@@ -753,16 +776,22 @@
             "isInterior": true,
             "collisions": [
                 {
-                    "pos": [-1.375, 0.96875, 2.84375]	
-                    ,
+                    "pos": [
+                        -1.375,
+                        0.96875,
+                        2.84375
+                    ],
                     "width": 0.3125,
                     "height": 0.125,
                     "variableName": "door_rr",
                     "variableType": "toggle"
                 },
                 {
-                    "pos": [-1.375, 0.96875, 1.90625]	
-                    ,
+                    "pos": [
+                        -1.375,
+                        0.96875,
+                        1.90625
+                    ],
                     "width": 0.3125,
                     "height": 0.125,
                     "variableName": "door_rr",
