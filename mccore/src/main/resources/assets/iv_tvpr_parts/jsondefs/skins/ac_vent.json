@@ -1,0 +1,15 @@
+{
+    "definitions": [
+        {
+            "subName": "_basic_gray_blue",
+            "subDescription": "Skin is added by Trin Vehicle Rebirth Pack, not part of original pack.",
+            "extraMaterials": [
+                "minecraft:dye:3:2"
+            ]
+        }
+    ],
+    "general": {
+        "packID": "iv_tpp",
+        "systemName": "ac_vent"
+    }
+}
