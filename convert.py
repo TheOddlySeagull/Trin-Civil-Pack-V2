@@ -59,7 +59,21 @@ def convert_CT_to_material_syntax(string):
     # remove "<mts:" and ">", replace "." with ":"
     return string[5:-1].replace('.', ':')
 
+def remove_json_comments(file_path):
+    """Remove // comments from a JSON file."""
+    with open(file_path, 'r') as f:
+        lines = f.readlines()
 
+    # Remove lines with // comments
+    cleaned_lines = []
+    for line in lines:
+        # Remove inline comments
+        if '//' in line:
+            line = line.split('//', 1)[0]
+        cleaned_lines.append(line)
+
+    # Return the cleaned JSON content
+    return ''.join(cleaned_lines)
 
 # Use argparse to get the folder to convert.
 parser = argparse.ArgumentParser(description='Convert vehicle JSON files to the new format.')
@@ -74,9 +88,14 @@ files = os.listdir(folder)
 
 # Go through all the files
 for file in files:
+    # get full path
+    file = os.path.join(folder, file)
     # Skip non-json files
     if not file.endswith('.json'):
         continue
+
+    # Pre-process the JSON file to remove comments
+    cleaned_json_content = remove_json_comments(file)
 
     # Ask the user if he wants to convert this file
     convert = input(f'Convert {file}? (y/n): ')
@@ -100,153 +119,172 @@ for file in files:
         default_seat = ask_default_seat_CT()
         default_engine = ask_default_engine_CT()
 
-    # Open the file
-    with open(file, 'r') as f:
-        # Load the JSON
-        data = json.load(f)
+    # Load the cleaned JSON content
+    data = json.loads(cleaned_json_content)
 
-        # In the "parts" key: tell how long the list is
-        print(len(data['parts']))
+    # In the "parts" key: tell how long the list is
+    print(len(data['parts']))
 
-        # If the user wants to convert parts
-        if convert_parts.lower() == 'y':
-            # for all parts, check the "types" key
-            for part in data['parts']:
-                # if "defaultPart" is not in the list
-                if 'defaultPart' not in part:
-                    print(part['types'])
-                    # If "ground_wheel" is in the list
-                    if 'ground_wheel' in part['types']:
-                        # Add "defaultPart": *default_wheel* after the "types" key
-                        part['defaultPart'] = default_wheel
-                    # If "seat" is in the list
-                    if 'seat' in part['types']:
-                        # Add "defaultPart": *default_seat* after the "types" key
-                        part['defaultPart'] = default_seat
-                        # Add "toneIndex": 1
-                        part['toneIndex'] = 1
-                        # Add "interactableVariables": [[]]
-                        part['interactableVariables'] = [[]]
-                    # If "engine_car" is in the list
-                    if 'engine_car' in part['types']:
-                        # Add "defaultPart": *default_engine* after the "types" key
-                        part['defaultPart'] = default_engine
-                        # Add "linkedParts": []
-                        wheels = ask_wheel_layout()
-                        part['linkedParts'] = wheels
-                    # If "generic_roofdevice", "generic_lightbar" or "generic_gyrophare" is in the list
-                    if 'generic_roofdevice' in part['types'] or 'generic_lightbar' in part['types'] or 'generic_gyrophare' in part['types']:
-                        # Replace the list with [ "generic_lightbar", "generic_roofdevice", "generic_gyrophare"]
-                        part['types'] = ["generic_lightbar", "generic_roofdevice", "generic_gyrophare"]
-                    # If "interactable_crate" or "interactable_barrel" is in the list
-                    if 'interactable_crate' in part['types'] or 'interactable_barrel' in part['types']:
-                        # Replace the list with ["interactable_crate", "interactable_barrel"]
-                        part['types'] = ["interactable_crate", "interactable_barrel"]
+    # If the user wants to convert parts
+    if convert_parts.lower() == 'y':
+        # for all parts, check the "types" key
+        for part in data['parts']:
+            # Ensure "types" key exists
+            if 'types' not in part:
+                print(f"The entry 'types' is missing in part at position {part.get('pos', 'unknown')}. Skipping this part.")
+                continue
 
-        # If the user wants to convert definitions
-        if convert_definitions.lower() == 'y':
-            # for all definitions, modify the "name" key
-            for definition in data["definitions"]:
-                # switch on the "subName"
-                if definition["subName"] == "_blue":
-                    definition["name"] =  definition["name"] + " - Electric Blue Paint, Gray Interior"
-                    definition["extraMaterialLists"] = [[
-                        "mts:iv_tpp.paint_bucket_electricblue:0:1",
-                        "minecraft:wool:4:2",
-                        "minecraft:wool:0:3"
-                    ]]
-                    definition["partTones"] = [
-                        "_gray"
-                    ]
-                elif definition["subName"] == "_brown":
-                    definition["name"] =  definition["name"] + " - Milk Coffee Paint, Tan Interior"
-                    definition["extraMaterialLists"] = [[
-                        "mts:iv_tpp.paint_bucket_milkcoffee:0:1",
-                        "minecraft:wool:4:2",
-                        "minecraft:wool:0:3"
-                    ]]
-                    definition["partTones"] = [
-                        "_beige"
-                    ]
-                elif definition["subName"] == "_light_blue":
-                    definition["name"] =  definition["name"] + " - Sky Blue Paint, Gray Interior"
-                    definition["extraMaterialLists"] = [[
-                        "mts:iv_tpp.paint_bucket_skyblue:0:1",
-                        "minecraft:wool:7:2",
-                        "minecraft:wool:8:3"
-                    ]]
-                    definition["partTones"] = [
-                        "_gray"
-                    ]
-                elif definition["subName"] == "_light_gray":
-                    definition["name"] =  definition["name"] + " - Silver Paint, Black Interior"
-                    definition["extraMaterialLists"] = [[
-                        "mts:iv_tpp.paint_bucket_silver:0:1",
-                        "minecraft:wool:7:2",
-                        "minecraft:wool:15:3"
-                    ]]
-                    definition["partTones"] = [
-                        "_black"
-                    ]
-                elif definition["subName"] == "_red":
-                    definition["name"] =  definition["name"] + " - Red Paint, Tan Interior"
-                    definition["extraMaterialLists"] = [[
-                        "mts:iv_tpp.paint_bucket_carminred:0:1",
-                        "minecraft:wool:4:2",
-                        "minecraft:wool:0:3"
-                    ]]
-                    definition["partTones"] = [
-                        "_beige"
-                    ]
-                elif definition["subName"] == "_olive":
-                    definition["name"] =  definition["name"] + " - Soft Green Paint, Tan Interior"
-                    definition["extraMaterialLists"] = [[
-                        "mts:iv_tpp.paint_bucket_softgreen:0:1",
-                        "minecraft:wool:4:2",
-                        "minecraft:wool:0:3"
-                    ]]
-                    definition["partTones"] = [
-                        "_beige"
-                    ]
-                elif definition["subName"] == "_pure_black":
-                    definition["name"] =  definition["name"] + " - Pure Black Paint, Red Interior"
-                    definition["extraMaterialLists"] = [[
-                        "mts:iv_tpp.paint_bucket_pureblack:0:1",
-                        "minecraft:wool:7:2",
-                        "minecraft:wool:14:3"
-                    ]]
-                    definition["partTones"] = [
-                        "_red"
-                    ]
-                elif definition["subName"] == "_pure_white":
-                    definition["name"] =  definition["name"] + " - Pure White Paint, Red Interior"
-                    definition["extraMaterialLists"] = [[
-                        "mts:iv_tpp.paint_bucket_purewhite:0:1",
-                        "minecraft:wool:7:2",
-                        "minecraft:wool:14:3"
-                    ]]
-                    definition["partTones"] = [
-                        "_red"
-                    ]
-                elif definition["subName"] == "_diamond":
-                    definition["name"] =  definition["name"] + " - Diamond Wrap, White Interior"
-                    definition["extraMaterialLists"] = [[
-                        "mts:iv_tpp.wrap_roll_diamond:0:1",
-                        "minecraft:wool:7:2",
-                        "minecraft:wool:11:3"
-                    ]]
-                    definition["partTones"] = [
-                        "_white"
-                    ]
+            # if "defaultPart" is not in the list
+            if 'defaultPart' not in part:
+                print(part['types'])
+                # If "ground_wheel" or "wheel" is in the list
+                if 'ground_wheel' in part['types'] or 'wheel' in part['types']:
+                    # Add "defaultPart": *default_wheel* after the "types" key
+                    part['defaultPart'] = default_wheel
+                # If "seat" is in the list
+                if 'seat' in part['types']:
+                    # Add "defaultPart": *default_seat* after the "types" key
+                    part['defaultPart'] = default_seat
+                    # Add "toneIndex": 1
+                    part['toneIndex'] = 1
+                    # Add "interactableVariables": [[]]
+                    part['interactableVariables'] = [[]]
+                # If "engine_car" is in the list
+                if 'engine_car' in part['types']:
+                    # Add "defaultPart": *default_engine* after the "types" key
+                    part['defaultPart'] = default_engine
+                    # Add "linkedParts": []
+                    wheels = ask_wheel_layout()
+                    part['linkedParts'] = wheels
+                # If "generic_roofdevice", "generic_lightbar" or "generic_gyrophare" is in the list
+                if 'generic_roofdevice' in part['types'] or 'generic_lightbar' in part['types'] or 'generic_gyrophare' in part['types']:
+                    # Replace the list with [ "generic_lightbar", "generic_roofdevice", "generic_gyrophare"]
+                    part['types'] = ["generic_lightbar", "generic_roofdevice", "generic_gyrophare"]
+                # If "interactable_crate" or "interactable_barrel" is in the list
+                if 'interactable_crate' in part['types'] or 'interactable_barrel' in part['types']:
+                    # Replace the list with ["interactable_crate", "interactable_barrel"]
+                    part['types'] = ["interactable_crate", "interactable_barrel"]
 
-        # If the user wants to convert general
-        if convert_general.lower() == 'y':
-            # Modify the health
-            health = int(data['motorized']['emptyMass'] / 10)
+    # If the user wants to convert definitions
+    if convert_definitions.lower() == 'y':
+        # for all definitions, modify the "name" key
+        for definition in data["definitions"]:
+            # Ensure the "name" key exists
+            if "name" not in definition:
+                print(f"The entry 'name' is missing in definition with subName '{definition.get('subName', 'unknown')}'. Skipping this definition.")
+                continue
 
-        # Save the JSON
-        with open(file, 'w') as f:
-            json.dump(data, f, indent=4)
+            # switch on the "subName"
+            if definition["subName"] == "_blue":
+                definition["name"] =  definition["name"] + " - Electric Blue Paint, Gray Interior"
+                definition["extraMaterialLists"] = [[
+                    "mts:iv_tpp.paint_bucket_electricblue:0:1",
+                    "minecraft:wool:4:2",
+                    "minecraft:wool:0:3"
+                ]]
+                definition["partTones"] = [
+                    "_gray"
+                ]
+            elif definition["subName"] == "_brown":
+                definition["name"] =  definition["name"] + " - Milk Coffee Paint, Tan Interior"
+                definition["extraMaterialLists"] = [[
+                    "mts:iv_tpp.paint_bucket_milkcoffee:0:1",
+                    "minecraft:wool:4:2",
+                    "minecraft:wool:0:3"
+                ]]
+                definition["partTones"] = [
+                    "_beige"
+                ]
+            elif definition["subName"] == "_light_blue":
+                definition["name"] =  definition["name"] + " - Sky Blue Paint, Gray Interior"
+                definition["extraMaterialLists"] = [[
+                    "mts:iv_tpp.paint_bucket_skyblue:0:1",
+                    "minecraft:wool:7:2",
+                    "minecraft:wool:8:3"
+                ]]
+                definition["partTones"] = [
+                    "_gray"
+                ]
+            elif definition["subName"] == "_light_gray":
+                definition["name"] =  definition["name"] + " - Silver Paint, Black Interior"
+                definition["extraMaterialLists"] = [[
+                    "mts:iv_tpp.paint_bucket_silver:0:1",
+                    "minecraft:wool:7:2",
+                    "minecraft:wool:15:3"
+                ]]
+                definition["partTones"] = [
+                    "_black"
+                ]
+            elif definition["subName"] == "_red":
+                definition["name"] =  definition["name"] + " - Red Paint, Tan Interior"
+                definition["extraMaterialLists"] = [[
+                    "mts:iv_tpp.paint_bucket_carminred:0:1",
+                    "minecraft:wool:4:2",
+                    "minecraft:wool:0:3"
+                ]]
+                definition["partTones"] = [
+                    "_beige"
+                ]
+            elif definition["subName"] == "_olive":
+                definition["name"] =  definition["name"] + " - Soft Green Paint, Tan Interior"
+                definition["extraMaterialLists"] = [[
+                    "mts:iv_tpp.paint_bucket_softgreen:0:1",
+                    "minecraft:wool:4:2",
+                    "minecraft:wool:0:3"
+                ]]
+                definition["partTones"] = [
+                    "_beige"
+                ]
+            elif definition["subName"] == "_pure_black":
+                definition["name"] =  definition["name"] + " - Pure Black Paint, Red Interior"
+                definition["extraMaterialLists"] = [[
+                    "mts:iv_tpp.paint_bucket_pureblack:0:1",
+                    "minecraft:wool:7:2",
+                    "minecraft:wool:14:3"
+                ]]
+                definition["partTones"] = [
+                    "_red"
+                ]
+            elif definition["subName"] == "_pure_white":
+                definition["name"] =  definition["name"] + " - Pure White Paint, Red Interior"
+                definition["extraMaterialLists"] = [[
+                    "mts:iv_tpp.paint_bucket_purewhite:0:1",
+                    "minecraft:wool:7:2",
+                    "minecraft:wool:14:3"
+                ]]
+                definition["partTones"] = [
+                    "_red"
+                ]
+            elif definition["subName"] == "_diamond":
+                definition["name"] =  definition["name"] + " - Diamond Wrap, White Interior"
+                definition["extraMaterialLists"] = [[
+                    "mts:iv_tpp.wrap_roll_diamond:0:1",
+                    "minecraft:wool:7:2",
+                    "minecraft:wool:11:3"
+                ]]
+                definition["partTones"] = [
+                    "_white"
+                ]
+
+    # If the user wants to convert general
+    if convert_general.lower() == 'y':
+        # Check if 'emptyMass' exists in 'motorized'
+        if 'emptyMass' not in data.get('motorized', {}):
+            # Prompt the user to provide the missing 'emptyMass'
+            empty_mass = input('The entry "emptyMass" is missing. Please provide a value: ')
+            # Ensure the value is numeric
+            try:
+                data['motorized']['emptyMass'] = int(empty_mass)
+            except ValueError:
+                print('Invalid value provided for "emptyMass". Skipping this entry.')
+                continue
+
+        # Modify the health
+        health = int(data['motorized']['emptyMass'] / 10)
+
+    # Save the JSON
+    with open(file, 'w') as f:
+        json.dump(data, f, indent=4)
 
     # Print that the file has been converted
     print(f'{file} has been converted.')
