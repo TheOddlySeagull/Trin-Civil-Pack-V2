@@ -16,3 +16,5 @@ compile.py
 .vscode/*
 *convert.py
 *convert_plate.py
+mccore/src/main/resources/assets/**/*_s.png
+*.py
