@@ -748,6 +748,20 @@
                             0.0,
                             0.0
                         ]
+                    },
+                    {
+                        "animationType": "rotation",
+                        "variable": "damage_totaled",
+                        "centerPoint": [
+                            0.0,
+                            0.063,
+                            3.344
+                        ],
+                        "axis": [
+                            -0.5742879566022836,
+                            -2.8620490060736348,
+                            9.011870122546988
+                        ]
                     }
                 ]
             },
@@ -766,6 +780,20 @@
                             25.0,
                             0.0,
                             0.0
+                        ]
+                    },
+                    {
+                        "animationType": "rotation",
+                        "variable": "damage_totaled",
+                        "centerPoint": [
+                            0.0,
+                            0.063,
+                            3.344
+                        ],
+                        "axis": [
+                            9.497770660920143,
+                            -1.3233584410977013,
+                            -3.719793865103192
                         ]
                     }
                 ]
@@ -786,6 +814,20 @@
                             0.0,
                             0.0
                         ]
+                    },
+                    {
+                        "animationType": "rotation",
+                        "variable": "damage_totaled",
+                        "centerPoint": [
+                            0.188,
+                            0.125,
+                            3.406
+                        ],
+                        "axis": [
+                            4.878819344160938,
+                            -6.606633925220078,
+                            9.151336818384749
+                        ]
                     }
                 ]
             },
@@ -805,6 +847,20 @@
                             0.0,
                             0.0
                         ]
+                    },
+                    {
+                        "animationType": "rotation",
+                        "variable": "damage_totaled",
+                        "centerPoint": [
+                            0.0,
+                            0.313,
+                            3.281
+                        ],
+                        "axis": [
+                            2.4069369375879717,
+                            -7.152867892835162,
+                            -7.138664429238153
+                        ]
                     }
                 ]
             },
@@ -823,6 +879,20 @@
                             -0.0,
                             -0.0,
                             1.0
+                        ]
+                    },
+                    {
+                        "animationType": "rotation",
+                        "variable": "damage_totaled",
+                        "centerPoint": [
+                            0.719,
+                            0.719,
+                            3.156
+                        ],
+                        "axis": [
+                            -8.319723778491703,
+                            -5.636858897958527,
+                            2.922650959923912
                         ]
                     }
                 ]
@@ -844,6 +914,20 @@
                             0.0
                         ],
                         "duration": 30
+                    },
+                    {
+                        "animationType": "rotation",
+                        "variable": "damage_totaled",
+                        "centerPoint": [
+                            1.313,
+                            0.75,
+                            3.344
+                        ],
+                        "axis": [
+                            -4.7302743934163,
+                            -6.9806927387608875,
+                            9.31195363457228
+                        ]
                     }
                 ]
             },
@@ -864,6 +948,20 @@
                             0.0
                         ],
                         "duration": 30
+                    },
+                    {
+                        "animationType": "rotation",
+                        "variable": "damage_totaled",
+                        "centerPoint": [
+                            1.313,
+                            0.75,
+                            3.344
+                        ],
+                        "axis": [
+                            9.4355393812045,
+                            -8.51583147953239,
+                            -9.016425718090119
+                        ]
                     }
                 ]
             },
@@ -884,6 +982,20 @@
                             0.0
                         ],
                         "duration": 30
+                    },
+                    {
+                        "animationType": "rotation",
+                        "variable": "damage_totaled",
+                        "centerPoint": [
+                            -1.313,
+                            0.75,
+                            3.344
+                        ],
+                        "axis": [
+                            -6.7901438416885345,
+                            -0.06920198593416238,
+                            -4.235900815055369
+                        ]
                     }
                 ]
             },
@@ -904,6 +1016,20 @@
                             0.0
                         ],
                         "duration": 30
+                    },
+                    {
+                        "animationType": "rotation",
+                        "variable": "damage_totaled",
+                        "centerPoint": [
+                            -1.313,
+                            0.75,
+                            3.344
+                        ],
+                        "axis": [
+                            -0.8202969266603599,
+                            0.7183820819532514,
+                            7.79844975686553
+                        ]
                     }
                 ]
             },
@@ -924,6 +1050,20 @@
                             0.0
                         ],
                         "duration": 30
+                    },
+                    {
+                        "animationType": "rotation",
+                        "variable": "damage_totaled",
+                        "centerPoint": [
+                            1.313,
+                            0.75,
+                            1.344
+                        ],
+                        "axis": [
+                            9.198821450077471,
+                            9.303401154822385,
+                            9.324388433934082
+                        ]
                     }
                 ]
             },
@@ -944,6 +1084,20 @@
                             0.0
                         ],
                         "duration": 30
+                    },
+                    {
+                        "animationType": "rotation",
+                        "variable": "damage_totaled",
+                        "centerPoint": [
+                            1.313,
+                            0.75,
+                            1.344
+                        ],
+                        "axis": [
+                            -3.8746041601556236,
+                            -7.849235395129801,
+                            9.754938512759999
+                        ]
                     }
                 ]
             },
@@ -964,6 +1118,20 @@
                             0.0
                         ],
                         "duration": 30
+                    },
+                    {
+                        "animationType": "rotation",
+                        "variable": "damage_totaled",
+                        "centerPoint": [
+                            -1.313,
+                            0.75,
+                            1.344
+                        ],
+                        "axis": [
+                            5.713515961842468,
+                            -6.356268324856764,
+                            -8.504717146784284
+                        ]
                     }
                 ]
             },
@@ -984,6 +1152,20 @@
                             0.0
                         ],
                         "duration": 30
+                    },
+                    {
+                        "animationType": "rotation",
+                        "variable": "damage_totaled",
+                        "centerPoint": [
+                            -1.313,
+                            0.75,
+                            1.344
+                        ],
+                        "axis": [
+                            -6.450234935276196,
+                            2.547735621731242,
+                            -5.673967936985582
+                        ]
                     }
                 ]
             },
@@ -1002,6 +1184,20 @@
                             -60.0,
                             0.0,
                             0.0
+                        ]
+                    },
+                    {
+                        "animationType": "rotation",
+                        "variable": "damage_totaled",
+                        "centerPoint": [
+                            0.0,
+                            0.813,
+                            3.594
+                        ],
+                        "axis": [
+                            -6.193165154053326,
+                            4.606066876877817,
+                            -9.363172562122681
                         ]
                     }
                 ]
@@ -1023,6 +1219,20 @@
                             0.0
                         ],
                         "duration": 30
+                    },
+                    {
+                        "animationType": "rotation",
+                        "variable": "damage_totaled",
+                        "centerPoint": [
+                            0.0,
+                            0.063,
+                            -1.219
+                        ],
+                        "axis": [
+                            -4.4524543575085325,
+                            7.580795946633948,
+                            -1.4387116939383802
+                        ]
                     }
                 ]
             }

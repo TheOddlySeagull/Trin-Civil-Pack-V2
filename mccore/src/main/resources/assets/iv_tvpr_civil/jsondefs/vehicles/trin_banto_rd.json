@@ -655,6 +655,20 @@
                             0.0,
                             1.0
                         ]
+                    },
+                    {
+                        "animationType": "rotation",
+                        "variable": "damage_totaled",
+                        "centerPoint": [
+                            0.53125,
+                            0.90625,
+                            1.9375
+                        ],
+                        "axis": [
+                            5.880553005616848,
+                            0.28936829133767894,
+                            -6.742519171000061
+                        ]
                     }
                 ]
             },
@@ -673,6 +687,20 @@
                             25.0,
                             0.0,
                             0.0
+                        ]
+                    },
+                    {
+                        "animationType": "rotation",
+                        "variable": "damage_totaled",
+                        "centerPoint": [
+                            0.0,
+                            0.1875,
+                            2.125
+                        ],
+                        "axis": [
+                            1.262415150147957,
+                            -3.202060842254985,
+                            0.779110935290479
                         ]
                     }
                 ]
@@ -693,6 +721,20 @@
                             0.0,
                             0.0
                         ]
+                    },
+                    {
+                        "animationType": "rotation",
+                        "variable": "damage_totaled",
+                        "centerPoint": [
+                            0.0,
+                            0.1875,
+                            2.125
+                        ],
+                        "axis": [
+                            5.431967598760252,
+                            0.0966173447749874,
+                            2.784510638397869
+                        ]
                     }
                 ]
             },
@@ -712,6 +754,20 @@
                             0.0,
                             0.0
                         ]
+                    },
+                    {
+                        "animationType": "rotation",
+                        "variable": "damage_totaled",
+                        "centerPoint": [
+                            0.1875,
+                            0.375,
+                            2.25
+                        ],
+                        "axis": [
+                            6.042457392873363,
+                            -2.1683127760625514,
+                            -7.723195001829128
+                        ]
                     }
                 ]
             },
@@ -730,6 +786,20 @@
                             1.0,
                             0.0,
                             0.0
+                        ]
+                    },
+                    {
+                        "animationType": "rotation",
+                        "variable": "damage_totaled",
+                        "centerPoint": [
+                            0.03125,
+                            0.25,
+                            2.03125
+                        ],
+                        "axis": [
+                            -6.886976302220145,
+                            9.05105927453532,
+                            8.446974767005962
                         ]
                     }
                 ]
@@ -755,6 +825,20 @@
                         "reverseEasing": "easeincubic",
                         "forwardsStartSound": "iv_tpp:hoodopen",
                         "reverseStartSound": "iv_tpp:hoodclose"
+                    },
+                    {
+                        "animationType": "rotation",
+                        "variable": "damage_totaled",
+                        "centerPoint": [
+                            0.0,
+                            1.063,
+                            2.188
+                        ],
+                        "axis": [
+                            -2.3022521359824637,
+                            4.090164869433634,
+                            8.538259260786624
+                        ]
                     }
                 ]
             },
@@ -779,6 +863,20 @@
                         "reverseEasing": "easeincubic",
                         "forwardsStartSound": "iv_tpp:bootopen",
                         "reverseEndSound": "iv_tpp:bootclose"
+                    },
+                    {
+                        "animationType": "rotation",
+                        "variable": "damage_totaled",
+                        "centerPoint": [
+                            0.0,
+                            0.313,
+                            -0.875
+                        ],
+                        "axis": [
+                            1.4708308112217612,
+                            -1.504402615176998,
+                            -9.71943292367581
+                        ]
                     }
                 ]
             }
