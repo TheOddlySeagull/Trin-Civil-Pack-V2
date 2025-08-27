@@ -1,318 +1,731 @@
 {
-	"definitions" : [
-		{
-			"subName" : "_black",
-			"extraMaterials" : ["minecraft:dye:0:4", "minecraft:dye:15:1"]
-		},
-		{
-			"subName" : "_dark_gray",
-			"extraMaterials" : ["minecraft:dye:8:4", "minecraft:dye:15:1"]
-		},
-		{
-			"subName" : "_light_gray",
-			"extraMaterials" : ["minecraft:dye:7:4", "minecraft:dye:15:1"]
-		},
-		{
-			"subName" : "_white",
-			"extraMaterials" : ["minecraft:dye:15:5"]
-		},
-		{
-			"subName" : "_camo_desert",
-			"extraMaterials" : ["minecraft:dye:11:5", "minecraft:sand:0:2"]
-		},
-		{
-			"subName" : "_camo_forest",
-			"extraMaterials" : ["minecraft:dye:2:5", "minecraft:leaves:-1:2"]
-		},
-		{
-			"subName" : "_camo_plains",
-			"extraMaterials" : ["minecraft:dye:2:5", "minecraft:tallgrass:-1:2"]
-		},
-		{
-			"subName" : "_camo_red_desert",
-			"extraMaterials" : ["minecraft:dye:1:5", "minecraft:sand:1:2"]
-		},
-		{
-			"subName" : "_camo_snow",
-			"extraMaterials" : ["minecraft:dye:15:5", "minecraft:snowball:0:1"]
-		}
-	],
-	"general": {
-		"type" : "car",
-		"openTop" : false,
-		"emptyMass" : 14500,
-		"materials" : ["minecraft:iron_ingot:0:64", "minecraft:obsidian:0:10"]
-	},
-	"motorized" : {
-		"fuelCapacity" : 30000,
-		"hornSound" : "mtsseagullmilitarypack:horn_1",
-		"controls" : [],
-		"instruments" : [
-			{//RG+
-				"pos" : [0.25, 1.125, 3.7875],
-				"rot" : [20, 0, 0],
-				"hudpos" : [80, 63],
-				"scale" : 0.015625,
-				"hudScale" : 0.6
-			},
-			{//RG
-				"pos" : [0.5, 1.125, 3.7875],
-				"rot" : [20, 0, 0],
-				"hudpos" : [60, 63],
-				"scale" : 0.015625,
-				"hudScale" : 0.9
-			},
-			{//LG+
-				"pos" : [1.125, 1.125, 3.7875],
-				"rot" : [20, 0, 0],
-				"hudpos" : [20, 63],
-				"scale" : 0.015625,
-				"hudScale" : 0.6
-			},
-			{//LG
-				"pos" : [0.9375, 1.125, 3.7875],
-				"rot" : [20, 0, 0],
-				"hudpos" : [40, 63],
-				"scale" : 0.015625,
-				"hudScale" : 0.9
-			}
-		]
-	},
-	"car" : {
-		"isBigTruck" : true,
-		"isFrontWheelDrive" : true,
-		"isRearWheelDrive" : true,
-		"dragCoefficient" : 0.9,
-		"axleRatio" : 3.0
-	},
-	"parts": [
-		{//RL
-			"pos" : [1.5, -0.25, 0],
-			"types" : ["wheel"],
-			"minValue" : 1,
-			"maxValue" : 1.3
-		},
-		{//RR
-			"pos" : [-1.125, -0.25, 0],
-			"types" : ["wheel"],
-			"minValue" : 1,
-			"maxValue" : 1.3
-		},
-		{//FL
-			"pos" : [1.5, -0.25, 4.84375],
-			"types" : ["wheel"],
-			"minValue" : 1,
-			"maxValue" : 1.3,
-			"turnsWithSteer" : true
-		},
-		{//FR
-			"pos" : [-1.125, -0.25, 4.84375],
-			"types" : ["wheel"],
-			"minValue" : 1,
-			"maxValue" : 1.3,
-			"turnsWithSteer" : true
-		},
-		{//front left
-			"pos" : [0.625, 0.375, 2.75],
-			"types" : ["seat"],
-			"isController" : true
-		},
-		{//front right
-			"pos" : [-0.25, 0.375, 2.75],
-			"types" : ["seat"]
-		},
-		{//back left 1
-			"pos" : [-0.625, 0.5, 2],
-			"rot" : [0, -90.0, 0],
-			"types" : ["seat"]
-		},
-		{//back left 2
-			"pos" : [-0.625, 0.5, 1],
-			"rot" : [0, -90.0, 0],
-			"types" : ["seat"]
-		},
-		{//back left 3
-			"pos" : [-0.625, 0.5, 0],
-			"rot" : [0, -90.0, 0],
-			"types" : ["seat"]
-		},
-		{//back right 1
-			"pos" : [1, 0.5, 2],
-			"rot" : [0, -90.0, 0],
-			"types" : ["seat"]
-		},
-		{//back right 2
-			"pos" : [1, 0.5, 1],
-			"rot" : [0, -90.0, 0],
-			"types" : ["seat"]
-		},
-		{//back right 3
-			"pos" : [1, 0.5, 0],
-			"rot" : [0, -90.0, 0],
-			"types" : ["seat"]
-		},
-		{//engines
-			"pos" : [0.21875, 0.3125, 3.9375],
-			"types" : ["engine_car"],
-			"minValue" : 0.0,
-			"maxValue" : 2
-		},
-		{//Rcrate
-			"pos" : [1.59375, 1.1875, 0.0625],
-			"rot" : [0, -90.0, 0],
-			"types" : ["crate"],
-			"maxValue" : 3.0
-		},
-		{//Lcrate
-			"pos" : [-1.21875, 1.1875, 0.0625],
-			"rot" : [0, -90.0, 0],
-			"types" : ["crate"],
-			"maxValue" : 3.0
-		}
-	],
-	"collision": [
-		{
-			"pos" : [0, 1.0625, 4.8125],
-			"width" : 1.875,
-			"height" : 0.125
-		},
-		{
-			"pos" : [0, 1.875, 2.9375],
-			"width" : 2.25,
-			"height" : 0.125
-		},
-		{
-			"pos" : [0, 1.875, 0.6875],
-			"width" : 2.25,
-			"height" : 0.125
-		},
-		{
-			"pos" : [0, 1.875, -0.875],
-			"width" : 0.5,
-			"height" : 0.06
-		},
-		{
-			"pos" : [0, 0.375, 4.625],
-			"width" : 2.25,
-			"height" : 0.125
-		},
-		{
-			"pos" : [0, 0.375, 0.1875],
-			"width" : 2.25,
-			"height" : 0.125
-		}
-	],
-	"rendering": {
-		"numberWindows" : 8,
-		"defaultDisplayText" : "SMP-0000",
-		"hudBackplaneTexturePercentages" : [0.72266, 0.85938, 0.33984, 0.35352],
-		"hudMouldingTexturePercentages" : [0.35352, 0.38672, 0.10938, 0.12891],
-		"displayTextMaxLength" : 8,
-		"textMarkings" : [
-			{//right
-				"pos" : [-1.43875, 0.125, 2.875],
-				"rot" : [0, -90, 0],
-				"scale" : 0.12,
-				"color" : "#ffffff"
-			},
-			{//left
-				"pos" : [1.81375, 0.125, 2.875],
-				"rot" : [0, 90, 0],
-				"scale" : 0.12,
-				"color" : "#ffffff"
-			},
-			{//back
-				"pos" : [1.09375, 0.75, -0.87625],
-				"rot" : [0, 180, 0],
-				"scale" : 0.12,
-				"color" : "#ffffff"
-			}
-		],
-		"rotatableModelObjects" : [
-			{
-				"partName" : "$brake",
-				"rotationPoint" : [-0.5625, 0, 3.8125],
-				"rotationAxis" : [1, 0, 0],
-				"rotationVariable" : "brake"
-			},
-			{
-				"partName" : "$gaz",
-				"rotationPoint" : [0.375, 0, 3.8125],
-				"rotationAxis" : [1, 0, 0],
-				"rotationVariable" : "throttle"
-			},
-			{
-				"partName" : "$p_brake",
-				"rotationPoint" : [0.375, 1.03125, 3.8125],
-				"rotationAxis" : [-1, 0, 0],
-				"rotationVariable" : "p_brake"
-			},
-			{
-				"partName" : "$steer",
-				"rotationPoint" : [0.65625, 1.09375, 3.6875],
-				"rotationAxis" : [0, 0, -1],
-				"rotationVariable" : "steeringwheel"
-			},
-			{
-				"partName" : "$doorFL",
-				"rotationPoint" : [1.4375, 1.0625, 3.8125],
-				"rotationAxis" : [0, -1, 0],
-				"rotationVariable" : "door"
-			},
-			{
-				"partName" : "$doorwindowFL",
-				"rotationPoint" : [1.4375, 1.0625, 3.8125],
-				"rotationAxis" : [0, -1, 0],
-				"rotationVariable" : "door"
-			},
-			{
-				"partName" : "$doorFR",
-				"rotationPoint" : [-1.0625, 1.0625, 3.8125],
-				"rotationAxis" : [0, 1, 0],
-				"rotationVariable" : "door"
-			},
-			{
-				"partName" : "$doorwindowFR",
-				"rotationPoint" : [-1.0625, 1.0625, 3.8125],
-				"rotationAxis" : [0, 1, 0],
-				"rotationVariable" : "door"
-			},
-			{
-				"partName" : "$doorRR",
-				"rotationPoint" : [-0.375, 1.0625, -0.875],
-				"rotationAxis" : [0, 1, 0],
-				"rotationVariable" : "door"
-			},
-			{
-				"partName" : "$doorwindowRR",
-				"rotationPoint" : [-0.375, 1.0625, -0.875],
-				"rotationAxis" : [0, 1, 0],
-				"rotationVariable" : "door"
-			},
-			{
-				"partName" : "$doorRL",
-				"rotationPoint" : [0.75, 1.0625, -0.875],
-				"rotationAxis" : [0, -1, 0],
-				"rotationVariable" : "door"
-			},
-			{
-				"partName" : "$doorwindowRL",
-				"rotationPoint" : [0.75, 1.0625, -0.875],
-				"rotationAxis" : [0, -1, 0],
-				"rotationVariable" : "door"
-			},
-			{
-				"partName" : "$axleR",
-				"rotationPoint" : [-1.125, -0.25, 0.03125],
-				"rotationAxis" : [1, 0, 0],
-				"rotationVariable" : "driveshaft"
-			},
-			{
-				"partName" : "$axleF",
-				"rotationPoint" : [1.5, -0.25, 4.84375],
-				"rotationAxis" : [1, 0, 0],
-				"rotationVariable" : "driveshaft"
-			}
-		]
-	}
+    "definitions": [
+        {
+            "subName": "_black",
+            "extraMaterials": [
+                "minecraft:dye:0:4",
+                "minecraft:dye:15:1"
+            ]
+        },
+        {
+            "subName": "_dark_gray",
+            "extraMaterials": [
+                "minecraft:dye:8:4",
+                "minecraft:dye:15:1"
+            ]
+        },
+        {
+            "subName": "_light_gray",
+            "extraMaterials": [
+                "minecraft:dye:7:4",
+                "minecraft:dye:15:1"
+            ]
+        },
+        {
+            "subName": "_white",
+            "extraMaterials": [
+                "minecraft:dye:15:5"
+            ]
+        },
+        {
+            "subName": "_camo_desert",
+            "extraMaterials": [
+                "minecraft:dye:11:5",
+                "minecraft:sand:0:2"
+            ]
+        },
+        {
+            "subName": "_camo_forest",
+            "extraMaterials": [
+                "minecraft:dye:2:5",
+                "minecraft:leaves:-1:2"
+            ]
+        },
+        {
+            "subName": "_camo_plains",
+            "extraMaterials": [
+                "minecraft:dye:2:5",
+                "minecraft:tallgrass:-1:2"
+            ]
+        },
+        {
+            "subName": "_camo_red_desert",
+            "extraMaterials": [
+                "minecraft:dye:1:5",
+                "minecraft:sand:1:2"
+            ]
+        },
+        {
+            "subName": "_camo_snow",
+            "extraMaterials": [
+                "minecraft:dye:15:5",
+                "minecraft:snowball:0:1"
+            ]
+        }
+    ],
+    "general": {
+        "type": "car",
+        "openTop": false,
+        "emptyMass": 14500,
+        "materials": [
+            "minecraft:iron_ingot:0:64",
+            "minecraft:obsidian:0:10"
+        ]
+    },
+    "motorized": {
+        "fuelCapacity": 30000,
+        "hornSound": "mtsseagullmilitarypack:horn_1",
+        "controls": [],
+        "instruments": [
+            {
+                "pos": [
+                    0.25,
+                    1.125,
+                    3.7875
+                ],
+                "rot": [
+                    20,
+                    0,
+                    0
+                ],
+                "hudpos": [
+                    80,
+                    63
+                ],
+                "scale": 0.015625,
+                "hudScale": 0.6
+            },
+            {
+                "pos": [
+                    0.5,
+                    1.125,
+                    3.7875
+                ],
+                "rot": [
+                    20,
+                    0,
+                    0
+                ],
+                "hudpos": [
+                    60,
+                    63
+                ],
+                "scale": 0.015625,
+                "hudScale": 0.9
+            },
+            {
+                "pos": [
+                    1.125,
+                    1.125,
+                    3.7875
+                ],
+                "rot": [
+                    20,
+                    0,
+                    0
+                ],
+                "hudpos": [
+                    20,
+                    63
+                ],
+                "scale": 0.015625,
+                "hudScale": 0.6
+            },
+            {
+                "pos": [
+                    0.9375,
+                    1.125,
+                    3.7875
+                ],
+                "rot": [
+                    20,
+                    0,
+                    0
+                ],
+                "hudpos": [
+                    40,
+                    63
+                ],
+                "scale": 0.015625,
+                "hudScale": 0.9
+            }
+        ],
+        "emptyMass": 14500
+    },
+    "car": {
+        "isBigTruck": true,
+        "isFrontWheelDrive": true,
+        "isRearWheelDrive": true,
+        "dragCoefficient": 0.9,
+        "axleRatio": 3.0
+    },
+    "parts": [
+        {
+            "pos": [
+                1.5,
+                -0.25,
+                0
+            ],
+            "types": [
+                "wheel"
+            ],
+            "minValue": 1,
+            "maxValue": 1.3
+        },
+        {
+            "pos": [
+                -1.125,
+                -0.25,
+                0
+            ],
+            "types": [
+                "wheel"
+            ],
+            "minValue": 1,
+            "maxValue": 1.3
+        },
+        {
+            "pos": [
+                1.5,
+                -0.25,
+                4.84375
+            ],
+            "types": [
+                "wheel"
+            ],
+            "minValue": 1,
+            "maxValue": 1.3,
+            "turnsWithSteer": true
+        },
+        {
+            "pos": [
+                -1.125,
+                -0.25,
+                4.84375
+            ],
+            "types": [
+                "wheel"
+            ],
+            "minValue": 1,
+            "maxValue": 1.3,
+            "turnsWithSteer": true
+        },
+        {
+            "pos": [
+                0.625,
+                0.375,
+                2.75
+            ],
+            "types": [
+                "seat"
+            ],
+            "isController": true,
+            "defaultPart": "iv_tpp:trin_seat_1_gray",
+            "toneIndex": 1,
+            "interactableVariables": [
+                []
+            ]
+        },
+        {
+            "pos": [
+                -0.25,
+                0.375,
+                2.75
+            ],
+            "types": [
+                "seat"
+            ],
+            "defaultPart": "iv_tpp:trin_seat_1_gray",
+            "toneIndex": 1,
+            "interactableVariables": [
+                []
+            ]
+        },
+        {
+            "pos": [
+                -0.625,
+                0.5,
+                2
+            ],
+            "rot": [
+                0,
+                -90.0,
+                0
+            ],
+            "types": [
+                "seat"
+            ],
+            "defaultPart": "iv_tpp:trin_seat_1_gray",
+            "toneIndex": 1,
+            "interactableVariables": [
+                []
+            ]
+        },
+        {
+            "pos": [
+                -0.625,
+                0.5,
+                1
+            ],
+            "rot": [
+                0,
+                -90.0,
+                0
+            ],
+            "types": [
+                "seat"
+            ],
+            "defaultPart": "iv_tpp:trin_seat_1_gray",
+            "toneIndex": 1,
+            "interactableVariables": [
+                []
+            ]
+        },
+        {
+            "pos": [
+                -0.625,
+                0.5,
+                0
+            ],
+            "rot": [
+                0,
+                -90.0,
+                0
+            ],
+            "types": [
+                "seat"
+            ],
+            "defaultPart": "iv_tpp:trin_seat_1_gray",
+            "toneIndex": 1,
+            "interactableVariables": [
+                []
+            ]
+        },
+        {
+            "pos": [
+                1,
+                0.5,
+                2
+            ],
+            "rot": [
+                0,
+                -90.0,
+                0
+            ],
+            "types": [
+                "seat"
+            ],
+            "defaultPart": "iv_tpp:trin_seat_1_gray",
+            "toneIndex": 1,
+            "interactableVariables": [
+                []
+            ]
+        },
+        {
+            "pos": [
+                1,
+                0.5,
+                1
+            ],
+            "rot": [
+                0,
+                -90.0,
+                0
+            ],
+            "types": [
+                "seat"
+            ],
+            "defaultPart": "iv_tpp:trin_seat_1_gray",
+            "toneIndex": 1,
+            "interactableVariables": [
+                []
+            ]
+        },
+        {
+            "pos": [
+                1,
+                0.5,
+                0
+            ],
+            "rot": [
+                0,
+                -90.0,
+                0
+            ],
+            "types": [
+                "seat"
+            ],
+            "defaultPart": "iv_tpp:trin_seat_1_gray",
+            "toneIndex": 1,
+            "interactableVariables": [
+                []
+            ]
+        },
+        {
+            "pos": [
+                0.21875,
+                0.3125,
+                3.9375
+            ],
+            "types": [
+                "engine_car"
+            ],
+            "minValue": 0.0,
+            "maxValue": 2,
+            "defaultPart": "iv_tpp:engine_v8_gasoline_normal_aut",
+            "linkedParts": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "pos": [
+                1.59375,
+                1.1875,
+                0.0625
+            ],
+            "rot": [
+                0,
+                -90.0,
+                0
+            ],
+            "types": [
+                "crate"
+            ],
+            "maxValue": 3.0
+        },
+        {
+            "pos": [
+                -1.21875,
+                1.1875,
+                0.0625
+            ],
+            "rot": [
+                0,
+                -90.0,
+                0
+            ],
+            "types": [
+                "crate"
+            ],
+            "maxValue": 3.0
+        }
+    ],
+    "collision": [
+        {
+            "pos": [
+                0,
+                1.0625,
+                4.8125
+            ],
+            "width": 1.875,
+            "height": 0.125
+        },
+        {
+            "pos": [
+                0,
+                1.875,
+                2.9375
+            ],
+            "width": 2.25,
+            "height": 0.125
+        },
+        {
+            "pos": [
+                0,
+                1.875,
+                0.6875
+            ],
+            "width": 2.25,
+            "height": 0.125
+        },
+        {
+            "pos": [
+                0,
+                1.875,
+                -0.875
+            ],
+            "width": 0.5,
+            "height": 0.06
+        },
+        {
+            "pos": [
+                0,
+                0.375,
+                4.625
+            ],
+            "width": 2.25,
+            "height": 0.125
+        },
+        {
+            "pos": [
+                0,
+                0.375,
+                0.1875
+            ],
+            "width": 2.25,
+            "height": 0.125
+        }
+    ],
+    "rendering": {
+        "numberWindows": 8,
+        "defaultDisplayText": "SMP-0000",
+        "hudBackplaneTexturePercentages": [
+            0.72266,
+            0.85938,
+            0.33984,
+            0.35352
+        ],
+        "hudMouldingTexturePercentages": [
+            0.35352,
+            0.38672,
+            0.10938,
+            0.12891
+        ],
+        "displayTextMaxLength": 8,
+        "textMarkings": [
+            {
+                "pos": [
+                    -1.43875,
+                    0.125,
+                    2.875
+                ],
+                "rot": [
+                    0,
+                    -90,
+                    0
+                ],
+                "scale": 0.12,
+                "color": "#ffffff"
+            },
+            {
+                "pos": [
+                    1.81375,
+                    0.125,
+                    2.875
+                ],
+                "rot": [
+                    0,
+                    90,
+                    0
+                ],
+                "scale": 0.12,
+                "color": "#ffffff"
+            },
+            {
+                "pos": [
+                    1.09375,
+                    0.75,
+                    -0.87625
+                ],
+                "rot": [
+                    0,
+                    180,
+                    0
+                ],
+                "scale": 0.12,
+                "color": "#ffffff"
+            }
+        ],
+        "rotatableModelObjects": [
+            {
+                "partName": "$brake",
+                "rotationPoint": [
+                    -0.5625,
+                    0,
+                    3.8125
+                ],
+                "rotationAxis": [
+                    1,
+                    0,
+                    0
+                ],
+                "rotationVariable": "brake"
+            },
+            {
+                "partName": "$gaz",
+                "rotationPoint": [
+                    0.375,
+                    0,
+                    3.8125
+                ],
+                "rotationAxis": [
+                    1,
+                    0,
+                    0
+                ],
+                "rotationVariable": "throttle"
+            },
+            {
+                "partName": "$p_brake",
+                "rotationPoint": [
+                    0.375,
+                    1.03125,
+                    3.8125
+                ],
+                "rotationAxis": [
+                    -1,
+                    0,
+                    0
+                ],
+                "rotationVariable": "p_brake"
+            },
+            {
+                "partName": "$steer",
+                "rotationPoint": [
+                    0.65625,
+                    1.09375,
+                    3.6875
+                ],
+                "rotationAxis": [
+                    0,
+                    0,
+                    -1
+                ],
+                "rotationVariable": "steeringwheel"
+            },
+            {
+                "partName": "$doorFL",
+                "rotationPoint": [
+                    1.4375,
+                    1.0625,
+                    3.8125
+                ],
+                "rotationAxis": [
+                    0,
+                    -1,
+                    0
+                ],
+                "rotationVariable": "door"
+            },
+            {
+                "partName": "$doorwindowFL",
+                "rotationPoint": [
+                    1.4375,
+                    1.0625,
+                    3.8125
+                ],
+                "rotationAxis": [
+                    0,
+                    -1,
+                    0
+                ],
+                "rotationVariable": "door"
+            },
+            {
+                "partName": "$doorFR",
+                "rotationPoint": [
+                    -1.0625,
+                    1.0625,
+                    3.8125
+                ],
+                "rotationAxis": [
+                    0,
+                    1,
+                    0
+                ],
+                "rotationVariable": "door"
+            },
+            {
+                "partName": "$doorwindowFR",
+                "rotationPoint": [
+                    -1.0625,
+                    1.0625,
+                    3.8125
+                ],
+                "rotationAxis": [
+                    0,
+                    1,
+                    0
+                ],
+                "rotationVariable": "door"
+            },
+            {
+                "partName": "$doorRR",
+                "rotationPoint": [
+                    -0.375,
+                    1.0625,
+                    -0.875
+                ],
+                "rotationAxis": [
+                    0,
+                    1,
+                    0
+                ],
+                "rotationVariable": "door"
+            },
+            {
+                "partName": "$doorwindowRR",
+                "rotationPoint": [
+                    -0.375,
+                    1.0625,
+                    -0.875
+                ],
+                "rotationAxis": [
+                    0,
+                    1,
+                    0
+                ],
+                "rotationVariable": "door"
+            },
+            {
+                "partName": "$doorRL",
+                "rotationPoint": [
+                    0.75,
+                    1.0625,
+                    -0.875
+                ],
+                "rotationAxis": [
+                    0,
+                    -1,
+                    0
+                ],
+                "rotationVariable": "door"
+            },
+            {
+                "partName": "$doorwindowRL",
+                "rotationPoint": [
+                    0.75,
+                    1.0625,
+                    -0.875
+                ],
+                "rotationAxis": [
+                    0,
+                    -1,
+                    0
+                ],
+                "rotationVariable": "door"
+            },
+            {
+                "partName": "$axleR",
+                "rotationPoint": [
+                    -1.125,
+                    -0.25,
+                    0.03125
+                ],
+                "rotationAxis": [
+                    1,
+                    0,
+                    0
+                ],
+                "rotationVariable": "driveshaft"
+            },
+            {
+                "partName": "$axleF",
+                "rotationPoint": [
+                    1.5,
+                    -0.25,
+                    4.84375
+                ],
+                "rotationAxis": [
+                    1,
+                    0,
+                    0
+                ],
+                "rotationVariable": "driveshaft"
+            }
+        ]
+    }
 }
