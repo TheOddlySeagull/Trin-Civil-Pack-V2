@@ -4,7 +4,7 @@
         "hasRunningLights": true,
         "hasHeadlights": true,
         "hasTurnSignals": true,
-        "emptyMass": 7000,
+        "emptyMass": 3000,
         "fuelCapacity": 15000,
         "axleRatio": 3.3,
         "brakingFactor": 1.0,
@@ -34,7 +34,7 @@
             ],
             "rot": [
                 0.0,
-                0.0,
+                180.0,
                 0.0
             ],
             "isMirrored": true,
@@ -83,7 +83,7 @@
             ],
             "rot": [
                 0.0,
-                0.0,
+                180.0,
                 0.0
             ],
             "turnsWithSteer": true,
@@ -263,6 +263,89 @@
             "types": [
                 "generic_bullbar"
             ]
+        },
+        {
+            "pos": [
+                0.0,
+                0.1875,
+                4.56313
+            ],
+            "rot": [
+                17.0,
+                0.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "defaultPart": "iv_tpp:plate_gramados",
+            "types": [
+                "generic_licenseplate_us",
+                "generic_licenseplate_euro"
+            ]
+        },
+        {
+            "pos": [
+                0.0,
+                0.5,
+                -2.31938
+            ],
+            "rot": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "defaultPart": "iv_tpp:plate_gramados",
+            "types": [
+                "generic_licenseplate_us",
+                "generic_licenseplate_euro"
+            ]
+        },
+        {
+            "pos": [
+                0.0,
+                0.25,
+                4.5625
+            ],
+            "rot": [
+                -0.0,
+                0.0,
+                0.0
+            ],
+            "maxValue": 1.75,
+            "types": [
+                "generic_sign_convoyfront"
+            ]
+        },
+        {
+            "pos": [
+                0.0,
+                0.59375,
+                -2.3125
+            ],
+            "rot": [
+                -0.0,
+                0.0,
+                0.0
+            ],
+            "maxValue": 1.25,
+            "types": [
+                "generic_sign_convoyrear"
+            ]
+        },
+        {
+            "pos": [
+                0.0,
+                1.0625,
+                -1.25
+            ],
+            "maxValue": 100.0,
+            "minYaw": -120.0,
+            "maxYaw": 120.0,
+            "minPitch": -22.5,
+            "maxPitch": 45.0,
+            "types": [
+                "gun_turret"
+            ]
         }
     ],
     "collisionGroups": [
@@ -364,11 +447,11 @@
                     "centerPoint": [
                         1.5,
                         0.6875,
-                        2.0
+                        2.4375
                     ],
                     "axis": [
                         0.0,
-                        1.0,
+                        -60.0,
                         0.0
                     ],
                     "duration": 30
@@ -408,11 +491,11 @@
                     "centerPoint": [
                         1.5,
                         0.6875,
-                        0.75
+                        1.25
                     ],
                     "axis": [
                         0.0,
-                        1.0,
+                        -60.0,
                         0.0
                     ],
                     "duration": 30
@@ -615,82 +698,87 @@
     ],
     "definitions": [
         {
-            "subName": "_black",
+            "subName": "_deepblack",
+            "name": "Trin ACC 167 - Deep Black paint, Gray Interior",
             "extraMaterialLists": [
                 [
-                    "minecraft:dye:0:4",
-                    "minecraft:dye:15:1"
+                    "mts:iv_tpp.paint_bucket_deepblack:0:1",
+                    "mts:iv_tpp.upholstery_pile_gray:0:3"
                 ]
             ]
         },
         {
-            "subName": "_dark_gray",
+            "subName": "_tungsten",
+            "name": "Trin ACC 167 - Tungsten paint, Gray Interior",
             "extraMaterialLists": [
                 [
-                    "minecraft:dye:8:4",
-                    "minecraft:dye:15:1"
+                    "mts:iv_tpp.paint_bucket_tungsten:0:1",
+                    "mts:iv_tpp.upholstery_pile_gray:0:3"
                 ]
             ]
         },
         {
-            "subName": "_light_gray",
+            "subName": "_glacierwhite",
+            "name": "Trin ACC 167 - Glacier White paint, Gray Interior",
             "extraMaterialLists": [
                 [
-                    "minecraft:dye:7:4",
-                    "minecraft:dye:15:1"
+                    "mts:iv_tpp.paint_bucket_glacierwhite:0:1",
+                    "mts:iv_tpp.upholstery_pile_gray:0:3"
                 ]
             ]
         },
         {
-            "subName": "_white",
+            "subName": "_militarygreen",
+            "name": "Trin ACC 167 - Military Green paint, Gray Interior",
             "extraMaterialLists": [
                 [
-                    "minecraft:dye:15:5"
+                    "mts:iv_tpp.paint_bucket_militarygreen:0:1",
+                    "mts:iv_tpp.upholstery_pile_gray:0:3"
                 ]
             ]
         },
         {
             "subName": "_camo_desert",
+            "name": "Trin ACC 167 - Desert Camouflage, Gray Interior",
             "extraMaterialLists": [
                 [
-                    "minecraft:dye:11:5",
-                    "minecraft:sand:0:2"
+                    "mts:iv_tpp.upholstery_pile_gray:0:3"
+                ]
+            ]
+        },
+        {
+            "subName": "_camo_badland",
+            "name": "Trin ACC 167 - Badland Camouflage, Gray Interior",
+            "extraMaterialLists": [
+                [
+                    "mts:iv_tpp.upholstery_pile_gray:0:3"
                 ]
             ]
         },
         {
             "subName": "_camo_forest",
+            "name": "Trin ACC 167 - Forest Camouflage, Gray Interior",
             "extraMaterialLists": [
                 [
-                    "minecraft:dye:2:5",
-                    "minecraft:leaves:-1:2"
+                    "mts:iv_tpp.upholstery_pile_gray:0:3"
                 ]
             ]
         },
         {
-            "subName": "_camo_plains",
+            "subName": "_camo_plain",
+            "name": "Trin ACC 167 - Plain Camouflage, Gray Interior",
             "extraMaterialLists": [
                 [
-                    "minecraft:dye:2:5",
-                    "minecraft:tallgrass:-1:2"
-                ]
-            ]
-        },
-        {
-            "subName": "_camo_red_desert",
-            "extraMaterialLists": [
-                [
-                    "minecraft:dye:1:5",
-                    "minecraft:sand:1:2"
+                    "mts:iv_tpp.upholstery_pile_gray:0:3"
                 ]
             ]
         },
         {
             "subName": "_camo_snow",
+            "name": "Trin ACC 167 - Snow Camouflage, Gray Interior",
             "extraMaterialLists": [
                 [
-                    "minecraft:dye:15:5",
-                    "minecraft:snowball:0:1"
+                    "mts:iv_tpp.upholstery_pile_gray:0:3"
                 ]
             ]
         }
@@ -699,36 +787,70 @@
         "textObjects": [
             {
                 "pos": [
-                    0.0,
-                    0.1875,
-                    4.56313
+                    1.50625,
+                    0.53125,
+                    4.0625
                 ],
                 "rot": [
-                    17.0,
-                    0.0,
+                    -0.0,
+                    90.0,
                     0.0
                 ],
                 "scale": 0.13,
-                "fieldName": "Text",
-                "defaultText": "SMP-000",
-                "maxLength": 7,
+                "fieldName": "Unit Number",
+                "defaultText": "ACC 167",
+                "maxLength": 12,
                 "color": "000000"
             },
             {
                 "pos": [
-                    0.0,
-                    0.5,
-                    -2.31938
+                    1.50625,
+                    0.59375,
+                    -1.875
                 ],
                 "rot": [
-                    0.0,
-                    180.0,
+                    -0.0,
+                    90.0,
+                    0.0
+                ],
+                "scale": 0.17,
+                "fieldName": "Unit Number",
+                "defaultText": "ACC 167",
+                "maxLength": 12,
+                "color": "000000"
+            },
+            {
+                "pos": [
+                    -1.50625,
+                    0.53125,
+                    4.0625
+                ],
+                "rot": [
+                    -0.0,
+                    -90.0,
                     0.0
                 ],
                 "scale": 0.13,
-                "fieldName": "Text",
-                "defaultText": "SMP-000",
-                "maxLength": 7,
+                "fieldName": "Unit Number",
+                "defaultText": "ACC 167",
+                "maxLength": 12,
+                "color": "000000"
+            },
+            {
+                "pos": [
+                    -1.50625,
+                    0.59375,
+                    -1.875
+                ],
+                "rot": [
+                    -0.0,
+                    -90.0,
+                    0.0
+                ],
+                "scale": 0.17,
+                "fieldName": "Unit Number",
+                "defaultText": "ACC 167",
+                "maxLength": 12,
                 "color": "000000"
             }
         ],
@@ -1543,7 +1665,7 @@
         "modelType": "obj"
     },
     "general": {
-        "health": 700,
+        "health": 300,
         "materialLists": [
             [
                 "minecraft:iron_ingot:0:31"
