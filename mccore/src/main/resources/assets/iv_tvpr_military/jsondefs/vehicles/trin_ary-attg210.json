@@ -265,10 +265,13 @@
                 2.5625,
                 0.25
             ],
-            "turnsWithSteer": true,
-            "maxValue": 50.0,
+            "maxValue": 100.0,
+            "minYaw": -120.0,
+            "maxYaw": 120.0,
+            "minPitch": -22.5,
+            "maxPitch": 45.0,
             "types": [
-                "gun_aat"
+                "gun_turret"
             ]
         },
         {
@@ -282,9 +285,29 @@
                 135.0,
                 0.0
             ],
-            "maxValue": 20.0,
+            "maxValue": 100.0,
+            "minYaw": -120.0,
+            "maxYaw": 120.0,
+            "minPitch": -22.5,
+            "maxPitch": 45.0,
             "types": [
-                "gun_fixed"
+                "gun_hand_standard",
+                "gun_hand_handgun",
+                "gun_hand_pistol",
+                "gun_hand_rifle",
+                "gun_hand_longarm",
+                "gun_hand_shotgun",
+                "gun_handheld_rocket",
+                "gun_hand_heavy",
+                "gun_hand_sprayer",
+                "gun_hand_sign_protest",
+                "gun_gavin_mg",
+                "gun_tripod",
+                "gun_fixed",
+                "gun_observer",
+                "gun_rocket",
+                "gun_pylon_standard",
+                "gun_atgm"
             ]
         },
         {
@@ -298,9 +321,146 @@
                 -135.0,
                 0.0
             ],
-            "maxValue": 20.0,
+            "maxValue": 100.0,
+            "minYaw": -120.0,
+            "maxYaw": 120.0,
+            "minPitch": -22.5,
+            "maxPitch": 45.0,
             "types": [
-                "gun_fixed"
+                "gun_hand_standard",
+                "gun_hand_handgun",
+                "gun_hand_pistol",
+                "gun_hand_rifle",
+                "gun_hand_longarm",
+                "gun_hand_shotgun",
+                "gun_handheld_rocket",
+                "gun_hand_heavy",
+                "gun_hand_sprayer",
+                "gun_hand_sign_protest",
+                "gun_gavin_mg",
+                "gun_tripod",
+                "gun_fixed",
+                "gun_observer",
+                "gun_rocket",
+                "gun_pylon_standard",
+                "gun_atgm"
+            ]
+        },
+        {
+            "pos": [
+                0.0,
+                0.5,
+                5.875
+            ],
+            "rot": [
+                -0.0,
+                0.0,
+                0.0
+            ],
+            "maxValue": 1.75,
+            "types": [
+                "generic_sign_convoyfront"
+            ]
+        },
+        {
+            "pos": [
+                0.0,
+                0.9375,
+                -1.46875
+            ],
+            "rot": [
+                -0.0,
+                0.0,
+                0.0
+            ],
+            "maxValue": 1.25,
+            "types": [
+                "generic_sign_convoyrear"
+            ],
+            "applyAfter": "$boot"
+        },
+        {
+            "pos": [
+                0.0,
+                0.375,
+                -1.51875
+            ],
+            "rot": [
+                -0.0,
+                180.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "defaultPart": "iv_tpp:plate_gramados",
+            "types": [
+                "generic_licenseplate_us",
+                "generic_licenseplate_euro"
+            ]
+        },
+        {
+            "pos": [
+                -0.84375,
+                0.5,
+                5.89375
+            ],
+            "rot": [
+                -0.0,
+                0.0,
+                0.0
+            ],
+            "maxValue": 3.0,
+            "defaultPart": "iv_tpp:plate_gramados",
+            "types": [
+                "generic_licenseplate_us",
+                "generic_licenseplate_euro"
+            ]
+        },
+        {
+            "pos": [
+                -0.9375,
+                0.375,
+                -1.50625
+            ],
+            "rot": [
+                -0.0,
+                0.0,
+                0.0
+            ],
+            "maxValue": 0.5,
+            "types": [
+                "generic_bumpersticker"
+            ]
+        },
+        {
+            "pos": [
+                0.9375,
+                0.375,
+                -1.50625
+            ],
+            "rot": [
+                -0.0,
+                0.0,
+                0.0
+            ],
+            "maxValue": 0.5,
+            "types": [
+                "generic_bumpersticker"
+            ]
+        },
+        {
+            "pos": [
+                0.84375,
+                0.5,
+                5.88125
+            ],
+            "rot": [
+                -0.0,
+                180.0,
+                0.0
+            ],
+            "maxValue": 0.5,
+            "types": [
+                "generic_bumpersticker"
             ]
         }
     ],
@@ -535,6 +695,305 @@
                     "duration": 30
                 }
             ]
+        },
+        {
+            "isInterior": true,
+            "collisions": [
+                {
+                    "pos": [
+                        -1.25,
+                        1.96875,
+                        1.5
+                    ],
+                    "width": 0.1875,
+                    "height": 0.0625
+                },
+                {
+                    "pos": [
+                        -1.25,
+                        1.96875,
+                        1.75
+                    ],
+                    "width": 0.1875,
+                    "height": 0.0625
+                },
+                {
+                    "pos": [
+                        -1.3125,
+                        1.46875,
+                        1.75
+                    ],
+                    "width": 0.1875,
+                    "height": 0.0625
+                },
+                {
+                    "pos": [
+                        -1.3125,
+                        1.46875,
+                        1.5
+                    ],
+                    "width": 0.1875,
+                    "height": 0.0625
+                },
+                {
+                    "pos": [
+                        -1.375,
+                        0.96875,
+                        1.75
+                    ],
+                    "width": 0.1875,
+                    "height": 0.0625
+                },
+                {
+                    "pos": [
+                        -1.375,
+                        0.96875,
+                        1.5
+                    ],
+                    "width": 0.1875,
+                    "height": 0.0625
+                },
+                {
+                    "pos": [
+                        -1.4375,
+                        0.46875,
+                        1.75
+                    ],
+                    "width": 0.1875,
+                    "height": 0.0625
+                },
+                {
+                    "pos": [
+                        -1.4375,
+                        0.46875,
+                        1.5
+                    ],
+                    "width": 0.1875,
+                    "height": 0.0625
+                },
+                {
+                    "pos": [
+                        -1.5,
+                        -0.03125,
+                        1.75
+                    ],
+                    "width": 0.1875,
+                    "height": 0.0625
+                },
+                {
+                    "pos": [
+                        -1.5,
+                        -0.03125,
+                        1.5
+                    ],
+                    "width": 0.1875,
+                    "height": 0.0625
+                },
+                {
+                    "pos": [
+                        -1.1875,
+                        2.46875,
+                        1.75
+                    ],
+                    "width": 0.1875,
+                    "height": 0.0625
+                },
+                {
+                    "pos": [
+                        -1.1875,
+                        2.46875,
+                        1.5
+                    ],
+                    "width": 0.1875,
+                    "height": 0.0625
+                },
+                {
+                    "pos": [
+                        -1.5625,
+                        -0.53125,
+                        1.75
+                    ],
+                    "width": 0.1875,
+                    "height": 0.0625
+                },
+                {
+                    "pos": [
+                        -1.5625,
+                        -0.53125,
+                        1.5
+                    ],
+                    "width": 0.1875,
+                    "height": 0.0625
+                }
+            ],
+            "animations": []
+        },
+        {
+            "collisions": [
+                {
+                    "pos": [
+                        -1.25,
+                        0.875,
+                        -1.3125
+                    ],
+                    "width": 0.125,
+                    "height": 0.875
+                },
+                {
+                    "pos": [
+                        -1.3125,
+                        1.25,
+                        -0.8125
+                    ],
+                    "width": 0.125,
+                    "height": 0.875
+                },
+                {
+                    "pos": [
+                        -1.3125,
+                        1.375,
+                        -0.3125
+                    ],
+                    "width": 0.125,
+                    "height": 0.625
+                },
+                {
+                    "pos": [
+                        -1.3125,
+                        1.375,
+                        0.1875
+                    ],
+                    "width": 0.125,
+                    "height": 0.625
+                },
+                {
+                    "pos": [
+                        -1.3125,
+                        1.25,
+                        0.6875
+                    ],
+                    "width": 0.125,
+                    "height": 0.875
+                },
+                {
+                    "pos": [
+                        -1.3125,
+                        1.0625,
+                        1.1875
+                    ],
+                    "width": 0.125,
+                    "height": 1.25
+                },
+                {
+                    "pos": [
+                        -1.3125,
+                        0.875,
+                        1.6875
+                    ],
+                    "width": 0.125,
+                    "height": 0.875
+                },
+                {
+                    "pos": [
+                        -1.3125,
+                        0.875,
+                        2.1875
+                    ],
+                    "width": 0.125,
+                    "height": 0.875
+                },
+                {
+                    "pos": [
+                        -1.3125,
+                        0.875,
+                        2.6875
+                    ],
+                    "width": 0.125,
+                    "height": 0.875
+                },
+                {
+                    "pos": [
+                        1.3125,
+                        0.875,
+                        2.6875
+                    ],
+                    "width": 0.125,
+                    "height": 0.875
+                },
+                {
+                    "pos": [
+                        1.3125,
+                        0.875,
+                        2.1875
+                    ],
+                    "width": 0.125,
+                    "height": 0.875
+                },
+                {
+                    "pos": [
+                        1.3125,
+                        0.875,
+                        1.6875
+                    ],
+                    "width": 0.125,
+                    "height": 0.875
+                },
+                {
+                    "pos": [
+                        1.3125,
+                        1.0625,
+                        1.1875
+                    ],
+                    "width": 0.125,
+                    "height": 1.25
+                },
+                {
+                    "pos": [
+                        1.3125,
+                        1.25,
+                        0.6875
+                    ],
+                    "width": 0.125,
+                    "height": 0.875
+                },
+                {
+                    "pos": [
+                        1.3125,
+                        1.375,
+                        0.1875
+                    ],
+                    "width": 0.125,
+                    "height": 0.625
+                },
+                {
+                    "pos": [
+                        1.3125,
+                        1.375,
+                        -0.3125
+                    ],
+                    "width": 0.125,
+                    "height": 0.625
+                },
+                {
+                    "pos": [
+                        1.3125,
+                        1.25,
+                        -0.8125
+                    ],
+                    "width": 0.125,
+                    "height": 0.875
+                },
+                {
+                    "pos": [
+                        1.25,
+                        0.875,
+                        -1.3125
+                    ],
+                    "width": 0.125,
+                    "height": 0.875
+                }
+            ],
+            "animations": []
         }
     ],
     "instruments": [
@@ -597,83 +1056,87 @@
     ],
     "definitions": [
         {
-            "subName": "_black",
+            "subName": "_deepblack",
+            "name": "Trin ATTG 210 - Deep Black paint, Gray Interior",
             "extraMaterialLists": [
                 [
-                    "minecraft:dye:10:3",
-                    "minecraft:dye:15:2"
+                    "mts:iv_tpp.paint_bucket_deepblack:0:1",
+                    "mts:iv_tpp.upholstery_pile_gray:0:3"
                 ]
             ]
         },
         {
-            "subName": "_gray",
+            "subName": "_tungsten",
+            "name": "Trin ATTG 210 - Tungsten paint, Gray Interior",
             "extraMaterialLists": [
                 [
-                    "minecraft:dye:10:3",
-                    "minecraft:dye:15:2"
+                    "mts:iv_tpp.paint_bucket_tungsten:0:1",
+                    "mts:iv_tpp.upholstery_pile_gray:0:3"
                 ]
             ]
         },
         {
-            "subName": "_white",
+            "subName": "_glacierwhite",
+            "name": "Trin ATTG 210 - Glacier White paint, Gray Interior",
             "extraMaterialLists": [
                 [
-                    "minecraft:dye:10:3",
-                    "minecraft:dye:15:2"
+                    "mts:iv_tpp.paint_bucket_glacierwhite:0:1",
+                    "mts:iv_tpp.upholstery_pile_gray:0:3"
+                ]
+            ]
+        },
+        {
+            "subName": "_militarygreen",
+            "name": "Trin ATTG 210 - Military Green paint, Gray Interior",
+            "extraMaterialLists": [
+                [
+                    "mts:iv_tpp.paint_bucket_militarygreen:0:1",
+                    "mts:iv_tpp.upholstery_pile_gray:0:3"
                 ]
             ]
         },
         {
             "subName": "_camo_desert",
+            "name": "Trin ATTG 210 - Desert Camouflage, Gray Interior",
             "extraMaterialLists": [
                 [
-                    "minecraft:dye:10:3",
-                    "minecraft:dye:15:2"
+                    "mts:iv_tpp.upholstery_pile_gray:0:3"
                 ]
             ]
         },
         {
             "subName": "_camo_desert_red",
+            "name": "Trin ATTG 210 - Badland Camouflage, Gray Interior",
             "extraMaterialLists": [
                 [
-                    "minecraft:dye:14:3",
-                    "minecraft:dye:15:2"
+                    "mts:iv_tpp.upholstery_pile_gray:0:3"
                 ]
             ]
         },
         {
             "subName": "_camo_forest",
+            "name": "Trin ATTG 210 - Forest Camouflage, Gray Interior",
             "extraMaterialLists": [
                 [
-                    "minecraft:dye:14:3",
-                    "minecraft:dye:15:2"
+                    "mts:iv_tpp.upholstery_pile_gray:0:3"
                 ]
             ]
         },
         {
             "subName": "_camo_plain",
+            "name": "Trin ATTG 210 - Plain Camouflage, Gray Interior",
             "extraMaterialLists": [
                 [
-                    "minecraft:dye:14:3",
-                    "minecraft:dye:15:2"
+                    "mts:iv_tpp.upholstery_pile_gray:0:3"
                 ]
             ]
         },
         {
             "subName": "_camo_snow",
+            "name": "Trin ATTG 210 - Snow Camouflage, Gray Interior",
             "extraMaterialLists": [
                 [
-                    "minecraft:dye:14:3",
-                    "minecraft:dye:15:2"
-                ]
-            ]
-        },
-        {
-            "subName": "_swat",
-            "extraMaterialLists": [
-                [
-                    "minecraft:dye:14:3",
-                    "minecraft:dye:15:2"
+                    "mts:iv_tpp.upholstery_pile_gray:0:3"
                 ]
             ]
         }
@@ -693,7 +1156,7 @@
                 ],
                 "scale": 0.26,
                 "fieldName": "Text",
-                "defaultText": "TMP 000",
+                "defaultText": "ATTG 210",
                 "maxLength": 12,
                 "color": "000000"
             },
@@ -710,7 +1173,7 @@
                 ],
                 "scale": 0.26,
                 "fieldName": "Text",
-                "defaultText": "TMP 000",
+                "defaultText": "ATTG 210",
                 "maxLength": 12,
                 "color": "000000"
             }
@@ -904,6 +1367,15 @@
                         "reverseEasing": "easeincubic",
                         "forwardsStartSound": "iv_tpp:bootopen",
                         "reverseEndSound": "iv_tpp:bootclose"
+                    }
+                ]
+            },
+            {
+                "objectName": "winch",
+                "animations": [
+                    {
+                        "animationType": "visibility",
+                        "variable": "part_present_15"
                     }
                 ]
             }
@@ -1118,6 +1590,183 @@
                 ]
             },
             {
+                "objectName": "light_bar",
+                "emissive": true,
+                "covered": true,
+                "isElectric": true,
+                "color": "FFCC00",
+                "brightnessAnimations": [
+                    {
+                        "animationType": "visibility",
+                        "variable": "light_bar",
+                        "clampMin": 1.0,
+                        "clampMax": 1.0
+                    }
+                ],
+                "blendableComponents": [
+                    {
+                        "pos": [
+                            -0.8125010132789612,
+                            2.4138940572738647,
+                            3.863557457923889
+                        ],
+                        "axis": [
+                            0.0,
+                            -0.1737000048160553,
+                            0.9847999811172485
+                        ],
+                        "flareHeight": 0.5625,
+                        "flareWidth": 0.5625,
+                        "beamDiameter": 12.0,
+                        "beamLength": 36.0
+                    },
+                    {
+                        "pos": [
+                            -0.8125010132789612,
+                            2.4138940572738647,
+                            3.863557457923889
+                        ],
+                        "axis": [
+                            0.0,
+                            -0.1737000048160553,
+                            0.9847999811172485
+                        ],
+                        "flareHeight": 0.5625,
+                        "flareWidth": 0.5625,
+                        "beamDiameter": 12.0,
+                        "beamLength": 36.0
+                    },
+                    {
+                        "pos": [
+                            0.8124989867210388,
+                            2.4138940572738647,
+                            3.863557457923889
+                        ],
+                        "axis": [
+                            0.0,
+                            -0.1737000048160553,
+                            0.9847999811172485
+                        ],
+                        "flareHeight": 0.5625,
+                        "flareWidth": 0.5625,
+                        "beamDiameter": 12.0,
+                        "beamLength": 36.0
+                    },
+                    {
+                        "pos": [
+                            0.8124989867210388,
+                            2.4138940572738647,
+                            3.863557457923889
+                        ],
+                        "axis": [
+                            0.0,
+                            -0.1737000048160553,
+                            0.9847999811172485
+                        ],
+                        "flareHeight": 0.5625,
+                        "flareWidth": 0.5625,
+                        "beamDiameter": 12.0,
+                        "beamLength": 36.0
+                    },
+                    {
+                        "pos": [
+                            0.4062489867210388,
+                            2.4138940572738647,
+                            3.863557457923889
+                        ],
+                        "axis": [
+                            0.0,
+                            -0.1737000048160553,
+                            0.9847999811172485
+                        ],
+                        "flareHeight": 0.5625,
+                        "flareWidth": 0.5625,
+                        "beamDiameter": 12.0,
+                        "beamLength": 36.0
+                    },
+                    {
+                        "pos": [
+                            0.4062489867210388,
+                            2.4138940572738647,
+                            3.863557457923889
+                        ],
+                        "axis": [
+                            0.0,
+                            -0.1737000048160553,
+                            0.9847999811172485
+                        ],
+                        "flareHeight": 0.5625,
+                        "flareWidth": 0.5625,
+                        "beamDiameter": 12.0,
+                        "beamLength": 36.0
+                    },
+                    {
+                        "pos": [
+                            -0.4062510132789612,
+                            2.4138940572738647,
+                            3.863557457923889
+                        ],
+                        "axis": [
+                            0.0,
+                            -0.1737000048160553,
+                            0.9847999811172485
+                        ],
+                        "flareHeight": 0.5625,
+                        "flareWidth": 0.5625,
+                        "beamDiameter": 12.0,
+                        "beamLength": 36.0
+                    },
+                    {
+                        "pos": [
+                            -0.4062510132789612,
+                            2.4138940572738647,
+                            3.863557457923889
+                        ],
+                        "axis": [
+                            0.0,
+                            -0.1737000048160553,
+                            0.9847999811172485
+                        ],
+                        "flareHeight": 0.5625,
+                        "flareWidth": 0.5625,
+                        "beamDiameter": 12.0,
+                        "beamLength": 36.0
+                    },
+                    {
+                        "pos": [
+                            -9.98377799987793e-07,
+                            2.4138940572738647,
+                            3.863557457923889
+                        ],
+                        "axis": [
+                            0.0,
+                            -0.1737000048160553,
+                            0.9847999811172485
+                        ],
+                        "flareHeight": 0.5625,
+                        "flareWidth": 0.5625,
+                        "beamDiameter": 12.0,
+                        "beamLength": 36.0
+                    },
+                    {
+                        "pos": [
+                            -9.98377799987793e-07,
+                            2.4138940572738647,
+                            3.863557457923889
+                        ],
+                        "axis": [
+                            0.0,
+                            -0.1737000048160553,
+                            0.9847999811172485
+                        ],
+                        "flareHeight": 0.5625,
+                        "flareWidth": 0.5625,
+                        "beamDiameter": 12.0,
+                        "beamLength": 36.0
+                    }
+                ]
+            },
+            {
                 "objectName": "&Headlight_ffcc00_FFFFF_111",
                 "emissive": true,
                 "covered": true,
@@ -1195,166 +1844,6 @@
                         "flareWidth": 0.9375,
                         "beamDiameter": 20.0,
                         "beamLength": 60.0
-                    },
-                    {
-                        "pos": [
-                            -0.8125010132789612,
-                            2.4138940572738647,
-                            3.863557457923889
-                        ],
-                        "axis": [
-                            0.0,
-                            -0.1737000048160553,
-                            0.9847999811172485
-                        ],
-                        "flareHeight": 0.5625,
-                        "flareWidth": 0.5625,
-                        "beamDiameter": 12.0,
-                        "beamLength": 36.0
-                    },
-                    {
-                        "pos": [
-                            -0.8125010132789612,
-                            2.4138940572738647,
-                            3.863557457923889
-                        ],
-                        "axis": [
-                            0.0,
-                            -0.1737000048160553,
-                            0.9847999811172485
-                        ],
-                        "flareHeight": 0.5625,
-                        "flareWidth": 0.5625,
-                        "beamDiameter": 12.0,
-                        "beamLength": 36.0
-                    },
-                    {
-                        "pos": [
-                            0.8124989867210388,
-                            2.4138940572738647,
-                            3.863557457923889
-                        ],
-                        "axis": [
-                            0.0,
-                            -0.1737000048160553,
-                            0.9847999811172485
-                        ],
-                        "flareHeight": 0.5625,
-                        "flareWidth": 0.5625,
-                        "beamDiameter": 12.0,
-                        "beamLength": 36.0
-                    },
-                    {
-                        "pos": [
-                            0.8124989867210388,
-                            2.4138940572738647,
-                            3.863557457923889
-                        ],
-                        "axis": [
-                            0.0,
-                            -0.1737000048160553,
-                            0.9847999811172485
-                        ],
-                        "flareHeight": 0.5625,
-                        "flareWidth": 0.5625,
-                        "beamDiameter": 12.0,
-                        "beamLength": 36.0
-                    },
-                    {
-                        "pos": [
-                            0.4062489867210388,
-                            2.4138940572738647,
-                            3.863557457923889
-                        ],
-                        "axis": [
-                            0.0,
-                            -0.1737000048160553,
-                            0.9847999811172485
-                        ],
-                        "flareHeight": 0.5625,
-                        "flareWidth": 0.5625,
-                        "beamDiameter": 12.0,
-                        "beamLength": 36.0
-                    },
-                    {
-                        "pos": [
-                            0.4062489867210388,
-                            2.4138940572738647,
-                            3.863557457923889
-                        ],
-                        "axis": [
-                            0.0,
-                            -0.1737000048160553,
-                            0.9847999811172485
-                        ],
-                        "flareHeight": 0.5625,
-                        "flareWidth": 0.5625,
-                        "beamDiameter": 12.0,
-                        "beamLength": 36.0
-                    },
-                    {
-                        "pos": [
-                            -0.4062510132789612,
-                            2.4138940572738647,
-                            3.863557457923889
-                        ],
-                        "axis": [
-                            0.0,
-                            -0.1737000048160553,
-                            0.9847999811172485
-                        ],
-                        "flareHeight": 0.5625,
-                        "flareWidth": 0.5625,
-                        "beamDiameter": 12.0,
-                        "beamLength": 36.0
-                    },
-                    {
-                        "pos": [
-                            -0.4062510132789612,
-                            2.4138940572738647,
-                            3.863557457923889
-                        ],
-                        "axis": [
-                            0.0,
-                            -0.1737000048160553,
-                            0.9847999811172485
-                        ],
-                        "flareHeight": 0.5625,
-                        "flareWidth": 0.5625,
-                        "beamDiameter": 12.0,
-                        "beamLength": 36.0
-                    },
-                    {
-                        "pos": [
-                            -9.98377799987793e-07,
-                            2.4138940572738647,
-                            3.863557457923889
-                        ],
-                        "axis": [
-                            0.0,
-                            -0.1737000048160553,
-                            0.9847999811172485
-                        ],
-                        "flareHeight": 0.5625,
-                        "flareWidth": 0.5625,
-                        "beamDiameter": 12.0,
-                        "beamLength": 36.0
-                    },
-                    {
-                        "pos": [
-                            -9.98377799987793e-07,
-                            2.4138940572738647,
-                            3.863557457923889
-                        ],
-                        "axis": [
-                            0.0,
-                            -0.1737000048160553,
-                            0.9847999811172485
-                        ],
-                        "flareHeight": 0.5625,
-                        "flareWidth": 0.5625,
-                        "beamDiameter": 12.0,
-                        "beamLength": 36.0
                     }
                 ]
             },
@@ -1741,6 +2230,9 @@
                 ]
             }
         ],
+        "customVariables": [
+            "light_bar"
+        ],
         "initialVariables": [
             "door_fl",
             "door_fr",
@@ -1802,11 +2294,18 @@
     },
     "general": {
         "health": 500,
+        "description": "Need to move troops, mount a turret, or haul crates through mud and mayhem? The ATTG 210 does it all -\njust don't ask for air conditioning or armor plating.",
         "materialLists": [
             [
-                "minecraft:iron_ingot:0:64",
-                "minecraft:leather:0:3",
-                "minecraft:dye:1:2"
+                "minecraft:iron_ingot:0:16",
+                "minecraft:iron_block:0:8",
+                "minecraft:glowstone_dust:0:20",
+                "minecraft:glass_pane:0:2",
+                "mts:iv_tpp.metal_pile_1:0:12",
+                "mts:iv_tpp.metal_pile_2:0:3",
+                "mts:iv_tpp.engine_v8_gasoline_normal_aut:0:1",
+                "mts:iv_tpp.trin_seat_1_gray:0:6",
+                "mts:iv_tpp.wheel_20h_6w_rim2_or:0:4"
             ]
         ],
         "radarWidth": 0.0,
