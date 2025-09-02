@@ -1,0 +1,37 @@
+{
+  "generic": {
+    "type": "generic_mvap221_roof",
+    "mustBeRemovedByScrewdriver": true,
+    "destroyable": true,
+    "canBePlacedOnGround": true,
+    "placedOffset": 0.125,
+    "width": 2.6,
+    "height": 0.906
+  },
+  "definitions": [
+    {
+      "subName": "_solid",
+      "modelName": "part_mvap221_roof_solid",
+      "benchTexture": "part_mvap221_roof_solid",
+      "useVehicleTexture": true,
+      "name": "Trin MVAP 221 roof (solid)",
+      "extraMaterialLists": [
+        [
+          "minecraft:iron_ingot:0:5"
+        ]
+      ]
+    }
+  ],
+  "rendering": {
+    "lightObjects": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "health": 100,
+    "materialLists": [
+      [
+        "minecraft:iron_ingot:0:15"
+      ]
+    ]
+  }
+}
