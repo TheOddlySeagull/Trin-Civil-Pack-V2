@@ -264,7 +264,8 @@
       "maxValue": 0.875,
       "types": [
         "seat_invisible"
-      ]
+      ],
+      "defaultPart": "iv_tpp:trin_accessory_invisiseat_sitting"
     },
     {
       "pos": [
@@ -280,7 +281,8 @@
       "maxValue": 0.875,
       "types": [
         "seat_invisible"
-      ]
+      ],
+      "defaultPart": "iv_tpp:trin_accessory_invisiseat_sitting"
     },
     {
       "pos": [
@@ -314,6 +316,219 @@
       "types": [
         "interactable_crate",
         "interactable_barrel"
+      ]
+    },
+    {
+      "pos": [
+        0.0,
+        0.3125,
+        5.5625
+      ],
+      "rot": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "maxValue": 1.75,
+      "types": [
+        "generic_sign_convoyfront"
+      ]
+    },
+    {
+      "pos": [
+        0.0,
+        0.65625,
+        -0.8125
+      ],
+      "rot": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "maxValue": 1.25,
+      "types": [
+        "generic_sign_convoyrear"
+      ],
+      "applyAfter": "door_boot"
+    },
+    {
+      "pos": [
+        0.0,
+        0.21875,
+        -0.95625
+      ],
+      "rot": [
+        -0.0,
+        180.0,
+        0.0
+      ],
+      "maxValue": 3.0,
+      "defaultPart": "iv_tpp:plate_gramados",
+      "types": [
+        "generic_licenseplate_us",
+        "generic_licenseplate_euro"
+      ]
+    },
+    {
+      "pos": [
+        0.0,
+        0.3125,
+        5.58125
+      ],
+      "rot": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "maxValue": 3.0,
+      "defaultPart": "iv_tpp:plate_gramados",
+      "types": [
+        "generic_licenseplate_us",
+        "generic_licenseplate_euro"
+      ]
+    },
+    {
+      "pos": [
+        1.03125,
+        0.21875,
+        -0.94375
+      ],
+      "rot": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "maxValue": 0.5,
+      "types": [
+        "generic_bumpersticker"
+      ]
+    },
+    {
+      "pos": [
+        0.59375,
+        0.3125,
+        5.56875
+      ],
+      "rot": [
+        -0.0,
+        180.0,
+        0.0
+      ],
+      "maxValue": 0.5,
+      "types": [
+        "generic_bumpersticker"
+      ]
+    },
+    {
+      "pos": [
+        0.53125,
+        0.21875,
+        -0.94375
+      ],
+      "rot": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "maxValue": 0.5,
+      "types": [
+        "generic_bumpersticker"
+      ]
+    },
+    {
+      "pos": [
+        -1.0,
+        0.21875,
+        -0.94375
+      ],
+      "rot": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "maxValue": 0.5,
+      "types": [
+        "generic_bumpersticker"
+      ]
+    },
+    {
+      "pos": [
+        -0.5,
+        0.21875,
+        -0.94375
+      ],
+      "rot": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "maxValue": 0.5,
+      "types": [
+        "generic_bumpersticker"
+      ]
+    },
+    {
+      "pos": [
+        -0.59375,
+        0.3125,
+        5.56875
+      ],
+      "rot": [
+        -0.0,
+        180.0,
+        0.0
+      ],
+      "maxValue": 0.5,
+      "types": [
+        "generic_bumpersticker"
+      ]
+    },
+    {
+      "pos": [
+        1.1875,
+        1.0,
+        3.75
+      ],
+      "rot": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "maxValue": 0.6875,
+      "types": [
+        "generic_antenna"
+      ]
+    },
+    {
+      "pos": [
+        1.1875,
+        0.9375,
+        5.375
+      ],
+      "rot": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "maxValue": 0.375,
+      "types": [
+        "generic_flag_small"
+      ]
+    },
+    {
+      "pos": [
+        -1.1875,
+        0.9375,
+        5.375
+      ],
+      "rot": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "maxValue": 0.375,
+      "types": [
+        "generic_flag_small"
       ]
     }
   ],
@@ -1172,7 +1387,8 @@
         "fieldName": "Unit Number",
         "defaultText": "MVAP 221",
         "maxLength": 12,
-        "color": "000000"
+        "color": "000000",
+        "attachedTo": "door_hood"
       }
     ],
     "animatedObjects": [
@@ -1468,20 +1684,25 @@
         ]
       },
       {
-        "objectName": "roof_bar_BUGGY",
-        "_comment": "Not implemented.",
+        "objectName": "roof_bar",
         "animations": [
           {
-            "animationType": "visibility",
-            "variable": "!part_present_12"
+            "animationType": "inhibitor",
+            "variable": "part_present_12",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          },
+          {
+            "animationType": "inhibitor",
+            "variable": "part_present_11",
+            "clampMin": 1.0,
+            "clampMax": 1.0
           },
           {
             "animationType": "visibility",
-            "variable": "!part_present_11"
-          },
-          {
-            "animationType": "visibility",
-            "variable": "!part_present_10"
+            "variable": "part_present_10",
+            "clampMin": 1.0,
+            "clampMax": 1.0
           }
         ]
       }
