@@ -1,0 +1,149 @@
+{
+  "generic": {
+    "type": "generic_uvtg165_module_body_separator",
+    "mustBeRemovedByScrewdriver": true,
+    "forwardsDamageMultiplier": 0.0,
+    "width": 1.0,
+    "height": 0.5
+  },
+  "parts": [],
+  "collisionGroups": [
+    {
+      "collisionTypes": [
+        "attack",
+        "vehicle",
+        "entity"
+      ],
+      "collisions": [
+        {
+          "pos": [0.0,0.375,0.0],
+          "width": 0.125,
+          "height": 0.875
+        },
+        {
+          "pos": [0.5,0.375,0.0],
+          "width": 0.125,
+          "height": 0.875
+        },
+        {
+          "pos": [1.0,0.375,0.0],
+          "width": 0.125,
+          "height": 0.875
+        },
+        {
+          "pos": [-1.0,0.375,0.0],
+          "width": 0.125,
+          "height": 0.875
+        },
+        {
+          "pos": [-0.5,0.375,0.0],
+          "width": 0.125,
+          "height": 0.875
+        },
+        {
+          "pos": [0.75,1.25,0.0],
+          "width": 0.125,
+          "height": 0.875
+        },
+        {
+          "pos": [0.25,1.25,0.0],
+          "width": 0.125,
+          "height": 0.875
+        },
+        {
+          "pos": [-0.25,1.25,0.0],
+          "width": 0.125,
+          "height": 0.875
+        },
+        {
+          "pos": [-0.75,1.25,0.0],
+          "width": 0.125,
+          "height": 0.875
+        }
+      ]
+    }
+  ],
+  "definitions": [
+    {
+      "subName": "_bed",
+      "useVehicleTexture": true,
+      "modelName": "part_uvtg165_module_body_separator_bed",
+      "name": "Trin UVTG 165 separation module (between cab and bed)",
+      "extraMaterialLists": [
+        [
+          "minecraft:iron_ingot:0:3"
+        ]
+      ]
+    },
+    {
+      "subName": "_extendedbed",
+      "useVehicleTexture": true,
+      "modelName": "part_uvtg165_module_body_separator_extendedbed",
+      "name": "Trin UVTG 165 separation module (between cab and extended bed)",
+      "extraMaterialLists": [
+        [
+          "minecraft:iron_ingot:0:3"
+        ]
+      ]
+    }
+  ],
+  "rendering": {
+    "animatedObjects": [
+      {
+        "objectName": "module_roof",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "parent_hasHardtop",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "objectName": "body_door_top",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "parent_hasHardtop",
+            "clampMin": 1.0,
+            "clampMax": 1.0
+          }
+        ]
+      },
+      {
+        "objectName": "window_body_door_top.001",
+        "animations": [],
+        "applyAfter": "body_door_top"
+      },
+      {
+        "objectName": "window_body_door_top.002",
+        "animations": [],
+        "applyAfter": "body_door_top"
+      },
+      {
+        "objectName": "window_body_door_top",
+        "animations": [],
+        "applyAfter": "body_door_top"
+      },
+      {
+        "objectName": "window_roof",
+        "applyAfter": "module_roof",
+        "animations": []
+      }
+    ],
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "health": 100,
+    "materialLists": [
+      [
+        "minecraft:iron_ingot:0:15"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

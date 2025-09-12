@@ -1,0 +1,551 @@
+{
+  "motorized": {
+    "hasRunningLights": true,
+    "hasHeadlights": true,
+    "hasTurnSignals": true,
+    "emptyMass": 3500,
+    "fuelCapacity": 20000,
+    "axleRatio": 3.5,
+    "brakingFactor": 1.0,
+    "dragCoefficient": 0.6,
+    "litVariable": "headlight",
+    "panel": "mts:default_car"
+  },
+  "parts": [
+    {
+      "pos": [-1.125,-0.0,4.4375],
+      "rot": [-0.0,180.0,0.0],
+      "isMirrored": true,
+      "maxValue": 1.0,
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [1.125,-0.0,4.4375],
+      "maxValue": 1.0,
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [-1.125,-0.0,0.0],
+      "rot": [-0.0,180.0,0.0],
+      "isMirrored": true,
+      "maxValue": 1.0,
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [1.125,-0.0,0.0],
+      "maxValue": 1.0,
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [0.0,0.3125,0.0],
+      "maxValue": 2.5,
+      "types": [
+        "generic_uvtg165_module_body_bed"
+      ]
+    },
+    {
+      "pos": [0.0,0.3125,3.8125],
+      "maxValue": 1.125,
+      "types": [
+        "engine_car"
+      ],
+      "linkedParts": []
+    },
+    {
+      "pos": [0.0,0.125,1.375],
+      "maxValue": 2.5,
+      "types": [
+        "generic_uvtg165_module_body_back"
+      ]
+    },
+    {
+      "pos": [0.0,0.875,-0.25],
+      "maxValue": 2.375,
+      "types": [
+        "generic_uvtg165_module_body_bed_roof"
+      ]
+    },
+    {
+      "pos": [0.0,0.125,2.75],
+      "maxValue": 2.5,
+      "types": [
+        "generic_uvtg165_module_body_front"
+      ]
+    },
+    {
+      "pos": [0.0,0.0625,1.9375],
+      "maxValue": 2.5,
+      "types": [
+        "generic_uvtg165_module_body_separator"
+      ]
+    },
+    {
+      "pos": [0.0,0.0625,0.5625],
+      "maxValue": 2.5,
+      "types": [
+        "generic_uvtg165_module_body_separator"
+      ]
+    },
+    {
+      "pos": [0.0,1.875,1.8125],
+      "maxValue": 2.0,
+      "types": [
+        "generic_uvtg165_module_body_roof"
+      ]
+    },
+    {
+      "pos": [0.0,0.875,-1.3125],
+      "rot": [-0.0,90.0,0.0],
+      "maxValue": 1.0,
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [0.0,1.0625,4.375],
+      "rot": [-0.0,0.0,90.0],
+      "maxValue": 1.0,
+      "types": [
+        "ground_wheel"
+      ]
+    },
+    {
+      "pos": [-0.625,0.375,1.25],
+      "maxValue": 0.4375,
+      "types": [
+        "seat"
+      ]
+    },
+    {
+      "pos": [0.625,0.375,1.25],
+      "maxValue": 0.4375,
+      "types": [
+        "seat"
+      ]
+    },
+    {
+      "pos": [0.625,0.375,2.5],
+      "maxValue": 0.4375,
+      "types": [
+        "seat"
+      ]
+    },
+    {
+      "pos": [0.625,0.375,1.25],
+      "maxValue": 0.875,
+      "types": [
+        "seat"
+      ]
+    },
+    {
+      "pos": [-0.625,0.375,1.25],
+      "maxValue": 0.875,
+      "types": [
+        "seat"
+      ]
+    },
+    {
+      "pos": [0.625,0.375,1.25],
+      "maxValue": 0.875,
+      "types": [
+        "seat"
+      ]
+    },
+    {
+      "pos": [-0.625,0.375,2.5],
+      "maxValue": 0.875,
+      "types": [
+        "seat"
+      ]
+    },
+    {
+      "pos": [0.625,0.375,2.5],
+      "maxValue": 0.875,
+      "types": [
+        "seat"
+      ]
+    },
+    {
+      "pos": [-0.625,0.375,1.25],
+      "maxValue": 0.875,
+      "types": [
+        "seat"
+      ]
+    },
+    {
+      "pos": [0.625,0.375,2.5],
+      "maxValue": 0.875,
+      "types": [
+        "seat"
+      ]
+    },
+    {
+      "pos": [-0.625,0.375,2.5],
+      "maxValue": 0.875,
+      "types": [
+        "seat"
+      ]
+    },
+    {
+      "pos": [-0.625,0.375,2.5],
+      "maxValue": 0.4375,
+      "types": [
+        "seat"
+      ]
+    }
+  ],
+  "collisionGroups": [
+    {
+      "collisionTypes": [
+        "attack",
+        "vehicle",
+        "block",
+        "entity"
+      ],
+      "collisions": [
+        {
+          "pos": [0.625,0.9375,4.1875],
+          "width": 1.25,
+          "height": 0.125
+        },
+        {
+          "pos": [-0.625,0.9375,4.1875],
+          "width": 1.25,
+          "height": 0.125
+        },
+        {
+          "pos": [0.9375,0.875,5.125],
+          "width": 0.625,
+          "height": 0.125
+        },
+        {
+          "pos": [-0.9375,0.875,5.125],
+          "width": 0.625,
+          "height": 0.125
+        },
+        {
+          "pos": [0.3125,0.875,5.125],
+          "width": 0.625,
+          "height": 0.125
+        },
+        {
+          "pos": [-0.3125,0.875,5.125],
+          "width": 0.625,
+          "height": 0.125
+        }
+      ],
+      "animations": []
+    },
+    {
+      "collisionTypes": [
+        "vehicle",
+        "block"
+      ],
+      "collisions": [
+        {
+          "pos": [0.0,0.875,0.0625],
+          "width": 1.5,
+          "height": 0.125
+        },
+        {
+          "pos": [0.0,1.8125,2.125],
+          "width": 1.5,
+          "height": 0.125
+        }
+      ],
+      "animations": []
+    },
+    {
+      "collisionTypes": [
+        "attack",
+        "vehicle",
+        "entity"
+      ],
+      "collisions": [
+        {
+          "pos": [-0.625,-0.0,2.3125],
+          "width": 1.0,
+          "height": 0.125
+        },
+        {
+          "pos": [0.625,-0.0,2.3125],
+          "width": 1.0,
+          "height": 0.125
+        },
+        {
+          "pos": [0.625,-0.0,3.3125],
+          "width": 1.0,
+          "height": 0.125
+        },
+        {
+          "pos": [-0.625,-0.0,3.3125],
+          "width": 1.0,
+          "height": 0.125
+        }
+      ]
+    }
+  ],
+  "instruments": [
+    {
+      "pos": [0.78125,0.84375,3.41875],
+      "scale": 0.015625,
+      "hudX": 80,
+      "hudY": 36,
+      "hudScale": 0.25
+    },
+    {
+      "pos": [0.78125,1.0,3.41875],
+      "scale": 0.015625,
+      "hudX": 160,
+      "hudY": 36,
+      "hudScale": 0.5
+    },
+    {
+      "pos": [0.46875,1.0,3.41875],
+      "scale": 0.015625,
+      "hudX": 240,
+      "hudY": 36,
+      "hudScale": 0.5
+    },
+    {
+      "pos": [0.46875,0.84375,3.41875],
+      "scale": 0.015625,
+      "hudX": 320,
+      "hudY": 36,
+      "hudScale": 0.25
+    }
+  ],
+  "definitions": [
+    {
+      "subName": "_dev",
+      "name": "Trin UVTG 165 - Dev Skin",
+      "extraMaterialLists": [
+        [
+          "mts:iv_tpp.paint_bucket_deepblack:0:1",
+          "mts:iv_tpp.upholstery_pile_gray:0:3"
+        ]
+      ]
+    }
+  ],
+  "variableModifiers": [
+    {
+      "variable": "hasHardtop",
+      "animations": [
+        {
+          "animationType": "translation",
+          "variable": "part_useHardtopModel_12",
+          "axis": [0.0,0.0,1.0]
+        }
+      ]
+    }
+  ],
+  "rendering": {
+    "textObjects": [
+      {
+        "pos": [1.31875,0.84375,4.1875],
+        "rot": [-0.0,90.0,0.0],
+        "scale": 0.17,
+        "fieldName": "Unit Number",
+        "defaultText": "MVAP 221",
+        "maxLength": 12,
+        "color": "000000"
+      },
+      {
+        "pos": [1.31875,0.84375,-0.25],
+        "rot": [-0.0,90.0,0.0],
+        "scale": 0.17,
+        "fieldName": "Unit Number",
+        "defaultText": "MVAP 221",
+        "maxLength": 12,
+        "color": "000000"
+      },
+      {
+        "pos": [-1.31875,0.84375,4.1875],
+        "rot": [-0.0,-90.0,0.0],
+        "scale": 0.17,
+        "fieldName": "Unit Number",
+        "defaultText": "MVAP 221",
+        "maxLength": 12,
+        "color": "000000"
+      },
+      {
+        "pos": [-1.31875,0.84375,-0.25],
+        "rot": [-0.0,-90.0,0.0],
+        "scale": 0.17,
+        "fieldName": "Unit Number",
+        "defaultText": "MVAP 221",
+        "maxLength": 12,
+        "color": "000000"
+      },
+      {
+        "pos": [0.0,1.03125,5.0625],
+        "rot": [-86.0,0.0,0.0],
+        "scale": 0.3,
+        "fieldName": "Unit Number",
+        "defaultText": "MVAP 221",
+        "maxLength": 12,
+        "color": "000000",
+        "attachedTo": "door_hood"
+      }
+    ],
+    "animatedObjects": [
+      {
+        "objectName": "door_hood",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "door_hood",
+            "centerPoint": [0.4375,0.9375,3.9375],
+            "axis": [-90.0,0.0,0.0],
+            "duration": 25,
+            "forwardsEasing": "easeoutquint",
+            "reverseEasing": "easeincubic",
+            "forwardsStartSound": "iv_tpp:hoodopen",
+            "reverseStartSound": "iv_tpp:hoodclose"
+          }
+        ]
+      },
+      {
+        "objectName": "door_hood",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "door_hood",
+            "centerPoint": [-0.4375,0.9375,3.9375],
+            "axis": [-90.0,0.0,0.0],
+            "duration": 25,
+            "forwardsEasing": "easeoutquint",
+            "reverseEasing": "easeincubic",
+            "forwardsStartSound": "iv_tpp:hoodopen",
+            "reverseStartSound": "iv_tpp:hoodclose"
+          }
+        ]
+      },
+      {
+        "objectName": "door_hood",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "door_hood",
+            "centerPoint": [0.4375,0.9375,4.75],
+            "axis": [-90.0,0.0,0.0],
+            "duration": 25,
+            "forwardsEasing": "easeoutquint",
+            "reverseEasing": "easeincubic",
+            "forwardsStartSound": "iv_tpp:hoodopen",
+            "reverseStartSound": "iv_tpp:hoodclose"
+          }
+        ]
+      },
+      {
+        "objectName": "door_hood",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "door_hood",
+            "centerPoint": [-0.4375,0.9375,4.75],
+            "axis": [-90.0,0.0,0.0],
+            "duration": 25,
+            "forwardsEasing": "easeoutquint",
+            "reverseEasing": "easeincubic",
+            "forwardsStartSound": "iv_tpp:hoodopen",
+            "reverseStartSound": "iv_tpp:hoodclose"
+          }
+        ]
+      },
+      {
+        "objectName": "pedal_accel",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "throttle",
+            "centerPoint": [0.375,0.40625,3.484375],
+            "axis": [-20.0,0.0,0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "pedal_brake",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "brake",
+            "centerPoint": [0.625,0.40625,3.484375],
+            "axis": [-20.0,0.0,0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "pedal_clutch",
+        "animations": [
+          {
+            "animationType": "visibility",
+            "variable": "engine_isautomatic_1"
+          },
+          {
+            "animationType": "rotation",
+            "variable": "clutch",
+            "centerPoint": [1.0,0.40625,3.484375],
+            "axis": [-30.0,0.0,0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "steer",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "rudder",
+            "centerPoint": [0.625,0.84375,3.25],
+            "axis": [0.0,0.0,1.0]
+          }
+        ]
+      },
+      {
+        "objectName": "shifter",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "engine_gearshift_1",
+            "centerPoint": [0.125,0.1875,2.96875],
+            "axis": [1.0,0.0,0.0]
+          }
+        ]
+      },
+      {
+        "objectName": "p_brake",
+        "animations": [
+          {
+            "animationType": "rotation",
+            "variable": "brake",
+            "centerPoint": [0.125,0.1875,2.40625],
+            "axis": [-20.0,0.0,0.0]
+          }
+        ]
+      }
+    ],
+    "lightObjects": [],
+    "customVariables": [],
+    "sounds": [],
+    "particles": [],
+    "modelType": "obj"
+  },
+  "general": {
+    "health": 400,
+    "materialLists": [
+      [
+        "minecraft:iron_ingot:0:45"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}

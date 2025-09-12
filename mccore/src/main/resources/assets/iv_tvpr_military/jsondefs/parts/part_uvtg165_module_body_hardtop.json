@@ -1,0 +1,43 @@
+{
+  "generic": {
+    "type": "generic_uvtg165_module_body_roof",
+    "mustBeRemovedByScrewdriver": true,
+    "forwardsDamageMultiplier": 0.0,
+    "width": 1.0,
+    "height": 0.5
+  },
+  "parts": [],
+  "collisionGroups": [],
+  "definitions": [
+    {
+      "subName": "",
+      "useVehicleTexture": true,
+      "modelName": "part_uvtg165_module_body_hardtop",
+      "name": "Trin UVTG 165 Hardtop",
+      "extraMaterialLists": [
+        [
+          "minecraft:glass_pane:0:3"
+        ]
+      ]
+    }
+  ],
+  "constantValues": {
+    "part_useHardtopModel": 1.0
+  },
+  "rendering": {
+    "animatedObjects": [],
+    "lightObjects": [],
+    "particles": [],
+    "modelType": "none"
+  },
+  "general": {
+    "health": 100,
+    "materialLists": [
+      [
+        "minecraft:iron_ingot:0:15"
+      ]
+    ],
+    "radarWidth": 0.0,
+    "radarRange": 0.0
+  }
+}
