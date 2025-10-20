@@ -2,7 +2,7 @@
 
 # Trin Vehicle Pack Rebirth — Modernized Trin Vehicles
 
-Immersive Vehicles (MTS/IV) content pack with updated Trin vehicle models, improved animations, and part tone support.
+Immersive Vehicles (MTS/IV) content pack with updated Trin vehicle from V2, improved animations, and part tone support.
 
 </div>
 
@@ -11,7 +11,7 @@ Immersive Vehicles (MTS/IV) content pack with updated Trin vehicle models, impro
 
 ## Overview
 
-This pack includes modernized versions of Trin civil vehicles with default parts pre-installed, new door mechanics, and part tone support. Other categories may be in-progress.
+This pack includes modernized versions of V2 Trin civil vehicles with default parts pre-installed, new animations, and part tone support. Other categories may be in-progress.
 
 ## Download
 
