@@ -6,6 +6,9 @@ Immersive Vehicles (MTS/IV) content pack with updated Trin vehicle models, impro
 
 </div>
 
+[![Discord](https://img.shields.io/badge/Discord-join-7289DA?logo=discord&logoColor=white)](https://discord.gg/ujQR3wf)
+[![Build Status](https://github.com/TheOddlySeagull/Trin-Vehicle-Pack-Rebirth/actions/workflows/build.yml/badge.svg)](https://github.com/TheOddlySeagull/Trin-Vehicle-Pack-Rebirth/actions/workflows/build.yml)
+
 ## Overview
 
 This pack includes modernized versions of Trin civil vehicles with default parts pre-installed, new door mechanics, and part tone support. Other categories may be in-progress.
