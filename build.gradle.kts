@@ -36,10 +36,6 @@ tasks.register("buildCore") {
 
 tasks.register("buildForge1122") {
     doFirst {
-        // Run your Python script here if needed
-        exec {
-            commandLine("python", "./1-12-2_1-16-5_ID_transformer.py", "--reverse")
-        }
         preBuild()
     }
     doLast {
@@ -50,10 +46,6 @@ tasks.register("buildForge1122") {
 
 tasks.register("buildForge1165") {
     doFirst {
-        // Run your Python script here if needed
-        exec {
-            commandLine("python", "./1-12-2_1-16-5_ID_transformer.py")
-        }
         preBuild()
     }
     doLast {

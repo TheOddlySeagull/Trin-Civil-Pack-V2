@@ -51,11 +51,23 @@ jobs:
         if: ${{ hashFiles('generate_specular_maps.py') != '' }}
         run: python ./generate_specular_maps.py
 
+      - name: Transform IDs for 1.12.2 (reverse)
+        if: ${{ hashFiles('1-12-2_1-16-5_ID_transformer.py') != '' }}
+        run: python ./1-12-2_1-16-5_ID_transformer.py --reverse
+
       - name: Build Forge 1.12.2
         run: ./gradlew --no-daemon buildForge1122
 
+      - name: Transform IDs forward for 1.16.5
+        if: ${{ hashFiles('1-12-2_1-16-5_ID_transformer.py') != '' }}
+        run: python ./1-12-2_1-16-5_ID_transformer.py
+
       - name: Build Forge 1.16.5
         run: ./gradlew --no-daemon buildForge1165
+
+      - name: Restore IDs back to 1.12.2 state
+        if: ${{ hashFiles('1-12-2_1-16-5_ID_transformer.py') != '' }}
+        run: python ./1-12-2_1-16-5_ID_transformer.py --reverse
 
       - name: Upload JAR artifacts
         uses: actions/upload-artifact@v4
