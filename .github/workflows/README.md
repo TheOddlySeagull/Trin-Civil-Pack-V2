@@ -1,0 +1,1 @@
+This workflow builds both 1.12.2 and 1.16.5 variants and uploads JARs from the out/ directory. Tag a commit to create a release with attached artifacts.
