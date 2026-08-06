@@ -10,8 +10,7 @@
 - Trin Banto wagon
   - hood to close
   - tailgate to close
-- Trin Bolter
-  - add lightbars
+- ✅ Trin Bolter
 - ✅ Trin Bullenite
 - Trin Camper 2
   - No doors interaction
