@@ -1046,7 +1046,11 @@
                             60.0,
                             0.0
                         ],
-                        "duration": 5
+                        "duration": 30,
+                        "forwardsEasing": "easeoutback",
+                        "reverseEasing": "easeincubic",
+                        "forwardsStartSound": "iv_tpp:dooropen",
+                        "reverseEndSound": "iv_tpp:doorclose"
                     },
                     {
                         "animationType": "rotation",
@@ -1080,7 +1084,11 @@
                             -60.0,
                             0.0
                         ],
-                        "duration": 5
+                        "duration": 30,
+                        "forwardsEasing": "easeoutback",
+                        "reverseEasing": "easeincubic",
+                        "forwardsStartSound": "iv_tpp:dooropen",
+                        "reverseEndSound": "iv_tpp:doorclose"
                     },
                     {
                         "animationType": "rotation",
@@ -1114,7 +1122,11 @@
                             0.0,
                             0.0
                         ],
-                        "duration": 5
+                        "duration": 25,
+                        "forwardsEasing": "easeoutquint",
+                        "reverseEasing": "easeincubic",
+                        "forwardsStartSound": "iv_tpp:hoodopen",
+                        "reverseStartSound": "iv_tpp:hoodclose"
                     },
                     {
                         "animationType": "rotation",
@@ -1148,7 +1160,11 @@
                             0.0,
                             0.0
                         ],
-                        "duration": 5
+                        "duration": 30,
+                        "forwardsEasing": "easeoutquint",
+                        "reverseEasing": "easeincubic",
+                        "forwardsStartSound": "iv_tpp:bootopen",
+                        "reverseEndSound": "iv_tpp:bootclose"
                     },
                     {
                         "animationType": "rotation",
