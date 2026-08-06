@@ -1,0 +1,122 @@
+**This document shows what has been migrated and what hasn't**
+
+# Civil Vehicles
+- Trin Banto pick-up
+  - hood to close
+  - tailgate to close
+- Trin Banto roadster
+  - hood to close
+  - tailgate to close
+- Trin Banto wagon
+  - hood to close
+  - tailgate to close
+- Trin Bolter
+  - add lightbars
+- ✅ Trin Bullenite
+- Trin Camper 2
+  - No doors interaction
+- Trin Camper 1
+  - No doors interaction
+- Trin Camporal
+  - No doors interaction
+- ✅ Trin Crystallius
+- ✅ Trin Destitume
+- Trin Devom
+  - hood to close
+  - tailgate to close
+  - doors to close
+- Trin E-cycle
+  - prevent tire sounds
+- Trin Econocab
+  - hood to close
+  - tailgate to close
+  - doors to close
+- ✅ Trin Farmawn
+- Trin Flide
+  - Nothing yet :x
+- Trin Fomber
+  - No doors interaction
+- ✅ Trin Forester
+- Trin Frog
+  - Use Trin engine
+  - hood to close
+  - tailgate to close
+  - doors to close
+- Trin Gorgantom
+  - Nothing yet :x
+- Trin Keibab
+  - tailgate window doens't follow tailgate
+- ✅ Trin Pharaon
+- Trin Pharaon Limo
+  - Nothing yet :x
+- Trin Portahead
+  - Nothing yet :x
+- Trin Predahead
+  - Nothing yet :x
+- Trin Roalif N
+  - Nothing yet :x
+- Trin Roalif XL
+  - Nothing yet :x
+- Trin Robaner
+  - Nothing yet :x
+- Trin Rodeo
+  - Nothing yet :x
+- Trin Roofler
+  - no sound
+  - bad animations
+- Trin Splite
+  - Nothing yet :x
+- Trin Sportail
+  - Nothing yet :x
+- Trin Sportos
+  - Nothing yet :x
+- Trin Springbok
+  - Nothing yet :x
+- Trin Transortus
+  - Nothing yet :x
+- Trin Travanner
+  - Nothing yet :x
+- Trin Trumon
+  - Nothing yet :x
+- Trin Urlon
+  - Nothing yet :x
+- Trin Vonger Panneled
+  - bad animations
+  - hood to close
+  - tailgate to close
+  - doors to close
+- Trin Vonger Windowed
+  - bad animations
+  - hood to close
+  - tailgate to close
+  - doors to close
+# Gramthanix Vehicles
+- Trin Pharaon
+  - Nothing yet :x
+# Industrial Vehicles
+- Trin Commarter Combine Harvester
+  - Nothing yet :x
+  - No default parts
+- Trin Cordawmer Heavy Tractor
+  - Nothing yet :x
+  - No default parts
+- Trin Crimpt Front End Loader
+  - Nothing yet :x
+  - No default parts
+# Parts
+- Pile of V2 junk
+  - Missing texture
+# Service Vehicles
+- Ambulance
+  - Nothing yet :x
+  - No default parts
+- Urlon
+  - Nothing yet :x
+  - No default parts
+- Flugar Fire ENgine
+  - Nothing yet :x
+  - No default parts
+  - bad hitboxes
+- Vonger
+  - Nothing yet :x
+  - No default parts
