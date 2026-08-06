@@ -1,15 +1,9 @@
 **This document shows what has been migrated and what hasn't**
 
 # Civil Vehicles
-- Trin Banto pick-up
-  - hood to close
-  - tailgate to close
-- Trin Banto roadster
-  - hood to close
-  - tailgate to close
-- Trin Banto wagon
-  - hood to close
-  - tailgate to close
+- ✅ Trin Banto pick-up
+- ✅ Trin Banto roadster
+- ✅ Trin Banto wagon
 - ✅ Trin Bolter
 - ✅ Trin Bullenite
 - Trin Camper 2
@@ -20,16 +14,11 @@
   - No doors interaction
 - ✅ Trin Crystallius
 - ✅ Trin Destitume
-- Trin Devom
-  - hood to close
-  - tailgate to close
-  - doors to close
+- ✅ Trin Devom
 - Trin E-cycle
   - prevent tire sounds
 - Trin Econocab
-  - hood to close
-  - tailgate to close
-  - doors to close
+  - bad animation & sounds
 - ✅ Trin Farmawn
 - Trin Flide
   - Nothing yet :x
@@ -38,9 +27,6 @@
 - ✅ Trin Forester
 - Trin Frog
   - Use Trin engine
-  - hood to close
-  - tailgate to close
-  - doors to close
 - Trin Gorgantom
   - Nothing yet :x
 - Trin Keibab
@@ -74,17 +60,10 @@
 - Trin Travanner
   - Nothing yet :x
 - Trin Trumon
-  - Nothing yet :x
-- Trin Urlon
-  - Nothing yet :x
-- Trin Vonger Panneled
-  - hood to close
-  - tailgate to close
-  - doors to close
-- Trin Vonger Windowed
-  - hood to close
-  - tailgate to close
-  - doors to close
+  - Nothing yet :x 
+- ✅ Trin Urlon
+- ✅ Trin Vonger Panneled
+- ✅ Trin Vonger Windowed
 # Gramthanix Vehicles
 - Trin Pharaon
   - Nothing yet :x
