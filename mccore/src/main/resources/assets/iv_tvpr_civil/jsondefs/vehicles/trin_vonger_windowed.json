@@ -1706,12 +1706,6 @@
                 ]
             }
         ],
-        "initialVariables": [
-            "door_frontright",
-            "door_frontleft",
-            "door_hood",
-            "door_back"
-        ],
         "sounds": [
             {
                 "name": "iv_tcp:horn_1",

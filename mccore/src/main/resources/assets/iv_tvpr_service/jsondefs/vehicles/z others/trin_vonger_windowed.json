@@ -2304,14 +2304,6 @@
             }
         ],
         "customVariables": [],
-        "initialVariables": [
-            "door_fl",
-            "door_fr",
-            "door_fl",
-            "door_fr",
-            "door_rl",
-            "door_hood"
-        ],
         "sounds": [
             {
                 "name": "iv_tep:horn_1",

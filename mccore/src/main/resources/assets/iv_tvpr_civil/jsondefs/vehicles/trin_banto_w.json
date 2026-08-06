@@ -1545,10 +1545,6 @@
                 ]
             }
         ],
-        "initialVariables": [
-            "door_boot",
-            "door_hood"
-        ],
         "sounds": [
             {
                 "name": "iv_tcp:horn_1",

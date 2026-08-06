@@ -1557,12 +1557,6 @@
             }
         ],
         "customVariables": [],
-        "initialVariables": [
-            "door_boot",
-            "door_fr",
-            "door_hood",
-            "door_fl"
-        ],
         "sounds": [
             {
                 "name": "iv_tcp:horn_1",

@@ -3324,17 +3324,6 @@
             "siren",
             "EMERLTS"
         ],
-        "initialVariables": [
-            "door_fl",
-            "door_fl",
-            "door_fr",
-            "door_fr",
-            "door_rl",
-            "door_rl",
-            "door_rr",
-            "door_rr",
-            "door_hood"
-        ],
         "sounds": [
             {
                 "name": "iv_tep:horn_1",

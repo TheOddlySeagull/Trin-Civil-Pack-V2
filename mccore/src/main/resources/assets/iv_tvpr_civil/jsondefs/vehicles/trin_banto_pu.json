@@ -770,10 +770,6 @@
             ]
         }
     ],
-    "initialVariables": [
-        "door_boot",
-        "door_hood"
-    ],
     "rendering": {
         "textObjects": [],
         "animatedObjects": [
