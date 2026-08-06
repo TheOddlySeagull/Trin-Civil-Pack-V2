@@ -60,9 +60,7 @@
   - Nothing yet :x
 - Trin Rodeo
   - Nothing yet :x
-- Trin Roofler
-  - no sound
-  - bad animations
+- ✅ Trin Roofler
 - Trin Splite
   - Nothing yet :x
 - Trin Sportail
@@ -80,12 +78,10 @@
 - Trin Urlon
   - Nothing yet :x
 - Trin Vonger Panneled
-  - bad animations
   - hood to close
   - tailgate to close
   - doors to close
 - Trin Vonger Windowed
-  - bad animations
   - hood to close
   - tailgate to close
   - doors to close

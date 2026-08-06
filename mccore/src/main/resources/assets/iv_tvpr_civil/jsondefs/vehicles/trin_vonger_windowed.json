@@ -958,7 +958,9 @@
                             -60.0,
                             0.0
                         ],
-                        "duration": 20,
+                        "duration": 30,
+                        "forwardsEasing": "easeoutback",
+                        "reverseEasing": "easeincubic",
                         "forwardsStartSound": "iv_tpp:dooropen",
                         "reverseEndSound": "iv_tpp:doorclose"
                     },
@@ -980,37 +982,8 @@
             },
             {
                 "objectName": "$doorwindowFL",
-                "animations": [
-                    {
-                        "animationType": "rotation",
-                        "variable": "door_frontleft",
-                        "centerPoint": [
-                            1.125,
-                            0.9375,
-                            4.5625
-                        ],
-                        "axis": [
-                            0.0,
-                            -60.0,
-                            0.0
-                        ],
-                        "duration": 20
-                    },
-                    {
-                        "animationType": "rotation",
-                        "variable": "damage_totaled",
-                        "centerPoint": [
-                            1.125,
-                            0.9375,
-                            4.5625
-                        ],
-                        "axis": [
-                            -9.78701005244076,
-                            0.9791414370358673,
-                            8.471863630948803
-                        ]
-                    }
-                ]
+                "applyAfter": "$doorFL",
+                "animations": []
             },
             {
                 "objectName": "$doorFR",
@@ -1028,7 +1001,9 @@
                             60.0,
                             0.0
                         ],
-                        "duration": 20,
+                        "duration": 30,
+                        "forwardsEasing": "easeoutback",
+                        "reverseEasing": "easeincubic",
                         "forwardsStartSound": "iv_tpp:dooropen",
                         "reverseEndSound": "iv_tpp:doorclose"
                     },
@@ -1050,37 +1025,8 @@
             },
             {
                 "objectName": "$doorwindowFR",
-                "animations": [
-                    {
-                        "animationType": "rotation",
-                        "variable": "door_frontright",
-                        "centerPoint": [
-                            -1.125,
-                            0.9375,
-                            4.5625
-                        ],
-                        "axis": [
-                            0.0,
-                            60.0,
-                            0.0
-                        ],
-                        "duration": 20
-                    },
-                    {
-                        "animationType": "rotation",
-                        "variable": "damage_totaled",
-                        "centerPoint": [
-                            -1.125,
-                            0.9375,
-                            4.5625
-                        ],
-                        "axis": [
-                            -8.50734710157746,
-                            6.140388229097272,
-                            9.155640572656864
-                        ]
-                    }
-                ]
+                "applyAfter": "$doorFR",
+                "animations": []
             },
             {
                 "objectName": "$doorRRL",
@@ -1098,7 +1044,9 @@
                             -60.0,
                             0.0
                         ],
-                        "duration": 20,
+                        "duration": 30,
+                        "forwardsEasing": "easeoutback",
+                        "reverseEasing": "easeincubic",
                         "forwardsStartSound": "iv_tpp:dooropen",
                         "reverseEndSound": "iv_tpp:doorclose"
                     },
@@ -1111,46 +1059,17 @@
                             -1.6875
                         ],
                         "axis": [
-                            7.238943374424537,
-                            4.623581690152587,
-                            9.182020942243451
+                            -0.26210630553562453,
+                            7.252406308781538,
+                            -4.099227982978739
                         ]
                     }
                 ]
             },
             {
                 "objectName": "$doorwindowRRL",
-                "animations": [
-                    {
-                        "animationType": "rotation",
-                        "variable": "door_back",
-                        "centerPoint": [
-                            0.75,
-                            1.875,
-                            -1.6875
-                        ],
-                        "axis": [
-                            0.0,
-                            -60.0,
-                            0.0
-                        ],
-                        "duration": 20
-                    },
-                    {
-                        "animationType": "rotation",
-                        "variable": "damage_totaled",
-                        "centerPoint": [
-                            0.75,
-                            1.875,
-                            -1.6875
-                        ],
-                        "axis": [
-                            -8.396859220491725,
-                            -3.1339351611343647,
-                            3.300603090480278
-                        ]
-                    }
-                ]
+                "applyAfter": "$doorRRL",
+                "animations": []
             },
             {
                 "objectName": "$doorRRR",
@@ -1168,7 +1087,9 @@
                             60.0,
                             0.0
                         ],
-                        "duration": 20,
+                        "duration": 30,
+                        "forwardsEasing": "easeoutback",
+                        "reverseEasing": "easeincubic",
                         "forwardsStartSound": "iv_tpp:dooropen",
                         "reverseEndSound": "iv_tpp:doorclose"
                     },
@@ -1190,37 +1111,8 @@
             },
             {
                 "objectName": "$doorwindowRRR",
-                "animations": [
-                    {
-                        "animationType": "rotation",
-                        "variable": "door_back",
-                        "centerPoint": [
-                            -0.75,
-                            1.875,
-                            -1.6875
-                        ],
-                        "axis": [
-                            0.0,
-                            60.0,
-                            0.0
-                        ],
-                        "duration": 20
-                    },
-                    {
-                        "animationType": "rotation",
-                        "variable": "damage_totaled",
-                        "centerPoint": [
-                            -0.75,
-                            1.875,
-                            -1.6875
-                        ],
-                        "axis": [
-                            -1.9154616856391886,
-                            -2.7421554554775778,
-                            7.409629888892248
-                        ]
-                    }
-                ]
+                "applyAfter": "$doorRRR",
+                "animations": []
             },
             {
                 "objectName": "$hood",
@@ -1238,7 +1130,9 @@
                             0.0,
                             0.0
                         ],
-                        "duration": 20,
+                        "duration": 25,
+                        "forwardsEasing": "easeoutquint",
+                        "reverseEasing": "easeincubic",
                         "forwardsStartSound": "iv_tpp:hoodopen",
                         "reverseStartSound": "iv_tpp:hoodclose"
                     },
@@ -1270,9 +1164,11 @@
                             0.0
                         ],
                         "duration": 10,
-                        "reverseDelay": 30,
-                        "forwardsStartSound": "iv_tpp:bootopen",
-                        "reverseEndSound": "iv_tpp:bootclose"
+                        "forwardsEasing": "easeinoutsine",
+                        "reverseEasing": "easeinoutsine",
+                        "reverseDelay": 20,
+                        "forwardsStartSound": "iv_tpp:dooropen",
+                        "reverseEndSound": "iv_tpp:doorclose"
                     },
                     {
                         "animationType": "translation",
@@ -1282,39 +1178,17 @@
                             0.0,
                             -1.15
                         ],
-                        "duration": 30,
-                        "forwardsDelay": 10,
-                        "forwardsStartSound": "iv_tpp:hoodopen",
-                        "reverseStartSound": "iv_tpp:hoodclose"
+                        "duration": 20,
+                        "forwardsEasing": "easeinoutsine",
+                        "reverseEasing": "easeinoutsine",
+                        "forwardsDelay": 10
                     }
                 ]
             },
             {
                 "objectName": "%doorwindowRL",
-                "animations": [
-                    {
-                        "animationType": "translation",
-                        "variable": "door_sideleft",
-                        "axis": [
-                            0.075,
-                            0.0,
-                            0.0
-                        ],
-                        "duration": 10,
-                        "reverseDelay": 30
-                    },
-                    {
-                        "animationType": "translation",
-                        "variable": "door_sideleft",
-                        "axis": [
-                            0.0,
-                            0.0,
-                            -1.15
-                        ],
-                        "duration": 30,
-                        "forwardsDelay": 10
-                    }
-                ]
+                "applyAfter": "%doorRL",
+                "animations": []
             }
         ],
         "lightObjects": [
