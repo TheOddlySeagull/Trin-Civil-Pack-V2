@@ -203,6 +203,11 @@
             "types": [
                 "engine_car"
             ],
+            "interactableVariables": [
+                [
+                    "door_hood"
+                ]
+            ],
             "linkedParts": [
                 3,
                 4

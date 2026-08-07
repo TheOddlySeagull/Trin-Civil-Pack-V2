@@ -53,14 +53,12 @@
   - Nothing yet :x
 - Trin Sportos
   - Nothing yet :x
-- Trin Springbok
-  - Nothing yet :x
+- ✅ Trin Springbok
 - Trin Transortus
   - Nothing yet :x
 - ✅ Trin Travanner
 - ✅ Trin Trumon
-- Trin Urlon
-  - engine no need hood
+- ✅ Trin Urlon
 - ✅ Trin Vonger Panneled
 - ✅ Trin Vonger Windowed
 # Gramthanix Vehicles
