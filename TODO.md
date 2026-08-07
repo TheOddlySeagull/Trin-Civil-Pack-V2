@@ -57,8 +57,7 @@
   - Nothing yet :x
 - Trin Transortus
   - Nothing yet :x
-- Trin Travanner
-  - Nothing yet :x
+- ✅ Trin Travanner
 - ✅ Trin Trumon
 - Trin Urlon
   - engine no need hood
