@@ -59,9 +59,9 @@
   - Nothing yet :x
 - Trin Travanner
   - Nothing yet :x
-- Trin Trumon
-  - Nothing yet :x 
-- ✅ Trin Urlon
+- ✅ Trin Trumon
+- Trin Urlon
+  - engine no need hood
 - ✅ Trin Vonger Panneled
 - ✅ Trin Vonger Windowed
 # Gramthanix Vehicles
