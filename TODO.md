@@ -51,8 +51,7 @@
   - Nothing yet :x
 - Trin Sportail
   - Nothing yet :x
-- Trin Sportos
-  - Nothing yet :x
+- ✅ Trin Sportos
 - ✅ Trin Springbok
 - Trin Transortus
   - Nothing yet :x
