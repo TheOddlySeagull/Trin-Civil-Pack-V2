@@ -22,57 +22,105 @@
             "pos": [
                 1.375,
                 0.0,
-                0.0
+                5.563
             ],
+            "turnsWithSteer": true,
             "minValue": 0.4,
             "maxValue": 1.1,
+            "defaultPart": "iv_tpp:wheel_classic_4d16_0_steel",
             "types": [
                 "ground_wheel"
             ],
-            "defaultPart": "iv_tpp:wheel_classic_4d16_0_steel"
+            "animations": [
+                {
+                    "animationType": "rotation",
+                    "variable": "rudder",
+                    "centerPoint": [
+                        1.375,
+                        0.0,
+                        5.563
+                    ],
+                    "axis": [
+                        0.0,
+                        -1.0,
+                        0.0
+                    ],
+                    "offset": 0.0,
+                    "clampMin": 0.0,
+                    "clampMax": 0.0
+                }
+            ]
         },
         {
             "pos": [
                 -1.375,
                 0.0,
+                5.563
+            ],
+            "rot": [
+                0.0,
+                180.0,
                 0.0
             ],
+            "turnsWithSteer": true,
             "isMirrored": true,
             "minValue": 0.4,
             "maxValue": 1.1,
+            "defaultPart": "iv_tpp:wheel_classic_4d16_0_steel",
             "types": [
                 "ground_wheel"
             ],
-            "defaultPart": "iv_tpp:wheel_classic_4d16_0_steel"
+            "animations": [
+                {
+                    "animationType": "rotation",
+                    "variable": "rudder",
+                    "centerPoint": [
+                        -1.375,
+                        0.0,
+                        5.563
+                    ],
+                    "axis": [
+                        0.0,
+                        -1.0,
+                        0.0
+                    ],
+                    "offset": 0.0,
+                    "clampMin": 0.0,
+                    "clampMax": 0.0
+                }
+            ]
         },
         {
             "pos": [
                 1.375,
                 0.0,
-                5.563
+                0.0
             ],
-            "turnsWithSteer": true,
             "minValue": 0.4,
             "maxValue": 1.1,
+            "defaultPart": "iv_tpp:wheel_classic_4d16_0_steel",
             "types": [
                 "ground_wheel"
-            ],
-            "defaultPart": "iv_tpp:wheel_classic_4d16_0_steel"
+            ]
         },
         {
             "pos": [
                 -1.375,
                 0.0,
-                5.563
+                0.0
             ],
-            "turnsWithSteer": true,
+            "rot": [
+                0.0,
+                180.0,
+                0.0
+            ],
             "isMirrored": true,
             "minValue": 0.4,
             "maxValue": 1.1,
+            "defaultPart": "iv_tpp:wheel_classic_4d16_0_steel",
             "types": [
                 "ground_wheel"
-            ],
-            "defaultPart": "iv_tpp:wheel_classic_4d16_0_steel"
+            ]
         },
         {
             "pos": [
@@ -81,11 +129,11 @@
                 2.938
             ],
             "isController": true,
+            "toneIndex": 1,
+            "defaultPart": "iv_tpp:trin_seat_2_gray",
             "types": [
                 "seat"
             ],
-            "toneIndex": 1,
-            "defaultPart": "iv_tpp:trin_seat_2_gray",
             "interactableVariables": [
                 [
                     "door_fl"
@@ -98,11 +146,11 @@
                 0.5,
                 2.938
             ],
+            "toneIndex": 1,
+            "defaultPart": "iv_tpp:trin_seat_2_gray",
             "types": [
                 "seat"
             ],
-            "toneIndex": 1,
-            "defaultPart": "iv_tpp:trin_seat_2_gray",
             "interactableVariables": [
                 [
                     "door_fr"
@@ -115,11 +163,11 @@
                 0.5,
                 1.125
             ],
+            "toneIndex": 1,
+            "defaultPart": "iv_tpp:trin_seat_2_gray",
             "types": [
                 "seat"
             ],
-            "toneIndex": 1,
-            "defaultPart": "iv_tpp:trin_seat_2_gray",
             "interactableVariables": [
                 [
                     "door_rl"
@@ -132,11 +180,11 @@
                 0.5,
                 1.125
             ],
+            "toneIndex": 1,
+            "defaultPart": "iv_tpp:trin_seat_2_gray",
             "types": [
                 "seat"
             ],
-            "toneIndex": 1,
-            "defaultPart": "iv_tpp:trin_seat_2_gray",
             "interactableVariables": [
                 [
                     "door_rr"
@@ -150,25 +198,25 @@
                 4.469
             ],
             "maxValue": 5.0,
+            "defaultPart": "iv_tpp:engine_v12_gasoline_normal_aut",
             "types": [
                 "engine_car"
-            ],
-            "linkedParts": [
-                1,
-                2,
-                3,
-                4
             ],
             "interactableVariables": [
                 [
                     "door_hood"
                 ]
             ],
-            "defaultPart": "iv_tpp:engine_v12_gasoline_normal_aut"
+            "linkedParts": [
+                1,
+                2,
+                3,
+                4
+            ]
         },
         {
             "pos": [
-                0,
+                0.0,
                 1.93125,
                 3.4375
             ],
@@ -188,6 +236,11 @@
             "maxValue": 3.0,
             "types": [
                 "interactable_luggage"
+            ],
+            "interactableVariables": [
+                [
+                    "tailgate"
+                ]
             ]
         },
         {
@@ -199,6 +252,11 @@
             "maxValue": 3.0,
             "types": [
                 "interactable_luggage"
+            ],
+            "interactableVariables": [
+                [
+                    "tailgate"
+                ]
             ]
         },
         {
@@ -210,11 +268,16 @@
             "maxValue": 3.0,
             "types": [
                 "interactable_luggage"
+            ],
+            "interactableVariables": [
+                [
+                    "tailgate"
+                ]
             ]
         },
         {
             "pos": [
-                0,
+                0.0,
                 0.15625,
                 7.32813
             ],
@@ -227,7 +290,7 @@
         },
         {
             "pos": [
-                0,
+                0.0,
                 0.53125,
                 -2.07813
             ],
@@ -268,6 +331,12 @@
     ],
     "collisionGroups": [
         {
+            "collisionTypes": [
+                "entity",
+                "attack",
+                "click",
+                "block"
+            ],
             "collisions": [
                 {
                     "pos": [
@@ -299,246 +368,253 @@
             ]
         },
         {
-            "isInterior": true,
-            "collisions": [
-                {
-                    "pos": [
-                        1.5,
-                        0.84375,
-                        3.46875
-                    ],
-                    "width": 0.3125,
-                    "height": 0.125,
-                    "variableName": "door_fl",
-                    "variableType": "toggle"
-                },
-                {
-                    "pos": [
-                        1.5,
-                        0.84375,
-                        2.5625
-                    ],
-                    "width": 0.3125,
-                    "height": 0.125,
-                    "variableName": "door_fl",
-                    "variableType": "toggle"
-                }
+            "collisionTypes": [
+                "entity",
+                "click"
             ],
-            "animations": [
-                {
-                    "animationType": "rotation",
-                    "variable": "door_fl",
-                    "centerPoint": [
-                        1.5625,
-                        0.9375,
-                        3.65625
-                    ],
-                    "axis": [
-                        0.0,
-                        -60.0,
-                        0.0
-                    ],
-                    "duration": 30
-                }
-            ]
-        },
-        {
-            "isInterior": true,
             "collisions": [
                 {
                     "pos": [
-                        -1.5,
-                        0.84375,
-                        3.46875
-                    ],
-                    "width": 0.3125,
-                    "height": 0.125,
-                    "variableName": "door_fr",
-                    "variableType": "toggle"
-                },
-                {
-                    "pos": [
-                        -1.5,
-                        0.84375,
-                        2.5625
-                    ],
-                    "width": 0.3125,
-                    "height": 0.125,
-                    "variableName": "door_fr",
-                    "variableType": "toggle"
-                }
-            ],
-            "animations": [
-                {
-                    "animationType": "rotation",
-                    "variable": "door_fr",
-                    "centerPoint": [
-                        -1.5625,
-                        0.9375,
-                        3.65625
-                    ],
-                    "axis": [
-                        0.0,
-                        60.0,
-                        0.0
-                    ],
-                    "duration": 30
-                }
-            ]
-        },
-        {
-            "isInterior": true,
-            "collisions": [
-                {
-                    "pos": [
-                        1.5,
-                        0.84375,
-                        2.25
-                    ],
-                    "width": 0.3125,
-                    "height": 0.125,
-                    "variableName": "door_rl",
-                    "variableType": "toggle"
-                },
-                {
-                    "pos": [
-                        1.5,
-                        0.84375,
-                        1.34375
-                    ],
-                    "width": 0.3125,
-                    "height": 0.125,
-                    "variableName": "door_rl",
-                    "variableType": "toggle"
-                }
-            ],
-            "animations": [
-                {
-                    "animationType": "rotation",
-                    "variable": "door_rl",
-                    "centerPoint": [
-                        1.5625,
-                        0.9375,
-                        1.15625
-                    ],
-                    "axis": [
-                        0.0,
-                        100.0,
-                        0.0
-                    ],
-                    "duration": 30
-                }
-            ]
-        },
-        {
-            "isInterior": true,
-            "collisions": [
-                {
-                    "pos": [
-                        -1.5,
-                        0.84375,
-                        2.25
-                    ],
-                    "width": 0.3125,
-                    "height": 0.125,
-                    "variableName": "door_rr",
-                    "variableType": "toggle"
-                },
-                {
-                    "pos": [
-                        -1.5,
-                        0.84375,
-                        1.34375
-                    ],
-                    "width": 0.3125,
-                    "height": 0.125,
-                    "variableName": "door_rr",
-                    "variableType": "toggle"
-                }
-            ],
-            "animations": [
-                {
-                    "animationType": "rotation",
-                    "variable": "door_rr",
-                    "centerPoint": [
-                        -1.5625,
-                        0.9375,
-                        1.15625
-                    ],
-                    "axis": [
-                        0.0,
-                        -100.0,
-                        0.0
-                    ],
-                    "duration": 30
-                }
-            ]
-        },
-        {
-            "isInterior": true,
-            "collisions": [
-                {
-                    "pos": [
-                        0,
-                        0.8125,
-                        -1.96875
-                    ],
-                    "width": 0.3125,
-                    "height": 0.125,
-                    "variableName": "door_boot",
-                    "variableType": "toggle"
-                }
-            ],
-            "animations": [
-                {
-                    "animationType": "rotation",
-                    "variable": "door_boot",
-                    "centerPoint": [
-                        0.0,
-                        1.063,
-                        -0.281
-                    ],
-                    "axis": [
-                        60.0,
-                        0.0,
-                        0.0
-                    ],
-                    "duration": 30
-                }
-            ]
-        },
-        {
-            "isInterior": true,
-            "collisions": [
-                {
-                    "pos": [
-                        0,
+                        0.53125,
                         1.0625,
-                        5.875
+                        4.9375
                     ],
-                    "width": 2.0,
-                    "height": 0.25,
-                    "variableName": "door_hood",
-                    "variableType": "toggle"
+                    "width": 1.0,
+                    "height": 0.125,
+                    "action": {
+                        "action": "toggle",
+                        "variable": "door_hood"
+                    }
+                },
+                {
+                    "pos": [
+                        -0.53125,
+                        1.0625,
+                        4.9375
+                    ],
+                    "width": 1.0,
+                    "height": 0.125,
+                    "action": {
+                        "action": "toggle",
+                        "variable": "door_hood"
+                    }
+                },
+                {
+                    "pos": [
+                        -0.28125,
+                        1.0625,
+                        6.625
+                    ],
+                    "width": 0.5,
+                    "height": 0.125,
+                    "action": {
+                        "action": "toggle",
+                        "variable": "door_hood"
+                    }
+                },
+                {
+                    "pos": [
+                        0.28125,
+                        1.0625,
+                        6.625
+                    ],
+                    "width": 0.5,
+                    "height": 0.125,
+                    "action": {
+                        "action": "toggle",
+                        "variable": "door_hood"
+                    }
+                },
+                {
+                    "pos": [
+                        -0.4375,
+                        1.0625,
+                        5.90625
+                    ],
+                    "width": 0.8125,
+                    "height": 0.125,
+                    "action": {
+                        "action": "toggle",
+                        "variable": "door_hood"
+                    }
+                },
+                {
+                    "pos": [
+                        0.4375,
+                        1.0625,
+                        5.90625
+                    ],
+                    "width": 0.8125,
+                    "height": 0.125,
+                    "action": {
+                        "action": "toggle",
+                        "variable": "door_hood"
+                    }
                 }
             ],
-            "animations": [
+            "applyAfter": "$hood"
+        },
+        {
+            "collisionTypes": [
+                "entity",
+                "click"
+            ],
+            "collisions": [
                 {
-                    "animationType": "rotation",
-                    "variable": "door_hood",
-                    "centerPoint": [
+                    "pos": [
                         0.0,
-                        1.063,
-                        4.406
+                        0.875,
+                        -1.9375
                     ],
-                    "axis": [
-                        -60.0,
-                        0.0,
-                        0.0
-                    ],
-                    "duration": 25
+                    "width": 0.5,
+                    "height": 0.125,
+                    "action": {
+                        "action": "toggle",
+                        "variable": "tailgate"
+                    }
                 }
-            ]
+            ],
+            "applyAfter": "$boot"
+        },
+        {
+            "collisionTypes": [
+                "entity",
+                "click"
+            ],
+            "collisions": [
+                {
+                    "pos": [
+                        1.5,
+                        0.84375,
+                        2.5625
+                    ],
+                    "width": 0.3125,
+                    "height": 0.125,
+                    "action": {
+                        "action": "toggle",
+                        "variable": "door_fl"
+                    }
+                },
+                {
+                    "pos": [
+                        1.5,
+                        0.84375,
+                        3.4375
+                    ],
+                    "width": 0.3125,
+                    "height": 0.125,
+                    "action": {
+                        "action": "toggle",
+                        "variable": "door_fl"
+                    }
+                }
+            ],
+            "applyAfter": "$doorFL"
+        },
+        {
+            "collisionTypes": [
+                "entity",
+                "click"
+            ],
+            "collisions": [
+                {
+                    "pos": [
+                        1.5,
+                        0.84375,
+                        2.25
+                    ],
+                    "width": 0.3125,
+                    "height": 0.125,
+                    "action": {
+                        "action": "toggle",
+                        "variable": "door_rl"
+                    }
+                },
+                {
+                    "pos": [
+                        1.5,
+                        0.84375,
+                        1.375
+                    ],
+                    "width": 0.3125,
+                    "height": 0.125,
+                    "action": {
+                        "action": "toggle",
+                        "variable": "door_rl"
+                    }
+                }
+            ],
+            "applyAfter": "$doorRL"
+        },
+        {
+            "collisionTypes": [
+                "entity",
+                "click"
+            ],
+            "collisions": [
+                {
+                    "pos": [
+                        -1.5,
+                        0.84375,
+                        2.5625
+                    ],
+                    "width": 0.3125,
+                    "height": 0.125,
+                    "action": {
+                        "action": "toggle",
+                        "variable": "door_fr"
+                    }
+                },
+                {
+                    "pos": [
+                        -1.5,
+                        0.84375,
+                        3.4375
+                    ],
+                    "width": 0.3125,
+                    "height": 0.125,
+                    "action": {
+                        "action": "toggle",
+                        "variable": "door_fr"
+                    }
+                }
+            ],
+            "applyAfter": "$doorFR"
+        },
+        {
+            "collisionTypes": [
+                "entity",
+                "click"
+            ],
+            "collisions": [
+                {
+                    "pos": [
+                        -1.5,
+                        0.84375,
+                        2.25
+                    ],
+                    "width": 0.3125,
+                    "height": 0.125,
+                    "action": {
+                        "action": "toggle",
+                        "variable": "door_rr"
+                    }
+                },
+                {
+                    "pos": [
+                        -1.5,
+                        0.84375,
+                        1.375
+                    ],
+                    "width": 0.3125,
+                    "height": 0.125,
+                    "action": {
+                        "action": "toggle",
+                        "variable": "door_rr"
+                    }
+                }
+            ],
+            "applyAfter": "$doorRR"
         }
     ],
     "connectionGroups": [
@@ -549,7 +625,7 @@
                 {
                     "type": "tow_bumper",
                     "pos": [
-                        0,
+                        0.0,
                         0.15625,
                         7.32813
                     ],
@@ -558,16 +634,16 @@
                 {
                     "type": "tow_bumper",
                     "pos": [
-                        0,
-                        0,
-                        -2
+                        0.0,
+                        0.0,
+                        -2.0
                     ],
                     "distance": 2.0
                 },
                 {
                     "type": "tow_wheel",
                     "pos": [
-                        0,
+                        0.0,
                         -0.5,
                         5.625
                     ],
@@ -576,7 +652,7 @@
                 {
                     "type": "tow_flatbed",
                     "pos": [
-                        0,
+                        0.0,
                         0.15625,
                         5.625
                     ],
@@ -592,9 +668,9 @@
                 {
                     "type": "trailer_standard",
                     "pos": [
-                        0,
-                        0,
-                        -2
+                        0.0,
+                        0.0,
+                        -2.0
                     ],
                     "distance": 2.0
                 }
@@ -684,6 +760,9 @@
         },
         {
             "subName": "_brown",
+            "partTones": [
+                "_beige"
+            ],
             "name": "Trin Pharaon - Milk Coffee Paint, Tan Interior",
             "extraMaterialLists": [
                 [
@@ -691,13 +770,13 @@
                     "minecraft:wool:4:2",
                     "minecraft:wool:0:3"
                 ]
-            ],
-            "partTones": [
-                "_beige"
             ]
         },
         {
             "subName": "_light_blue",
+            "partTones": [
+                "_gray"
+            ],
             "name": "Trin Pharaon - Sky Blue Paint, Gray Interior",
             "extraMaterialLists": [
                 [
@@ -705,13 +784,13 @@
                     "minecraft:wool:7:2",
                     "minecraft:wool:8:3"
                 ]
-            ],
-            "partTones": [
-                "_gray"
             ]
         },
         {
             "subName": "_light_gray",
+            "partTones": [
+                "_black"
+            ],
             "name": "Trin Pharaon - Silver Paint, Black Interior",
             "extraMaterialLists": [
                 [
@@ -719,13 +798,13 @@
                     "minecraft:wool:7:2",
                     "minecraft:wool:15:3"
                 ]
-            ],
-            "partTones": [
-                "_black"
             ]
         },
         {
             "subName": "_olive",
+            "partTones": [
+                "_beige"
+            ],
             "name": "Trin Pharaon - Soft Green Paint, Tan Interior",
             "extraMaterialLists": [
                 [
@@ -733,13 +812,13 @@
                     "minecraft:wool:4:2",
                     "minecraft:wool:0:3"
                 ]
-            ],
-            "partTones": [
-                "_beige"
             ]
         },
         {
             "subName": "_red",
+            "partTones": [
+                "_beige"
+            ],
             "name": "Trin Pharaon - Carmin Red Paint, Tan Interior",
             "extraMaterialLists": [
                 [
@@ -747,13 +826,13 @@
                     "minecraft:wool:4:2",
                     "minecraft:wool:0:3"
                 ]
-            ],
-            "partTones": [
-                "_beige"
             ]
         },
         {
             "subName": "_pure_black",
+            "partTones": [
+                "_red"
+            ],
             "name": "Trin Pharaon - Pure Black Paint, Red Interior",
             "extraMaterialLists": [
                 [
@@ -761,13 +840,13 @@
                     "minecraft:wool:7:2",
                     "minecraft:wool:14:3"
                 ]
-            ],
-            "partTones": [
-                "_red"
             ]
         },
         {
             "subName": "_pure_white",
+            "partTones": [
+                "_red"
+            ],
             "name": "Trin Pharaon - Pure White Paint, Red Interior",
             "extraMaterialLists": [
                 [
@@ -775,13 +854,13 @@
                     "minecraft:wool:7:2",
                     "minecraft:wool:14:3"
                 ]
-            ],
-            "partTones": [
-                "_red"
             ]
         },
         {
             "subName": "_diamond",
+            "partTones": [
+                "_gray_blue"
+            ],
             "name": "Trin Pharaon - Diamond Wrap, Gray & Blue Interior",
             "extraMaterialLists": [
                 [
@@ -789,9 +868,6 @@
                     "minecraft:wool:7:2",
                     "minecraft:wool:11:3"
                 ]
-            ],
-            "partTones": [
-                "_gray_blue"
             ]
         }
     ],
@@ -813,7 +889,10 @@
                             12.5,
                             0.0,
                             0.0
-                        ]
+                        ],
+                        "offset": 0.0,
+                        "clampMin": 0.0,
+                        "clampMax": 0.0
                     },
                     {
                         "animationType": "rotation",
@@ -827,7 +906,10 @@
                             -5.770108876268987,
                             -0.8139608332542796,
                             1.1605914034036164
-                        ]
+                        ],
+                        "offset": 0.0,
+                        "clampMin": 0.0,
+                        "clampMax": 0.0
                     }
                 ]
             },
@@ -846,7 +928,10 @@
                             12.5,
                             0.0,
                             0.0
-                        ]
+                        ],
+                        "offset": 0.0,
+                        "clampMin": 0.0,
+                        "clampMax": 0.0
                     },
                     {
                         "animationType": "rotation",
@@ -860,7 +945,10 @@
                             -9.179746919423472,
                             -1.7330999226915793,
                             5.330504041339099
-                        ]
+                        ],
+                        "offset": 0.0,
+                        "clampMin": 0.0,
+                        "clampMax": 0.0
                     }
                 ]
             },
@@ -879,7 +967,10 @@
                             30.0,
                             0.0,
                             0.0
-                        ]
+                        ],
+                        "offset": 0.0,
+                        "clampMin": 0.0,
+                        "clampMax": 0.0
                     },
                     {
                         "animationType": "rotation",
@@ -893,7 +984,10 @@
                             -8.579152887407783,
                             5.9209104205235406,
                             6.807879592383049
-                        ]
+                        ],
+                        "offset": 0.0,
+                        "clampMin": 0.0,
+                        "clampMax": 0.0
                     }
                 ]
             },
@@ -913,6 +1007,9 @@
                             -60.0,
                             0.0
                         ],
+                        "offset": 0.0,
+                        "clampMin": 0.0,
+                        "clampMax": 0.0,
                         "duration": 30,
                         "forwardsEasing": "easeoutback",
                         "reverseEasing": "easeincubic",
@@ -931,7 +1028,10 @@
                             0.5065096997347105,
                             -6.152497560221586,
                             -3.657600986899472
-                        ]
+                        ],
+                        "offset": 0.0,
+                        "clampMin": 0.0,
+                        "clampMax": 0.0
                     }
                 ]
             },
@@ -961,6 +1061,9 @@
                             60.0,
                             0.0
                         ],
+                        "offset": 0.0,
+                        "clampMin": 0.0,
+                        "clampMax": 0.0,
                         "duration": 30,
                         "forwardsEasing": "easeoutback",
                         "reverseEasing": "easeincubic",
@@ -979,7 +1082,10 @@
                             -0.05167478494395361,
                             -7.724199778291894,
                             -2.6217268658414046
-                        ]
+                        ],
+                        "offset": 0.0,
+                        "clampMin": 0.0,
+                        "clampMax": 0.0
                     }
                 ]
             },
@@ -1009,6 +1115,9 @@
                             100.0,
                             0.0
                         ],
+                        "offset": 0.0,
+                        "clampMin": 0.0,
+                        "clampMax": 0.0,
                         "duration": 30,
                         "forwardsEasing": "easeoutback",
                         "reverseEasing": "easeincubic",
@@ -1027,7 +1136,10 @@
                             -0.7589372840456647,
                             2.7420974929402213,
                             1.0657230751148283
-                        ]
+                        ],
+                        "offset": 0.0,
+                        "clampMin": 0.0,
+                        "clampMax": 0.0
                     }
                 ]
             },
@@ -1052,6 +1164,9 @@
                             -100.0,
                             0.0
                         ],
+                        "offset": 0.0,
+                        "clampMin": 0.0,
+                        "clampMax": 0.0,
                         "duration": 30,
                         "forwardsEasing": "easeoutback",
                         "reverseEasing": "easeincubic",
@@ -1070,7 +1185,10 @@
                             9.814661572533097,
                             5.7780257298748054,
                             -6.097731605592179
-                        ]
+                        ],
+                        "offset": 0.0,
+                        "clampMin": 0.0,
+                        "clampMax": 0.0
                     }
                 ]
             },
@@ -1094,7 +1212,10 @@
                             -0.0,
                             -0.0,
                             1.0
-                        ]
+                        ],
+                        "offset": 0.0,
+                        "clampMin": 0.0,
+                        "clampMax": 0.0
                     },
                     {
                         "animationType": "rotation",
@@ -1108,7 +1229,10 @@
                             0.0943655918474473,
                             7.045553893230153,
                             3.347395341751051
-                        ]
+                        ],
+                        "offset": 0.0,
+                        "clampMin": 0.0,
+                        "clampMax": 0.0
                     }
                 ]
             },
@@ -1128,6 +1252,9 @@
                             0.0,
                             0.0
                         ],
+                        "offset": 0.0,
+                        "clampMin": 0.0,
+                        "clampMax": 0.0,
                         "duration": 25,
                         "forwardsEasing": "easeoutquint",
                         "reverseEasing": "easeincubic",
@@ -1146,7 +1273,10 @@
                             6.001966729346794,
                             6.153798565909522,
                             -0.023360772043352185
-                        ]
+                        ],
+                        "offset": 0.0,
+                        "clampMin": 0.0,
+                        "clampMax": 0.0
                     }
                 ]
             },
@@ -1155,7 +1285,7 @@
                 "animations": [
                     {
                         "animationType": "rotation",
-                        "variable": "door_boot",
+                        "variable": "tailgate",
                         "centerPoint": [
                             0.0,
                             1.063,
@@ -1166,6 +1296,9 @@
                             0.0,
                             0.0
                         ],
+                        "offset": 0.0,
+                        "clampMin": 0.0,
+                        "clampMax": 0.0,
                         "duration": 30,
                         "forwardsEasing": "easeoutquint",
                         "reverseEasing": "easeincubic",
@@ -1184,7 +1317,10 @@
                             -9.978828832420941,
                             2.033162857251554,
                             7.129203460553018
-                        ]
+                        ],
+                        "offset": 0.0,
+                        "clampMin": 0.0,
+                        "clampMax": 0.0
                     }
                 ]
             },
@@ -1203,7 +1339,10 @@
                             1.0,
                             0.0,
                             0.0
-                        ]
+                        ],
+                        "offset": 0.0,
+                        "clampMin": 0.0,
+                        "clampMax": 0.0
                     },
                     {
                         "animationType": "rotation",
@@ -1217,7 +1356,10 @@
                             0.004539174103516785,
                             1.9297336208146358,
                             5.222057878409448
-                        ]
+                        ],
+                        "offset": 0.0,
+                        "clampMin": 0.0,
+                        "clampMax": 0.0
                     }
                 ]
             }
@@ -1233,6 +1375,7 @@
                     {
                         "animationType": "visibility",
                         "variable": "engine_reversed_1",
+                        "offset": 0.0,
                         "clampMin": 1.0,
                         "clampMax": 1.0
                     }
@@ -1278,12 +1421,14 @@
                     {
                         "animationType": "visibility",
                         "variable": "right_turn_signal",
+                        "offset": 0.0,
                         "clampMin": 1.0,
                         "clampMax": 1.0
                     },
                     {
                         "animationType": "visibility",
                         "variable": "10_10_0_cycle",
+                        "offset": 0.0,
                         "clampMin": 1.0,
                         "clampMax": 1.0
                     }
@@ -1343,6 +1488,7 @@
                     {
                         "animationType": "visibility",
                         "variable": "running_light",
+                        "offset": 0.0,
                         "clampMin": 1.0,
                         "clampMax": 1.0
                     }
@@ -1430,6 +1576,7 @@
                     {
                         "animationType": "visibility",
                         "variable": "running_light",
+                        "offset": 0.0,
                         "clampMin": 1.0,
                         "clampMax": 1.0
                     }
@@ -1475,12 +1622,14 @@
                     {
                         "animationType": "visibility",
                         "variable": "left_turn_signal",
+                        "offset": 0.0,
                         "clampMin": 1.0,
                         "clampMax": 1.0
                     },
                     {
                         "animationType": "visibility",
                         "variable": "10_10_0_cycle",
+                        "offset": 0.0,
                         "clampMin": 1.0,
                         "clampMax": 1.0
                     }
@@ -1540,6 +1689,7 @@
                     {
                         "animationType": "visibility",
                         "variable": "brake",
+                        "offset": 0.0,
                         "clampMin": 0.01,
                         "clampMax": 1.0
                     }
@@ -1599,6 +1749,7 @@
                     {
                         "animationType": "visibility",
                         "variable": "headlight",
+                        "offset": 0.0,
                         "clampMin": 1.0,
                         "clampMax": 1.0
                     }
@@ -1649,6 +1800,7 @@
                     {
                         "animationType": "visibility",
                         "variable": "horn",
+                        "offset": 0.0,
                         "clampMin": 1.0,
                         "clampMax": 1.0
                     }
@@ -1659,7 +1811,8 @@
                 "middleDistance": 0.0,
                 "middleDistanceVolume": 0.0,
                 "maxDistance": 0.0,
-                "maxDistanceVolume": 0.0
+                "maxDistanceVolume": 0.0,
+                "conicalAngle": 0.0
             },
             {
                 "name": "iv_tcp:siren",
@@ -1667,6 +1820,7 @@
                     {
                         "animationType": "visibility",
                         "variable": "siren",
+                        "offset": 0.0,
                         "clampMin": 1.0,
                         "clampMax": 1.0
                     }
@@ -1677,7 +1831,8 @@
                 "middleDistance": 0.0,
                 "middleDistanceVolume": 0.0,
                 "maxDistance": 0.0,
-                "maxDistanceVolume": 0.0
+                "maxDistanceVolume": 0.0,
+                "conicalAngle": 0.0
             }
         ],
         "particles": [],
