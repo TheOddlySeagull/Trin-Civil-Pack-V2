@@ -1894,7 +1894,7 @@
     "general": {
         "description": "Recommended parts:\nLarge Sized Wheels\nV8 Engine\nModel 1 Seat & bus seats",
         "materials": [
-            "mts:iv_tcp_v2.pile_of_v2_junk:0:14"
+            "mts:iv_tvpr_parts.pile_of_v2_junk:0:14"
         ]
     }
 }

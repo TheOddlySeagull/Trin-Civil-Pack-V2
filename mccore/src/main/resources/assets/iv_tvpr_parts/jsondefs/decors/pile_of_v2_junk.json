@@ -1,11 +1,32 @@
-{//dyes: black:0 red:1 green:2 brown:3 blue:4 purple:5 cyan:6 light gray:7 gray:8 pink:9 lime:10 yellow:11 light blue:12 magenta:13 orange:14 white:15
+{
+	"decor": {
+		"type": "generic",
+		"width": 1.0,
+		"height": 0.5,
+		"depth": 1.0
+	},
+	"definitions": [
+		{
+			"subName": "",
+			"modelName": "pile_of_v2_junk",
+			"name": "Pile Of V2 Junk",
+			"extraMaterialLists": [
+				[]
+			]
+		}
+	],
+	"rendering": {
+		"lightObjects": [],
+		"modelType": "obj"
+	},
 	"general": {
-		"name" : "Pile Of V2 Junk",
-		"width" : 0.25,
-		"height" : 1,
-		"depth" : 1,
-		"oriented" : true,
-		"modelName" : "pile_of_v2_junk",
-		"materials" : ["minecraft:iron_ingot:0:10"]
+		"name": "Pile Of V2 Junk",
+		"materialLists": [
+			[
+				"minecraft:iron_ingot:0:10"
+			]
+		],
+		"radarWidth": 0.0,
+		"radarRange": 0.0
 	}
 }

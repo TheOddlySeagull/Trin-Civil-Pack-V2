@@ -1715,7 +1715,7 @@
     "general": {
         "description": "Recommended parts:\nSmall Sized Wheels\ni3 Engine\nModel 3 Seats",
         "materials": [
-            "mts:iv_tcp_v2.pile_of_v2_junk:0:4"
+            "mts:iv_tvpr_parts.pile_of_v2_junk:0:4"
         ]
     }
 }

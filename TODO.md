@@ -53,8 +53,7 @@
 - ✅ Trin Vonger Panneled
 - ✅ Trin Vonger Windowed
 # Gramthanix Vehicles
-- Trin Pharaon
-  - Nothing yet :x
+- ✅ Trin Pharaon
 # Industrial Vehicles
 - Trin Commarter Combine Harvester
   - Nothing yet :x

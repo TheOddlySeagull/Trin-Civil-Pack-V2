@@ -1328,7 +1328,7 @@
     "general": {
         "description": "Recommended parts:\nTiny Sized Wheels\ni1 UNU Engine\nModel 3 Seats",
         "materials": [
-            "mts:iv_tcp_v2.pile_of_v2_junk:0:3"
+            "mts:iv_tvpr_parts.pile_of_v2_junk:0:3"
         ]
     }
 }

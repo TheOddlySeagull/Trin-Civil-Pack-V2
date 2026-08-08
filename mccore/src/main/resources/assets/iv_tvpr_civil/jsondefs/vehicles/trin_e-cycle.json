@@ -604,7 +604,7 @@
         "health": 100,
         "materialLists": [
             [
-                "mts:iv_tcp_v2.pile_of_v2_junk:0:1"
+                "mts:iv_tvpr_parts.pile_of_v2_junk:0:1"
             ]
         ],
         "radarWidth": 0.0,

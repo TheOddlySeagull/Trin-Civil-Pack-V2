@@ -842,7 +842,7 @@
     "general": {
         "description": "Recommended parts:\nAverage Sized Wheels\ni3 Engine\nBike Seats",
         "materials": [
-            "mts:iv_tcp_v2.pile_of_v2_junk:0:2"
+            "mts:iv_tvpr_parts.pile_of_v2_junk:0:2"
         ]
     }
 }
