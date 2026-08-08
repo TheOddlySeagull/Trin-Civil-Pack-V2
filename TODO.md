@@ -49,8 +49,7 @@
 - ✅ Trin Roofler
 - Trin Splite
   - Nothing yet :x
-- Trin Sportail
-  - Nothing yet :x
+- ✅ Trin Sportail
 - ✅ Trin Sportos
 - ✅ Trin Springbok
 - Trin Transortus
