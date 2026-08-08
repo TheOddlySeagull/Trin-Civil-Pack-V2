@@ -7,11 +7,11 @@
 - ✅ Trin Bolter
 - ✅ Trin Bullenite
 - Trin Camper 2
-  - No doors interaction
+  - Nothing yet :x
 - Trin Camper 1
-  - No doors interaction
+  - Nothing yet :x
 - Trin Camporal
-  - No doors interaction
+  - Nothing yet :x
 - ✅ Trin Crystallius
 - ✅ Trin Destitume
 - ✅ Trin Devom
@@ -23,7 +23,7 @@
 - Trin Flide
   - Nothing yet :x
 - Trin Fomber
-  - No doors interaction
+  - Nothing yet :x
 - ✅ Trin Forester
 - Trin Frog
   - Use Trin engine
@@ -42,8 +42,7 @@
   - Nothing yet :x
 - Trin Roalif XL
   - Nothing yet :x
-- Trin Robaner
-  - Nothing yet :x
+- ✅ Trin Robaner
 - ✅ Trin Rodeo
 - ✅ Trin Roofler
 - ✅ Trin Splite
