@@ -32,8 +32,7 @@
 - Trin Keibab
   - tailgate window doens't follow tailgate
 - ✅ Trin Pharaon
-- Trin Pharaon Limo
-  - Nothing yet :x
+- ✅ Trin Pharaon Limo
 - ✅ Trin Portahead
 - ✅ Trin Predahead
 - Trin Roalif N
