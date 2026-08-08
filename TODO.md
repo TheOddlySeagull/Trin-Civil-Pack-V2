@@ -36,8 +36,7 @@
   - Nothing yet :x
 - Trin Portahead
   - Nothing yet :x
-- Trin Predahead
-  - Nothing yet :x
+- ✅ Trin Predahead
 - Trin Roalif N
   - Nothing yet :x
 - Trin Roalif XL
