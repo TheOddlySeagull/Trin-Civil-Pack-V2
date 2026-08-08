@@ -47,8 +47,7 @@
 - Trin Rodeo
   - Nothing yet :x
 - ✅ Trin Roofler
-- Trin Splite
-  - Nothing yet :x
+- ✅ Trin Splite
 - ✅ Trin Sportail
 - ✅ Trin Sportos
 - ✅ Trin Springbok
