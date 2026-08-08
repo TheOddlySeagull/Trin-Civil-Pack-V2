@@ -44,8 +44,7 @@
   - Nothing yet :x
 - Trin Robaner
   - Nothing yet :x
-- Trin Rodeo
-  - Nothing yet :x
+- ✅ Trin Rodeo
 - ✅ Trin Roofler
 - ✅ Trin Splite
 - ✅ Trin Sportail
