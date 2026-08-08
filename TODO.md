@@ -29,8 +29,7 @@
   - Use Trin engine
 - Trin Gorgantom
   - Nothing yet :x
-- Trin Keibab
-  - tailgate window doens't follow tailgate
+- ✅ Trin Keibab
 - ✅ Trin Pharaon
 - ✅ Trin Pharaon Limo
 - ✅ Trin Portahead
