@@ -34,8 +34,7 @@
 - ✅ Trin Pharaon
 - Trin Pharaon Limo
   - Nothing yet :x
-- Trin Portahead
-  - Nothing yet :x
+- ✅ Trin Portahead
 - ✅ Trin Predahead
 - Trin Roalif N
   - Nothing yet :x
